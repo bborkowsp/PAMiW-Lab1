@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "x9RX77teNduM+pSqvOBZ8797kVSEAGV2haceyOqe350/fADz0YTWn4j9dIuFHu7dHQwLH7fn9PpXeQv/bVjMlQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\oryginal\\L3\\L3\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Paweł\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

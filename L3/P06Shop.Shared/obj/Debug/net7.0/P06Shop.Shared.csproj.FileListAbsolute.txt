@@ -1,0 +1,33 @@
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\oryginal\L3\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\kopia new folder\najnoszwsza kopia, bo stara jest w visual srudio\L3nowe\L3\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\oryginal\L3\L3\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
