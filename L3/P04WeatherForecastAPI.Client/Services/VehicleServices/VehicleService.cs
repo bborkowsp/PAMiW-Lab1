@@ -13,6 +13,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace P04WeatherForecastAPI.Client.Services.VehicleServices
 {
@@ -28,7 +29,10 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
 
         public async Task<ServiceResponse<List<Vehicle>>> GetVehiclesAsync()
         {
-            var response = await _httpClient.GetAsync(_appSettings.BaseVehicleEndpoint.GetAllVehiclesEndpoint);
+            var baseEndpoint = _appSettings.BaseAPIUrl + "/" + _appSettings.BaseVehicleEndpoint.Base_url;
+            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.GetAllVehiclesEndpoint;
+
+            var response = await _httpClient.GetAsync(fullEndpoint);
             var json = await response.Content.ReadAsStringAsync();
             var result = JsonConvert.DeserializeObject<ServiceResponse<List<Vehicle>>>(json);
             return result;
@@ -36,22 +40,24 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
 
         public Vehicle GetVehicleById(int id)
         {
-            return null;
+            throw new NotImplementedException("This method is not implemented.");
         }
 
         public void DeleteVehicle(int id)
         {
+            throw new NotImplementedException("This method is not implemented.");
 
         }
 
         public void UpdateVehicle(Vehicle updatedVehicle)
         {
+            throw new NotImplementedException("This method is not implemented.");
 
         }
 
         public ServiceResponse<Vehicle> CreateVehicle(Vehicle newVehicle)
         {
-            return null;
+            throw new NotImplementedException("This method is not implemented.");
         }
 
     }

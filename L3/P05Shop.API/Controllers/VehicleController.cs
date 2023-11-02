@@ -16,7 +16,7 @@ namespace P05Shop.API.Controllers
             _VehicleService = VehicleService;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllVehicles")]
         public async Task<ActionResult<ServiceResponse<List<Vehicle>>>> GetVehicles()
         {
             var result = await _VehicleService.GetVehiclesAsync();
@@ -38,7 +38,7 @@ namespace P05Shop.API.Controllers
             }
             else
             {
-                return BadRequest(serviceResponse.Message);
+                return StatusCode(500, $"Internal server error {serviceResponse.Message}");
             }
         }
 
