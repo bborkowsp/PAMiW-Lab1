@@ -30,22 +30,25 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
 
         public async Task<ServiceResponse<Vehicle>> CreateVehicleAsync(Vehicle vehicle)
         {
-            //    var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
-            //    var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.NewVehicleEndpoint;
+            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
+            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.NewVehicleEndpoint;
 
-            var response = await _httpClient.PostAsJsonAsync(_appSettings.BaseVehicleEndpoint.GetAllVehiclesEndpoint, vehicle);
+            var response = await _httpClient.PostAsJsonAsync(fullEndpoint, vehicle);
             var result = await response.Content.ReadFromJsonAsync<ServiceResponse<Vehicle>>();
             return result;
         }
 
         public async Task<ServiceResponse<bool>> DeleteVehicleAsync(int id)
         {
-            // jesli uzyjemy / na poczatku to wtedy sciezka trakktowana jest od root czyli pomija czesc środkową adresu 
-            // zazwyczaj unikamy stosowania / na poczatku 
-            var response = await _httpClient.DeleteAsync($"{id}");
+            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
+            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.DeleteVehicleEndpoint + $"/{id}";
+
+            var response = await _httpClient.DeleteAsync(fullEndpoint);
             var result = await response.Content.ReadFromJsonAsync<ServiceResponse<bool>>();
+
             return result;
         }
+
 
 
         //// skopiowane z postmana 

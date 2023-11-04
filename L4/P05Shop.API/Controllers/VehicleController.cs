@@ -17,7 +17,7 @@ namespace P05Shop.API.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllVehicles")]
         public async Task<ActionResult<ServiceResponse<List<Vehicle>>>> GetVehicles()
         {
             _logger.Log(LogLevel.Information, "Invoked GetVehicles Method in controller");
@@ -31,7 +31,7 @@ namespace P05Shop.API.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("UpdateVehicle/{id}")]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> UpdateVehicle([FromBody] Vehicle vehicle)
         {
 
@@ -43,7 +43,7 @@ namespace P05Shop.API.Controllers
                 return StatusCode(500, $"Internal server error {result.Message}");
         }
 
-        [HttpPost]
+        [HttpPost("NewVehicle")]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> CreateVehicle([FromBody] Vehicle vehicle)
         {
             var result = await _VehicleService.CreateVehicleAsync(vehicle);
@@ -56,7 +56,7 @@ namespace P05Shop.API.Controllers
 
         // http:localhost/api/Vehicle/delete?id=4
         // http:localhost/api/Vehicle/4 dla api REST
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteVehicle/{id}")]
         public async Task<ActionResult<ServiceResponse<bool>>> DeleteVehicle([FromRoute] int id)
         {
             var result = await _VehicleService.DeleteVehicleAsync(id);
