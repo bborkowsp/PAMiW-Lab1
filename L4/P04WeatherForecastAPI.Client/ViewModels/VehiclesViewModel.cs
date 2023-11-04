@@ -11,7 +11,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
+using System.Windows.Input;
 using System.Windows.Documents;
 
 
@@ -27,6 +27,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         private readonly IMessageDialogService _messageDialogService;
 
         public ObservableCollection<Vehicle> Vehicles { get; set; }
+        private List<Vehicle> _allVehicles;
 
 
 
@@ -44,31 +45,18 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
         public async Task GetVehicles()
         {
-            Vehicles.Clear();
-            var VehiclesResult = await _vehicleService.GetVehiclesAsync();
-            if (VehiclesResult.Success)
+            var vehiclesResult = await _vehicleService.GetVehiclesAsync();
+            if (vehiclesResult.Success)
             {
-                foreach (var v in VehiclesResult.Data)
-                {
-                    Vehicles.Add(v);
-                }
+                _allVehicles = vehiclesResult.Data;
+                _currentPage = 0;
+                LoadCurrentPage();
             }
-            // var allVehicles = Vehicles.ToList();
-            // DisplayedVehicles.Clear();
-
-            // // Oblicz bieżącą stronę
-            // var startIndex = _currentPage * PageSize;
-            // var endIndex = startIndex + PageSize;
-            // if (endIndex > allVehicles.Count)
-            // {
-            //     endIndex = allVehicles.Count;
-            // }
-
-            // // Dodaj produkty do wyświetlenia na bieżącej stronie
-            // for (int i = startIndex; i < endIndex; i++)
-            // {
-            //     DisplayedVehicles.Add(allVehicles[i]);
-            // }
+            else
+            {
+                // Handle error
+                _messageDialogService.ShowMessage(vehiclesResult.Message);
+            }
         }
 
         public async Task CreateVehicle()
@@ -150,6 +138,42 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
 
 
+
+
+
+
+
+
+        private void LoadCurrentPage()
+        {
+            Vehicles.Clear();
+            int startIndex = _currentPage * PageSize;
+            int endIndex = Math.Min(startIndex + PageSize, _allVehicles.Count);
+
+            for (int i = startIndex; i < endIndex; i++)
+            {
+                Vehicles.Add(_allVehicles[i]);
+            }
+        }
+
+
+        public RelayCommand NextPageCommand => new RelayCommand(() =>
+        {
+            if ((_currentPage + 1) * PageSize < _allVehicles.Count)
+            {
+                _currentPage++;
+                LoadCurrentPage();
+            }
+        });
+
+        public RelayCommand PreviousPageCommand => new RelayCommand(() =>
+        {
+            if (_currentPage > 0)
+            {
+                _currentPage--;
+                LoadCurrentPage();
+            }
+        });
 
         //     public ICommand NextPageCommand => new RelayCommand(NextPage);
 

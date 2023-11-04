@@ -9,7 +9,7 @@ namespace P07Shop.DataSeeder
         {
             int VehicleId = 1;
             var VehicleFaker = new Faker<Vehicle>("pl")
-                .UseSeed(0)
+                .UseSeed(1)
                 .RuleFor(x => x.Model, x => x.Vehicle.Model())
                 .RuleFor(x => x.Fuel, x => x.Vehicle.Fuel())
                 .RuleFor(x => x.Id, x => VehicleId++);

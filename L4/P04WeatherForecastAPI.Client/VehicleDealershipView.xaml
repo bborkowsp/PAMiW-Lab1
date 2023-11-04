@@ -34,6 +34,9 @@
                 </Style>
             </Button.Style>
         </Button>
+         <Button  Content="Previous page" Command="{Binding PreviousPageCommand}"  Width="100" Height="50"/>
+        <Button  Content="Next page" Command="{Binding NextPageCommand}"  Width="100" Height="50"/>
+       
         <ListView Height="300" ItemsSource="{Binding Vehicles}">
             <ListView.ItemTemplate>
                 <DataTemplate>
