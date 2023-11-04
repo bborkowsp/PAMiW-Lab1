@@ -21,7 +21,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
     public partial class VehiclesViewModel : ObservableObject
     {
         private int _currentPage = 0;
-        private const int PageSize = 5;
+        private const int PageSize = 2;
         private readonly IVehicleService _vehicleService;
         private readonly VehicleDetailsView _vehicleDetailsView;
         private readonly IMessageDialogService _messageDialogService;
@@ -175,53 +175,6 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             }
         });
 
-        //     public ICommand NextPageCommand => new RelayCommand(NextPage);
-
-        //     private void NextPage()
-        //     {
-        //         _currentPage++;
-        //         GetVehicles();
-        //     }
-
-        //     public ICommand PreviousPageCommand => new RelayCommand(PreviousPage);
-
-        //     private void PreviousPage()
-        //     {
-        //         if (_currentPage > 0)
-        //         {
-        //             _currentPage--;
-        //             GetVehicles();
-        //         }
-        //     }
-
-        //     internal class RelayCommand : ICommand
-        //     {
-        //         private readonly Action _execute;
-        //         private readonly Func<bool> _canExecute;
-
-        //         public RelayCommand(Action execute, Func<bool> canExecute = null)
-        //         {
-        //             _execute = execute ?? throw new ArgumentNullException(nameof(execute));
-        //             _canExecute = canExecute;
-        //         }
-
-        //         public bool CanExecute(object parameter)
-        //         {
-        //             return _canExecute?.Invoke() ?? true;
-        //         }
-
-        //         public void Execute(object parameter)
-        //         {
-        //             _execute();
-        //         }
-
-        //         // ICommand implementation
-        //         public event EventHandler CanExecuteChanged
-        //         {
-        //             add { CommandManager.RequerySuggested += value; }
-        //             remove { CommandManager.RequerySuggested -= value; }
-        //         }
-        //     }
     }
 }
 

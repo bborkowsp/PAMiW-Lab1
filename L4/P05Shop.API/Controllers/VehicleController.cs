@@ -31,7 +31,7 @@ namespace P05Shop.API.Controllers
         }
 
 
-        [HttpPut("UpdateVehicle/{id}")]
+        [HttpPut("UpdateVehicle")]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> UpdateVehicle([FromBody] Vehicle vehicle)
         {
 
