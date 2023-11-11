@@ -1,0 +1,23 @@
+﻿
+dotnet new mvc -n NazwaProjektu
+
+
+  dodadalismy scaffolding kodu : 
+
+ dotnet tool install -g dotnet-aspnet-codegenerator
+
+dotnet aspnet-codegenerator controller -name ProductsController -m Product -dc ShopContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
+
+
+
+zmienne środowiskowe: 
+$Env:ASPNETCORE_ENVIRONMENT = "Development"
+dotnet run
+
+lub cmd
+set ASPNETCORE_ENVIRONMENT=Development
+dotnet run
+
+lub linux
+export ASPNETCORE_ENVIRONMENT=Development
+dotnet run

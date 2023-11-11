@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = P08ShopWebApp.Client
+build_property.RootNamespace = P08ShopWebApp.Client
+build_property.ProjectDir = C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P08ShopWebApp.Client\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P08ShopWebApp.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Calculator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/CalculatorBinding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYXRvckJpbmRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsAutoGen/ProductsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNBdXRvR2VuXFByb2R1Y3RzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/ProductsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Paweł/OneDrive - Politechnika Warszawska/Sem5/PAMiW/PAMiW-Lab/PAMiW-Lab/PAMiW-Lab/L5/P08ShopWebApp.Client/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3sr9bgqqa6
