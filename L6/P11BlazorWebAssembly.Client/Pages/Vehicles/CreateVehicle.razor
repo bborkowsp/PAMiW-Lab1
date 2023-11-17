@@ -1,0 +1,31 @@
+﻿@page "/vehicles/createvehicle"
+
+@inject IVehicleDealershipService VehicleDealershipService
+@inject NavigationManager NavigationManager
+
+<h3>Create Vehicle</h3>
+
+@if (message != null)
+{
+    <p><em>@message</em></p>
+}
+else
+{
+    <VehicleForm vehicle="vehicle" OnValidSubmit="HandleValidSubmit"></VehicleForm>
+}
+
+@code {
+    private Vehicle vehicle = new Vehicle();
+    private string? message = null;
+
+    async Task HandleValidSubmit()
+    {
+        var response = await VehicleDealershipService.CreateVehicleAsync(vehicle);
+        if (response.Success)
+            NavigationManager.NavigateTo("/vehicles/vehiclesList");
+        else
+            message = response.Message;
+    }
+
+
+}

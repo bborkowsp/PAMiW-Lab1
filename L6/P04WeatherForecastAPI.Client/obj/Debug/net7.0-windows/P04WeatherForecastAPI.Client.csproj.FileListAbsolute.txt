@@ -1,0 +1,9 @@
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\FavoriteCitiesView.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\ProductDetailsView.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\ShopProductsView.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client_MarkupCompile.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client_MarkupCompile.lref

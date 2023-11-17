@@ -1,0 +1,114 @@
+﻿@page "/vehicles/vehiclesList"
+
+@inject IVehicleDealershipService VehicleDealershipService
+@inject NavigationManager NavigationManager
+
+<h3>Full list of vehicles</h3>
+
+
+<p>
+    <a href="vehicles/createvehicle">Create new vehicle</a>
+</p>
+
+@if (vehicles == null)
+{
+    <p><em>@message</em></p>
+}
+
+else
+{
+    <div>
+        <InputText @bind-Value=searchTerm></InputText>
+        <button class="btn btn-primary" @onclick=Search>Search</button>
+    </div>
+    
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Model</th>
+                <th>Fuel</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var vehicle in vehicles)
+            {
+                <tr>
+                    <td>@vehicle.Id</td>
+                    <td>@vehicle.Model</td>
+                    <td>@vehicle.Fuel</td>
+
+                    <td>
+                        <button class="btn btn-primary" @onclick="()=> GoToEdit(vehicle.Id)">Edit</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">Previous</button>
+    <span>@currentPage</span>
+    <button class="btn btn-primary" @onclick="NextPage">Next</button>
+}
+
+
+
+@code {
+    private List<Vehicle> vehicles;
+    private string message = "Loading vehicles...";
+
+    private int currentPage = 1;
+    private const int pageSize = 10;
+
+    private string searchTerm = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await  LoadVehicles();
+    }
+
+    private async Task LoadVehicles()
+    {
+        var response = await VehicleDealershipService.SearchVehiclesAsync(searchTerm, currentPage, pageSize);
+        if (response.Success)
+        {
+            vehicles = response.Data;
+            //.Skip(pageSize * (currentPage - 1))
+            //.Take(pageSize)
+            //.ToList();
+        }
+        else
+        {
+            message = response.Message;
+        }
+    }
+
+
+    void GoToEdit(int id)
+    {
+        NavigationManager.NavigateTo($"/vehicles/editvehicle/{id}");
+    }
+
+    private async Task PreviousPage()
+    {
+        if (currentPage > 1)
+        {
+            currentPage--;
+            await LoadVehicles();
+        }
+    }
+    private async Task NextPage()
+    {
+        currentPage++;
+        await LoadVehicles();
+    }
+
+    private async Task Search()
+    {
+        currentPage = 1;
+        await LoadVehicles();
+    }
+}
