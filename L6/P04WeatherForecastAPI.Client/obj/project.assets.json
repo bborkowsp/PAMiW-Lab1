@@ -1811,11 +1811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
       "projectName": "P04WeatherForecastAPI.Client",
-      "projectPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+      "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P04WeatherForecastAPI.Client\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P04WeatherForecastAPI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1832,8 +1832,8 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bt9uMfQRMqHRFvzNjMlV57K8LBMxVyTzRNxqE9/ljvrbJSKV4bedBW+4vmIK3X/C4ou1tGDOxBs8xnlAFXhOGQ==",
+  "dgSpecHash": "NTicsa5v9PYmeRh6IeZan0SMlW6Xg9qRVZeNhI6ri7h+ENCf95GW4PYv7W6PUEf3qA6jNzBc5wcMIdeZg2/wEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P04WeatherForecastAPI.Client\\P04WeatherForecastAPI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.29.0\\microsoft.cognitiveservices.speech.1.29.0.nupkg.sha512",

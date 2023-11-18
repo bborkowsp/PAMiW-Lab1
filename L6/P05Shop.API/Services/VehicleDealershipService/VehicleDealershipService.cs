@@ -18,7 +18,7 @@ namespace P05Shop.API.Services.VehicleDealershipService
         
 
         public async Task<ServiceResponse<Vehicle>> CreateVehicleAsync(Vehicle vehicle)
-        {
+        { Console.WriteLine("p05 service create");
             try
             {
                 _dataContext.Vehicles.Add(vehicle);
@@ -37,7 +37,8 @@ namespace P05Shop.API.Services.VehicleDealershipService
 
         }
   public async Task<ServiceResponse<List<Vehicle>>> SearchVehiclesAsync(string text, int page, int pageSize)
-        {
+        {            Console.WriteLine("p05 service");
+
             IQueryable<Vehicle> query = _dataContext.Vehicles;
 
             if (!string.IsNullOrEmpty(text))

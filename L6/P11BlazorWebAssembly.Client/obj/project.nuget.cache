@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "521h5ouvR1Ir7b2sKhwo8ETrHPr2SXM+Tj9oqSuRZyoJHAsk7w8M/XgCOnnySmxEP0QDqf57SJvBuP9u3Ckk5w==",
+  "dgSpecHash": "c+uLi0c8AKRMlCYggtfZTJ6aSe3LuR7HM6wocUa1SpGic+PkYSBK8Vaa/IoSnON+oc75isn8DwI+GBfYG4av3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",

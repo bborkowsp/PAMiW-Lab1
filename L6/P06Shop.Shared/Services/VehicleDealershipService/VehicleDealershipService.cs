@@ -30,6 +30,7 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
         }
         public async Task<ServiceResponse<List<Vehicle>>> SearchVehiclesAsync(string text, int page, int pageSize)
         {
+            Console.WriteLine("p06 service");
 
             try
             {

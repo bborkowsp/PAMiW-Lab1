@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {}
+    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj",
-        "projectName": "P06Shop.Shared",
-        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
+        "projectName": "P08ShopWebApp.Client",
+        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P08ShopWebApp.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.Extensions.Options": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.5, )"
             },
-            "Newtonsoft.Json": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.6, )"
             }
           },
           "imports": [
@@ -61,6 +73,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

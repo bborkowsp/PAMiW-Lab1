@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QsIlhkvjNvTcwf68NorRojzQJYjFO4Zzhae9v0grXVhqgWa6PqRfzZhOwQhi9QLhmN6CIonGmgm9e+dXmOs0Qg==",
+  "dgSpecHash": "LwUTFULap9f1jVKPKoiZAqGVTjOHwPaTNA7/iMKSFwhQbA6lJfeaM6tpt/9YiqMudI6dZN4lxDsDUuq7h935qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

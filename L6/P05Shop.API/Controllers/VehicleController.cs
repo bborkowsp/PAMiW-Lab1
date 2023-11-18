@@ -61,7 +61,8 @@ namespace P05Shop.API.Controllers
 
         [HttpPost]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> CreateVehicle([FromBody] Vehicle product)
-        {
+        {            Console.WriteLine("p05 controller create");
+
             var result = await _vehicleDealershipService.CreateVehicleAsync(product);
 
             if (result.Success)
@@ -89,7 +90,7 @@ namespace P05Shop.API.Controllers
         public async Task<ActionResult<ServiceResponse<List<Vehicle>>>> SearchVehicles(string? text = null, int page = 1, int pageSize = 10)
         {
             _logger.Log(LogLevel.Information, "Invoked GetVehicles Method in controller");
-
+            Console.WriteLine("p05 controller");
             var result = await _vehicleDealershipService.SearchVehiclesAsync(text, page, pageSize);
 
             if (result.Success)

@@ -30,15 +30,15 @@ builder.Services.AddScoped<IVehicleDealershipService, P05Shop.API.Services.Vehic
 // +
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin",
-        builder =>
-        {
-            builder.WithOrigins("http://localhost:5294")
-                   .AllowAnyMethod()
-                   .AllowAnyHeader()
-                   .AllowCredentials();
-        });
+    options.AddPolicy("MyCorsePolicy", builder =>
+    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 });
+
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("MyCorsePolicy", builder =>
+//    builder.AllowAnyHeader().AllowAnyHeader().WithOrigins("https://mySite.pl"));
+//});
 
 
 var app = builder.Build();
@@ -50,12 +50,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowSpecificOrigin"); // +
-
 app.UseHttpsRedirection();
+
+app.UseCors("MyCorsePolicy");
 
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
+

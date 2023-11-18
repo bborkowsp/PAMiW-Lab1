@@ -1968,11 +1968,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
       "projectName": "P11BlazorWebAssembly.Client",
-      "projectPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
+      "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P11BlazorWebAssembly.Client\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P11BlazorWebAssembly.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Paweł\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1989,8 +1989,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\L6Original\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L6\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }
