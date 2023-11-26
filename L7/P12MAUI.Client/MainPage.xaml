@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="P12MAUI.Client.MainPage"
     xmlns:viewmodel="clr-namespace:P04WeatherForecastAPI.Client.ViewModels"
-    BackgroundColor="Black">
+    BackgroundColor="LightBlue">
 
 
     <ScrollView>
@@ -20,7 +20,7 @@
                     Text="Add new Vehicle" TextColor="Black">
                     <Button.Style>
                         <Style TargetType="Button">
-                            <Setter Property="Background" Value="White" />
+                            <Setter Property="Background" Value="SteelBlue" />
 
 
                             <Setter Property="Padding" Value="10,5" />
@@ -30,47 +30,14 @@
                     </Button.Style>
                 </Button>
 
-                <Button
-                    Command="{Binding PreviousPageCommand}"
-                    Text="Previous page" TextColor="Black">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="White" />
 
-
-                            <Setter Property="Padding" Value="10,5" />
-                            <Setter Property="FontSize" Value="14" />
-
-                        </Style>
-                    </Button.Style>
-                </Button>
-
-                <Button
-                    Command="{Binding NextPageCommand}"
-                    Text="Next page" TextColor="Black">
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="White" />
-
-
-                            <Setter Property="Padding" Value="10,5" />
-                            <Setter Property="FontSize" Value="14" />
-
-                        </Style>
-                    </Button.Style>
-                </Button>
-                <Label Text=" Aktualna strona: " VerticalTextAlignment="Center"></Label>
-                <Label Text="{Binding CurrentPage}" VerticalTextAlignment="Center"></Label>
-                <Label Text=" z " VerticalTextAlignment="Center"></Label>
-                <Label Text="{Binding MaxPage}" VerticalTextAlignment="Center"></Label>
-                <Label Text=" " VerticalTextAlignment="Center"></Label>
             </HorizontalStackLayout>
 
 
             <CollectionView ItemsSource="{Binding PageVehicles}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BackgroundColor="DimGray" Padding="10" Margin="5">
+                        <Frame BackgroundColor="Blue" Padding="10" Margin="5">
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:VehiclesViewModel}}, Path=ShowDetailsCommand }"

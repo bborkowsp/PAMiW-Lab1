@@ -30,7 +30,7 @@
         <HorizontalStackLayout HorizontalOptions="End">
             <Button
                 Command="{Binding DeleteCommand}"
-                Text="Delete" TextColor="White" BackgroundColor="Red">
+                Text="Delete" TextColor="White" BackgroundColor="LightBlue">
 
             </Button>
 
