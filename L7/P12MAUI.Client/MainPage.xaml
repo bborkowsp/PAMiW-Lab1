@@ -34,7 +34,7 @@
             </HorizontalStackLayout>
 
 
-            <CollectionView ItemsSource="{Binding PageVehicles}">
+            <CollectionView ItemsSource="{Binding Vehicles}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame BackgroundColor="Blue" Padding="10" Margin="5">
