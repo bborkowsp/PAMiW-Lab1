@@ -1,0 +1,53 @@
+﻿@page "/vehicles/editvehicle/{Id:int}"
+
+@inject IVehicleDealershipService VehicleDealershipService
+@inject NavigationManager NavigationManager
+
+<h3>Edit Vehicle</h3>
+
+@if (vehicle == null)
+{
+    <p><em>@message</em></p>
+}
+else
+{
+    <VehicleForm vehicle="vehicle" OnValidSubmit="HandleValidSubmit"></VehicleForm>
+    <button class="btn btn-danger" @onclick=HandleDelete>Delete</button>
+}
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Vehicle vehicle;
+    private string message = "Loading vehicle...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await VehicleDealershipService.GetVehicleByIdAsync(Id);
+        if (response.Success)
+            vehicle = response.Data;
+        else
+            message = response.Message;
+    }
+
+    async Task HandleValidSubmit()
+    {
+        var response = await VehicleDealershipService.UpdateVehicleAsync(vehicle);
+        if (response.Success)
+            NavigationManager.NavigateTo("/vehicles/vehiclesList");
+        else
+            message = response.Message;
+    }
+
+    async Task HandleDelete()
+    {
+        var response = await VehicleDealershipService.DeleteVehicleAsync(Id);
+        if (response.Success)
+            NavigationManager.NavigateTo("/vehicles/vehiclesList");
+        else
+            message = response.Message;
+    }
+}

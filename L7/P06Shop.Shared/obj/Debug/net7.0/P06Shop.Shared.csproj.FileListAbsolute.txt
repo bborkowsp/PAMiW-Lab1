@@ -1,0 +1,96 @@
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\L6Original\L6\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
