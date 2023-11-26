@@ -60,7 +60,47 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             }
             else
             {
+<<<<<<< HEAD
                 _messageDialogService.ShowMessage(productsResult.Message);
+=======
+                _messageDialogService.ShowMessage(vehiclesResult.Message);
+            }
+        }
+
+        public void LoadVehiclesOnPage()
+        {
+            PageVehicles.Clear();
+
+            int ItemsPerPage = 7;
+
+            MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(AllVehicles.Count) / Convert.ToDouble(ItemsPerPage)));
+            if (MaxPage == 0)
+            {
+                MaxPage = 1;
+            }
+
+            for (int i = (CurrentPage - 1) * ItemsPerPage; i < (CurrentPage - 1) * ItemsPerPage + ItemsPerPage; i++)
+            {
+                if (i > AllVehicles.Count - 1)
+                {
+                    break;
+                }
+                PageVehicles.Add(AllVehicles[i]);
+            }
+        }
+
+        [ObservableProperty]
+        public int maxPage;
+
+        public int CurrentPage
+        {
+            get => _currentPage;
+            set
+            {
+                _currentPage = value;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+>>>>>>> parent of 5598479 (changes)
             }
         }
 
