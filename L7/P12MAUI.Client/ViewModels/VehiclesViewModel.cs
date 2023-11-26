@@ -74,7 +74,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         {
             PageVehicles.Clear();
 
-            int ItemsPerPage = 7;
+            int ItemsPerPage = 700;
 
             MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(AllVehicles.Count) / Convert.ToDouble(ItemsPerPage)));
             if (MaxPage == 0)
