@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {}
+    "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
         "projectName": "P08ShopWebApp.Client",
-        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

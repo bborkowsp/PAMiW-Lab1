@@ -20,49 +20,52 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 {
    
  public partial class VehiclesViewModel : ObservableObject
-     {
-        private readonly IVehicleDealershipService _productService;
-        private readonly VehicleDetailsView _productDetailsView;
+    {
+        private readonly IVehicleDealershipService _vehicleDealershipService;
+        private readonly VehicleDetailsView _vehicleDetailsView;
         private readonly IMessageDialogService _messageDialogService;
         private readonly IConnectivity _connectivity;
-        public ObservableCollection<Vehicle> Vehicles { get; set; }
+
+        private int _currentPage = 1;
+        public List<Vehicle> AllVehicles { get; set; }
+        public ObservableCollection<Vehicle> PageVehicles { get; set; }
 
         [ObservableProperty]
-        private Vehicle selectedProduct;
+        private Vehicle selectedVehicle;
 
-        public VehiclesViewModel(IVehicleDealershipService productService, VehicleDetailsView productDetailsView, IMessageDialogService messageDialogService,
+        public VehiclesViewModel(IVehicleDealershipService vehicleDealership, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService,
             IConnectivity connectivity)
         {
             _messageDialogService = messageDialogService;
-            _productDetailsView = productDetailsView;
-            _productService = productService;
+            _vehicleDetailsView = vehicleDetailsView;
+            _vehicleDealershipService = vehicleDealership;
             _connectivity = connectivity; // set the _connectivity field
-            Vehicles = new ObservableCollection<Vehicle>();
+            PageVehicles = new ObservableCollection<Vehicle>();
+            AllVehicles = new List<Vehicle>();
             GetVehicles();
         }
 
         public async Task GetVehicles()
         {
-            Vehicles.Clear();
+            AllVehicles.Clear();
+            
             if (_connectivity.NetworkAccess != NetworkAccess.Internet)
             {
                 _messageDialogService.ShowMessage("Internet not available!");
                 return;
             }
-
-            var productsResult = await _productService.GetVehiclesAsync();
-            if (productsResult.Success)
+            
+            var vehiclesResult = await _vehicleDealershipService.GetVehiclesAsync();
+            if (vehiclesResult.Success)
             {
-                foreach (var p in productsResult.Data)
+                foreach (var p in vehiclesResult.Data)
                 {
-                    Vehicles.Add(p);
+                    AllVehicles.Add(p);
                 }
+                LoadVehiclesOnPage();
             }
             else
             {
-<<<<<<< HEAD
-                _messageDialogService.ShowMessage(productsResult.Message);
-=======
                 _messageDialogService.ShowMessage(vehiclesResult.Message);
             }
         }
@@ -71,7 +74,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         {
             PageVehicles.Clear();
 
-            int ItemsPerPage = 7;
+            int ItemsPerPage = 700;
 
             MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(AllVehicles.Count) / Convert.ToDouble(ItemsPerPage)));
             if (MaxPage == 0)
@@ -100,12 +103,34 @@ namespace P04WeatherForecastAPI.Client.ViewModels
                 _currentPage = value;
                 LoadVehiclesOnPage();
                 OnPropertyChanged();
->>>>>>> parent of 5598479 (changes)
             }
         }
 
         [RelayCommand]
-        public async Task ShowDetails(Vehicle product)
+        public async void NextPage()
+        {
+            if (CurrentPage < MaxPage)
+            {
+                CurrentPage++;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+            }
+        }
+
+        [RelayCommand]
+        public async void PreviousPage()
+        {
+            if (CurrentPage > 1)
+            {
+                CurrentPage--;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+            }
+        }
+
+
+        [RelayCommand]
+        public async Task ShowDetails(Vehicle vehicle)
         {
             if (_connectivity.NetworkAccess != NetworkAccess.Internet)
             {
@@ -115,10 +140,10 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
             await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object>
             {
-                {"Product", product },
-                {nameof(VehicleDetailsView), this }
+                {"Vehicle", vehicle },
+                {nameof(VehiclesViewModel), this }
             });
-            SelectedProduct = product;
+            SelectedVehicle = vehicle;
         }
 
         [RelayCommand]
@@ -130,11 +155,11 @@ namespace P04WeatherForecastAPI.Client.ViewModels
                 return;
             }
 
-            SelectedProduct = new Vehicle();
+            SelectedVehicle = new Vehicle();
             await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object>
             {
-                {"Product", SelectedProduct },
-                {nameof(VehicleDetailsView), this }
+                {"Vehicle", SelectedVehicle },
+                {nameof(VehiclesViewModel), this }
             });
         }
 
