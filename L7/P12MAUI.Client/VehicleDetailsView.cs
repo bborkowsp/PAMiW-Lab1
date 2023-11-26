@@ -4,9 +4,9 @@ namespace P12MAUI.Client;
 
 public partial class VehicleDetailsView : ContentPage
 {
-	public VehicleDetailsView(VehicleDetailsViewModel bookDetailsViewModel)
+	public VehicleDetailsView(VehicleDetailsViewModel vehicleDetailsViewModel)
 	{
-		BindingContext = bookDetailsViewModel;
+		BindingContext = vehicleDetailsViewModel;
 		InitializeComponent();
 	}
 }

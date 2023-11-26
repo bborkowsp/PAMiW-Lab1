@@ -1,1 +1,1 @@
-C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P12MAUI.Client\P12MAUI.Client.csproj;x64
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P12MAUI.Client\P12MAUI.Client.csproj;x64

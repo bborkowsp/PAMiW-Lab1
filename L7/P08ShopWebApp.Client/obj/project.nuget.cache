@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NCWvi8RKOiQqNL/GMKBoX4hZTO90lGIgESdcnraY2BunTY+tMLUeD8YhxRNXpVaQlJQDEx+NIUBPJL/+m2jBCg==",
+  "dgSpecHash": "QDE/9o0wG6Xq1D+lMuc+WvgELOM9EItspAmeU9d5aSIctdLxilwLODaxzGPr/fpbSpuSABev15mm37rtigNuFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\5598\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L7\\P08ShopWebApp.Client\\P08ShopWebApp.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
