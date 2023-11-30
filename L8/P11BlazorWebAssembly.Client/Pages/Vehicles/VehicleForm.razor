@@ -1,0 +1,27 @@
+﻿ 
+
+<EditForm Model="vehicle" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="model">Model:</label>
+        <InputText id="model" @bind-Value="vehicle.Model" class="form-control"></InputText>
+    </div>
+    <div class="form-group">
+        <label for="fuel">Fuel:</label>
+        <InputText id="fuel" @bind-Value="vehicle.Fuel" class="form-control"></InputText>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public Vehicle vehicle { get; set; }
+
+    [Parameter]
+    public EventCallback OnValidSubmit { get; set; }
+
+}

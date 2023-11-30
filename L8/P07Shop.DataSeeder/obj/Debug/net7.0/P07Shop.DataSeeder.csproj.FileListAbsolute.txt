@@ -1,0 +1,150 @@
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\PAMiW_Lab5\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\KopiaKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\KopiaKopiiKopii\Pamiw\Lab 5\L5-master\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L5\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\PAMiW-Lab\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\L6Original\L6\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L6\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\Downloads\5598\PAMiW-Lab\L7\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.deps.json
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\bin\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.AssemblyReference.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfoInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.AssemblyInfo.cs
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.csproj.CopyComplete
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\refint\P07Shop.DataSeeder.dll
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\P07Shop.DataSeeder.pdb
+C:\Users\Paweł\OneDrive - Politechnika Warszawska\Sem5\PAMiW\PAMiW-Lab\L8\P07Shop.DataSeeder\obj\Debug\net7.0\ref\P07Shop.DataSeeder.dll
