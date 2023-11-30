@@ -99,6 +99,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         [RelayCommand]
         public void OpenFavotireCities()
         {
+
             //var favoriteCitiesView = new FavoriteCitiesView();
             _favoriteCityViewModel.SelectedCity = new FavoriteCity() { Name = "Warsaw" };
             _favoriteCitiesView.Show();
@@ -107,11 +108,29 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         [RelayCommand]
         public void OpenVehicleDealershipWindow()
         {
+            if (!string.IsNullOrEmpty(LoginViewModel.Token))
+            {
             VehicleDealershipView VehicleDealershipView = _serviceProvider.GetService<VehicleDealershipView>();
             VehiclesViewModel VehiclesViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
             VehicleDealershipView.Show();
             VehiclesViewModel.GetVehicles();
+            }
+            else
+            {
+                
+            }
+            
+        }
+
+        [RelayCommand]
+        public void OpenLoginWindow()
+        {
+            LoginView loginView = _serviceProvider.GetService<LoginView>();
+            LoginViewModel loginViewModel = _serviceProvider.GetService<LoginViewModel>();
+
+            loginView.Show();
+             
         }
     }
 }

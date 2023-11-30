@@ -2,8 +2,11 @@
 using Microsoft.Extensions.Options;
 using Microsoft.VisualBasic.FileIO;
 using Newtonsoft.Json;
-using P04WeatherForecastAPI.Client.Configuration;
 using P06Shop.Shared;
+using P06Shop.Shared.Configuration;
+using P06Shop.Shared.MessageBox;
+using P06Shop.Shared.Services.AuthService;
+using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.VehicleDealership;
 using System;
@@ -45,22 +48,17 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
 
         public async Task<ServiceResponse<Vehicle>> CreateVehicleAsync(Vehicle vehicle)
         {
-            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
-            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.NewVehicleEndpoint;
-
-            var response = await _httpClient.PostAsJsonAsync(fullEndpoint, vehicle);
+            var url = _appSettings.BaseAPIUrl + "/" + _appSettings.VehicleDealershipEndpoints.GetVehiclesEndpoint;
+            var response = await _httpClient.PostAsJsonAsync(url, vehicle);
             var result = await response.Content.ReadFromJsonAsync<ServiceResponse<Vehicle>>();
             return result;
         }
 
         public async Task<ServiceResponse<bool>> DeleteVehicleAsync(int id)
         {
-            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
-            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.DeleteVehicleEndpoint + $"/{id}";
-
-            var response = await _httpClient.DeleteAsync(fullEndpoint);
+            var url = $"{_appSettings.BaseAPIUrl}/{_appSettings.VehicleDealershipEndpoints.DeleteVehicleEndpoint.Replace("{vehicleId}", id.ToString())}";
+            var response = await _httpClient.DeleteAsync(url);
             var result = await response.Content.ReadFromJsonAsync<ServiceResponse<bool>>();
-
             return result;
         }
 
@@ -82,12 +80,21 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
         // alternatywny sposób pobierania danych 
         public async Task<ServiceResponse<List<Vehicle>>> GetVehiclesAsync()
         {
-            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
-            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.GetAllVehiclesEndpoint;
+            var url = _appSettings.BaseAPIUrl + "/" + _appSettings.VehicleDealershipEndpoints.GetVehiclesEndpoint;
+            var response = await _httpClient.GetAsync(url);
+            if (!response.IsSuccessStatusCode)
+                return new ServiceResponse<List<Vehicle>>
+                {
+                    Success = false,
+                    Message = "HTTP request failed"
+                };
 
-            var response = await _httpClient.GetAsync(fullEndpoint);
             var json = await response.Content.ReadAsStringAsync();
-            var result = JsonConvert.DeserializeObject<ServiceResponse<List<Vehicle>>>(json);
+            var result = JsonConvert.DeserializeObject<ServiceResponse<List<Vehicle>>>(json)
+                ?? new ServiceResponse<List<Vehicle>> { Success = false, Message = "Deserialization failed" };
+
+            result.Success = result.Success && result.Data != null;
+
             return result;
         }
 
@@ -103,10 +110,10 @@ namespace P04WeatherForecastAPI.Client.Services.VehicleServices
         // wersja 2 
         public async Task<ServiceResponse<Vehicle>> UpdateVehicleAsync(Vehicle vehicle)
         {
-            var baseEndpoint = _appSettings.BaseAPIUrl + _appSettings.BaseVehicleEndpoint.Base_url;
-            var fullEndpoint = baseEndpoint + _appSettings.BaseVehicleEndpoint.UpdateVehicleEndpoint;
+            var url = _appSettings.BaseAPIUrl + "/" + _appSettings.VehicleDealershipEndpoints.GetVehiclesEndpoint;
+            var content = new StringContent(JsonConvert.SerializeObject(vehicle), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync(url, content);
 
-            var response = await _httpClient.PutAsJsonAsync(fullEndpoint, vehicle);
             var result = await response.Content.ReadFromJsonAsync<ServiceResponse<Vehicle>>();
             return result;
         }
