@@ -85,12 +85,12 @@
       "url": "appsettings.Production.json"
     },
     {
-      "hash": "sha256-BZxtf\/7kMiMjZAcya0a8TejFWcIvpy2QUrUIhS+ZNi4=",
-      "url": "P11BlazorWebAssembly.Client.styles.css"
-    },
-    {
       "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
       "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-BZxtf\/7kMiMjZAcya0a8TejFWcIvpy2QUrUIhS+ZNi4=",
+      "url": "P11BlazorWebAssembly.Client.styles.css"
     },
     {
       "hash": "sha256-5V8ovY1srbIIz7lzzMhLd3nNJ9LJ6bHoBOnLJahv8Go=",

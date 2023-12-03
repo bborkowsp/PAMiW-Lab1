@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q86dxr54APW9JRJkwNCaZD1HW46uYTKMQ5NxZTinVLBMySji0012EqOxiNPO61DVQEM7Nt/qm9OJqEhX2Pc6qA==",
+  "dgSpecHash": "XNHWwqZ+Wuv1q7k3b6yXtZdWu+afw+t+cGRUhWAYKQsiQiie6x0AkQmFqNybErVVkEsKKsTgKZXIMPyPrBuOYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",

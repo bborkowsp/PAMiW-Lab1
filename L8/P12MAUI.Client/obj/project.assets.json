@@ -33405,11 +33405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
       "projectName": "P12MAUI.Client",
-      "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
+      "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -33435,32 +33435,32 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }

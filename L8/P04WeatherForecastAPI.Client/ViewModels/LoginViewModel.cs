@@ -42,12 +42,12 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             var response = await _authService.Login(UserLoginDTO);
             if (response.Success)
             {
-                _wpfMesageDialogService.ShowMessage("Logged in successfully!");
+                _wpfMesageDialogService.ShowMessage("Zalogowano");
                 Token = response.Data;
             }
             else
             {
-                _wpfMesageDialogService.ShowMessage("Login failed!\nMessage: " + response.Message);
+                _wpfMesageDialogService.ShowMessage("Błąd logowania: " + response.Message);
                 Token = string.Empty;
             }
             

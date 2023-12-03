@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {}
+    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "projectName": "P06Shop.Shared",
-        "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
