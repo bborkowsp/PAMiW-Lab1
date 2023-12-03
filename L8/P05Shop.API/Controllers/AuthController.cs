@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using P05Shop.API.Services.AuthService;
 using P06Shop.Shared;
 using P06Shop.Shared.Auth;
-using System.Diagnostics;
 using System.Security.Claims;
 
 namespace P05Shop.API.Controllers
@@ -41,7 +40,6 @@ namespace P05Shop.API.Controllers
         [HttpPost("register")]
         public async Task<ActionResult<ServiceResponse<int>>> Register(UserRegisterDTO userRegisterDTO)
         {
-
             var user = new User()
             {
                 Email = userRegisterDTO.Email,

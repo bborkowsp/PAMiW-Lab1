@@ -31,24 +31,14 @@
 
     async Task HandleRegistration()
     {
-        Console.WriteLine("Handling registration of " + userRegisterDTO.Email);
         var result = await AuthService.Register(userRegisterDTO);
-        Console.WriteLine("Request result: " + result.Success + " " + result.Data.ToString());
         if (result.Success)
         {
             NavigationManager.NavigateTo("Login");
         }
         else
         {
-            string resMessage = result.Message;
-            if (resMessage == "Cannot invoke operation")
-            {
-                message = "Provided data don't meet the requirements! Check if the passord has min 6 characters and if the email is in correct format!";
-            }
-            else
-            {
-                message = resMessage;
-            }
+            message  = result.Message;
         }
     }
 
