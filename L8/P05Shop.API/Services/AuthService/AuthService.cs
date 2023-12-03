@@ -1,8 +1,9 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using P05Shop.API.Models;
 using P06Shop.Shared;
 using P06Shop.Shared.Auth;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -47,6 +48,7 @@ namespace P05Shop.API.Services.AuthService
 
         public async Task<ServiceResponse<string>> Login(string email, string password)
         {
+
             var response = new ServiceResponse<string>();
 
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == email.ToLower());
@@ -107,6 +109,7 @@ namespace P05Shop.API.Services.AuthService
 
         public async Task<ServiceResponse<int>> Register(User user, string password)
         {
+
             if (await UserExists(user.Email))
             {
                 return new ServiceResponse<int>

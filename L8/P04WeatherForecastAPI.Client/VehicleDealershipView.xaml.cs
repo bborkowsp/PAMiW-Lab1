@@ -16,13 +16,13 @@ using System.Windows.Shapes;
 namespace P04WeatherForecastAPI.Client
 {
     /// <summary>
-    /// Interaction logic for ShopVehiclesWindow.xaml
+    /// Interaction logic for ShopProductsWindow.xaml
     /// </summary>
     public partial class VehicleDealershipView : Window
     {
-        public VehicleDealershipView(VehiclesViewModel VehiclesViewModel)
+        public VehicleDealershipView(VehiclesViewModel productsViewModel)
         {
-            DataContext = VehiclesViewModel;
+            DataContext = productsViewModel;
             InitializeComponent();
         }
     }

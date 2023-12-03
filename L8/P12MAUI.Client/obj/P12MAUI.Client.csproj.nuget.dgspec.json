@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj": {}
+    "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "projectName": "P06Shop.Shared",
-        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,18 +70,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
         "projectName": "P12MAUI.Client",
-        "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\P12MAUI.Client.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P12MAUI.Client\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P12MAUI.Client\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -107,32 +107,32 @@
           "net7.0-android33.0": {
             "targetAlias": "net7.0-android",
             "projectReferences": {
-              "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           },
           "net7.0-ios16.1": {
             "targetAlias": "net7.0-ios",
             "projectReferences": {
-              "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           },
           "net7.0-maccatalyst16.1": {
             "targetAlias": "net7.0-maccatalyst",
             "projectReferences": {
-              "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           },
           "net7.0-windows10.0.19041": {
             "targetAlias": "net7.0-windows10.0.19041.0",
             "projectReferences": {
-              "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           }
@@ -197,6 +197,18 @@
             "Microsoft.Maui.Graphics": {
               "target": "Package",
               "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
             "Xamarin.Android.Glide": {
@@ -283,7 +295,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
@@ -339,6 +351,18 @@
               "target": "Package",
               "version": "[7.0.101, )",
               "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -369,7 +393,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
@@ -425,6 +449,18 @@
               "target": "Package",
               "version": "[7.0.101, )",
               "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
             }
           },
           "imports": [
@@ -456,7 +492,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -594,7 +630,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,16 +1,14 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
 using P04WeatherForecastAPI.Client.MessageBox;
-using P04WeatherForecastAPI.Client.Services.VehicleServices;
+
+using P04WeatherForecastAPI.Client.Services.SpeechService;
 using P04WeatherForecastAPI.Client.Services.WeatherServices;
 using P04WeatherForecastAPI.Client.ViewModels;
-
 using P06Shop.Shared.Configuration;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.Services.VehicleDealershipService;
-
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -19,7 +17,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-
 
 namespace P04WeatherForecastAPI.Client
 {
@@ -40,7 +37,7 @@ namespace P04WeatherForecastAPI.Client
               .AddJsonFile("appsettings.json")
               .AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", optional: true);
             _configuration = builder.Build();
-            // pamietac o lunch profiles w visual studio! 
+
 
 
             var serviceCollection = new ServiceCollection();
@@ -64,7 +61,7 @@ namespace P04WeatherForecastAPI.Client
             //Microsoft.Extensions.Options.ConfigurationExtensions
             var appSettings = _configuration.GetSection(nameof(AppSettings));
             var appSettingsSection = appSettings.Get<AppSettings>();
-         
+
             // services.Configure<AppSettings>(appSettings);
             services.AddSingleton(appSettingsSection);
             return appSettingsSection;
@@ -75,7 +72,7 @@ namespace P04WeatherForecastAPI.Client
             // konfiguracja serwisów 
             services.AddSingleton<IAccuWeatherService, AccuWeatherService>();
             services.AddSingleton<IFavoriteCityService, FavoriteCityService>();
-            services.AddSingleton<IVehicleDealershipService, VehicleService>();
+            services.AddSingleton<IVehicleDealershipService, VehicleDealershipService>();
             services.AddSingleton<IMessageDialogService, WpfMesageDialogService>();
         }
 
@@ -104,10 +101,10 @@ namespace P04WeatherForecastAPI.Client
         {
             var uriBuilder = new UriBuilder(appSettingsSection.BaseAPIUrl)
             {
-              //  Path = appSettingsSection.BaseVehicleEndpoint.Base_url,
+                //Path = appSettingsSection.BaseProductEndpoint.Base_url,
             };
             //Microsoft.Extensions.Http
-            services.AddHttpClient<IVehicleDealershipService, VehicleService>(client => client.BaseAddress = uriBuilder.Uri);
+            services.AddHttpClient<IVehicleDealershipService, VehicleDealershipService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = uriBuilder.Uri);
         }
 

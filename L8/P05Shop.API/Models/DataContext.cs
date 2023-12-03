@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using P06Shop.Shared.VehicleDealership;
 using P06Shop.Shared.Auth;
+using P06Shop.Shared.VehicleDealership;
 using P07Shop.DataSeeder;
 
 namespace P05Shop.API.Models
@@ -17,14 +17,10 @@ namespace P05Shop.API.Models
 
         public DbSet<User> Users { get; set; }
 
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // fluent api 
-            // modelBuilder.Entity<Vehicle>()
-            //     .Property(p => p.Barcode)
-            //     .IsRequired()
-            //     .HasMaxLength(12);
+
 
             modelBuilder.Entity<Vehicle>()
                 .Property(p => p.Model)
@@ -36,9 +32,7 @@ namespace P05Shop.API.Models
                 .IsRequired()
                 .HasMaxLength(100);
 
-            // modelBuilder.Entity<Vehicle>()
-            //  .Property(p => p.Price)
-            //  .HasColumnType("decimal(8,2)");
+
 
             // data seed 
 
@@ -58,3 +52,8 @@ namespace P05Shop.API.Models
 
 // cofniecie migraji niezaplikowanych 
 //dotnet ef migrations remove
+
+
+// Dodanie migracji nazwanej "AddUsers" dodającej Users i aktualizacja bazy:
+// dotnet ef migrations add AddUsers
+// dotnet ef database update

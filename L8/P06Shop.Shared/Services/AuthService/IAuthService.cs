@@ -1,4 +1,4 @@
-using P06Shop.Shared.Auth;
+﻿using P06Shop.Shared.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;

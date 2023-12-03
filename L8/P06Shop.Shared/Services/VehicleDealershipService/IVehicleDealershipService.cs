@@ -12,8 +12,8 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
         Task<ServiceResponse<bool>> DeleteVehicleAsync(int id);
 
         Task<ServiceResponse<Vehicle>> CreateVehicleAsync(Vehicle product);
-                Task<ServiceResponse<List<Vehicle>>> SearchVehiclesAsync(string text, int page, int pageSize);
 
         Task<ServiceResponse<Vehicle>> GetVehicleByIdAsync(int id);
+        Task<ServiceResponse<List<Vehicle>>> SearchVehiclesAsync(string text, int page, int pageSize);
     }
 }

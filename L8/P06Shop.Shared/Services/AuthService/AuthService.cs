@@ -1,7 +1,8 @@
-using P06Shop.Shared.Auth;
+﻿using P06Shop.Shared.Auth;
 using P06Shop.Shared.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http.Json;
 using System.Text;
@@ -34,6 +35,7 @@ namespace P06Shop.Shared.Services.AuthService
         public async Task<ServiceResponse<int>> Register(UserRegisterDTO userRegisterDTO)
         {
             var result = await _httpClient.PostAsJsonAsync("api/auth/register/", userRegisterDTO);
+            Console.WriteLine("Registration of user " + userRegisterDTO.Email + " returned " + await result.Content.ReadAsStringAsync());
             return await result.Content.ReadFromJsonAsync<ServiceResponse<int>>();
         }
 

@@ -10,5 +10,9 @@ namespace P06Shop.Shared.Configuration
     {
         public string Base_url { get; set; }
         public string GetAllProductsEndpoint { get; set; }
+
+        public string SearchProductsEndpoint { get; set; }
+
+        
     }
 }

@@ -1,13 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using P05Shop.API.Models;
-using P05Shop.API.Services.VehicleDealershipService;
-using P06Shop.Shared.Services.VehicleDealershipService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using P05Shop.API.Models;
 using P05Shop.API.Services.AuthService;
+using P05Shop.API.Services.VehicleDealershipService;
+using P06Shop.Shared.Services.VehicleDealershipService;
 using System.Text;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +21,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IVehicleDealershipService, P05Shop.API.Services.VehicleDealershipService.VehicleDealershipService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 // addScoped - obiekt jest tworzony za kazdym razem dla nowego zapytania http
 // jedno zaptranie tworzy jeden obiekt 
@@ -36,22 +35,22 @@ builder.Services.AddScoped<IVehicleDealershipService, P05Shop.API.Services.Vehic
 // +
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("MyCorsePolicy", builder =>
-    builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("https://localhost:7070")
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .AllowCredentials();
+        });
 });
 
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("MyCorsePolicy", builder =>
-//    builder.AllowAnyHeader().AllowAnyHeader().WithOrigins("https://mySite.pl"));
-//});
-
-
+// Dodanie autentykacji za pomoc� JWT
 string token = builder.Configuration.GetSection("AppSettings:Token").Value;
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
     {
-       // options.Authority = "https://localhost:5001";
+        // options.Authority = "https://localhost:5001";
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateAudience = false,
@@ -60,6 +59,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
         };
     });
+
 
 var app = builder.Build();
 
@@ -70,13 +70,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors("AllowSpecificOrigin"); // +
 
-app.UseCors("MyCorsePolicy");
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
-

@@ -5,6 +5,7 @@ using P04WeatherForecastAPI.Client.Commands;
 using P04WeatherForecastAPI.Client.DataSeeders;
 using P04WeatherForecastAPI.Client.Models;
 using P04WeatherForecastAPI.Client.Services.WeatherServices;
+using P06Shop.Shared.MessageBox;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -29,23 +30,24 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         private readonly FavoriteCityViewModel _favoriteCityViewModel;
         //public ICommand LoadCitiesCommand { get;  }
         private readonly IServiceProvider _serviceProvider;
+        private readonly IMessageDialogService _messageDialogService;
 
 
-
-        public MainViewModelV4(IAccuWeatherService accuWeatherService,
+        public MainViewModelV4(IAccuWeatherService accuWeatherService, 
             FavoriteCityViewModel favoriteCityViewModel, FavoriteCitiesView favoriteCitiesView,
-            IServiceProvider serviceProvider)
+            IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
         {
             _favoriteCitiesView = favoriteCitiesView;
             _favoriteCityViewModel = favoriteCityViewModel;
 
             _serviceProvider = serviceProvider;
 
-            // _serviceProvider= serviceProvider; 
-            //LoadCitiesCommand = new RelayCommand(x => LoadCities(x as string));
-            _accuWeatherService = accuWeatherService;
+                // _serviceProvider= serviceProvider; 
+                //LoadCitiesCommand = new RelayCommand(x => LoadCities(x as string));
+                _accuWeatherService = accuWeatherService;
             Cities = new ObservableCollection<CityViewModel>(); // podejście nr 2 
 
+            _messageDialogService = messageDialogService;
 
         }
 
@@ -73,15 +75,15 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             }
         }
 
-
+         
         private async void LoadWeather()
         {
-            if (SelectedCity != null)
+            if(SelectedCity != null)
             {
-                _weather = await _accuWeatherService.GetCurrentConditions(SelectedCity.Key);
+                _weather = await _accuWeatherService.GetCurrentConditions(SelectedCity.Key); 
                 WeatherView = new WeatherViewModel(_weather);
             }
-        }
+        } 
 
         // podajście nr 2 do przechowywania kolekcji obiektów:
         public ObservableCollection<CityViewModel> Cities { get; set; }
@@ -92,14 +94,13 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             // podejście nr 2:
             var cities = await _accuWeatherService.GetLocations(locationName);
             Cities.Clear();
-            foreach (var city in cities)
+            foreach (var city in cities) 
                 Cities.Add(new CityViewModel(city));
         }
 
         [RelayCommand]
         public void OpenFavotireCities()
         {
-
             //var favoriteCitiesView = new FavoriteCitiesView();
             _favoriteCityViewModel.SelectedCity = new FavoriteCity() { Name = "Warsaw" };
             _favoriteCitiesView.Show();
@@ -110,17 +111,16 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         {
             if (!string.IsNullOrEmpty(LoginViewModel.Token))
             {
-            VehicleDealershipView VehicleDealershipView = _serviceProvider.GetService<VehicleDealershipView>();
-            VehiclesViewModel VehiclesViewModel = _serviceProvider.GetService<VehiclesViewModel>();
+                VehicleDealershipView vehicleDealershipView = _serviceProvider.GetService<VehicleDealershipView>();
+                VehiclesViewModel vehiclesViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
-            VehicleDealershipView.Show();
-            VehiclesViewModel.GetVehicles();
+                vehicleDealershipView.Show();
+                vehiclesViewModel.GetVehicles();
             }
             else
             {
-                
+                _messageDialogService.ShowMessage("Access denied! Log in first!");
             }
-            
         }
 
         [RelayCommand]
@@ -130,7 +130,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             LoginViewModel loginViewModel = _serviceProvider.GetService<LoginViewModel>();
 
             loginView.Show();
-             
+
         }
     }
 }

@@ -30,31 +30,6 @@ namespace P06Shop.Shared.VehicleDealership
         public string Model { get; set; }
         public string Fuel { get; set; }
 
-        // public string Barcode { get; set; }
-
-        // public double Price { get; set; }
-
-        // public DateTime ReleaseDate { get; set; }
-
-
-        // private string _description;
-
-
-        // public string Description
-        // {
-        //     get { return _description; }
-        //     set
-        //     {
-        //         if (_description != value)
-        //         {
-        //             _description = value;
-        //             OnPropertyChanged(nameof(Description));
-        //         }
-        //     }
-        // }
-
-
-
         public event PropertyChangedEventHandler PropertyChanged;
 
 

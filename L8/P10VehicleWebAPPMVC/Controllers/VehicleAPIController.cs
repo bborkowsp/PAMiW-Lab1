@@ -26,7 +26,6 @@ namespace P09ShopWebAPPMVC.Client.Controllers
         public async Task<IActionResult> Index()
         {
             var vehicles = await _vehicleDealershipService.GetVehiclesAsync();
-            Debug.WriteLine("vehicles: " + vehicles.Success);
             return vehicles != null ?
                           View(vehicles.Data.AsEnumerable()) :
                           Problem("Entity set 'VehicleDealershipContext.VehicleDealership'  is null.");

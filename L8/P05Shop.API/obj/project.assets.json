@@ -72,7 +72,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.8": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.14": {
         "type": "package",
         "dependencies": {
           "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.15.1"
@@ -1378,10 +1378,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.8": {
-      "sha512": "UWGvF86d2q90e1ync37Yg+yg2GRSeSh9y/Q5YRFw42YfzTDQd0X6somujDFVc9HWn6zVB7osSZnxHMW8BwoRSA==",
+    "Microsoft.AspNetCore.Authentication.JwtBearer/7.0.14": {
+      "sha512": "640Jjm2NnpQYHew0I2RyP2PjBKfB1ItSDYHX1TD+ooJov+b+ELPuo/GgrJCNJr3ZI1YmplmsQv88d8JRojZ+fA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.8",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/7.0.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1389,7 +1389,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
         "lib/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
-        "microsoft.aspnetcore.authentication.jwtbearer.7.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
@@ -4013,7 +4013,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.8",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.14",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.5",
@@ -4030,11 +4030,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P05Shop.API\\P05Shop.API.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P05Shop.API\\P05Shop.API.csproj",
       "projectName": "P05Shop.API",
-      "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P05Shop.API\\P05Shop.API.csproj",
+      "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P05Shop.API\\P05Shop.API.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P05Shop.API\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P05Shop.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4056,11 +4056,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P06Shop.Shared\\P06Shop.Shared.csproj"
             },
-            "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
+            "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\Downloads\\copygood\\L8\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
             }
           }
         }
@@ -4077,7 +4077,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
-            "version": "[7.0.8, )"
+            "version": "[7.0.14, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
@@ -4121,7 +4121,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using P04WeatherForecastAPI.Client.Models;
+using P04WeatherForecastAPI.Client.Services.SpeechService;
 using P04WeatherForecastAPI.Client.Services.WeatherServices;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
@@ -11,71 +12,136 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
+using System.Windows;
 using System.Windows.Documents;
-
-
+using System.Diagnostics;
 
 namespace P04WeatherForecastAPI.Client.ViewModels
 {
     public partial class VehiclesViewModel : ObservableObject
     {
-        private int _currentPage = 0;
-        private const int PageSize = 2;
-        private readonly IVehicleDealershipService _vehicleService;
+        private readonly IVehicleDealershipService _ivehicleDealershipService;
         private readonly VehicleDetailsView _vehicleDetailsView;
         private readonly IMessageDialogService _messageDialogService;
 
-        public ObservableCollection<Vehicle> Vehicles { get; set; }
-        private List<Vehicle> _allVehicles;
-
-
+        private int _currentPage = 1;
+        public List<Vehicle> vehicleList { get; set; }
+        public ObservableCollection<Vehicle> PageVehicles { get; set; }
 
         [ObservableProperty]
         private Vehicle selectedVehicle;
 
 
-        public VehiclesViewModel(IVehicleDealershipService vehicleService, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService)
+
+        public VehiclesViewModel(IVehicleDealershipService ivehicleDealershipService, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService)
         {
+            _ivehicleDealershipService = ivehicleDealershipService;
             _messageDialogService = messageDialogService;
             _vehicleDetailsView = vehicleDetailsView;
-            _vehicleService = vehicleService;
-            Vehicles = new ObservableCollection<Vehicle>();
+            PageVehicles = new ObservableCollection<Vehicle>();
+            vehicleList = new List<Vehicle>();
         }
 
         public async Task GetVehicles()
         {
-            var vehiclesResult = await _vehicleService.GetVehiclesAsync();
+            vehicleList.Clear();
+            var vehiclesResult = await _ivehicleDealershipService.GetVehiclesAsync();
             if (vehiclesResult.Success)
             {
-                _allVehicles = vehiclesResult.Data;
-                _currentPage = 0;
-                LoadCurrentPage();
-            }
-            else
-            {
-                // Handle error
-                _messageDialogService.ShowMessage(vehiclesResult.Message);
+                foreach (var vehicle in vehiclesResult.Data)
+                {
+                    vehicleList.Add(vehicle);
+                }
+                LoadVehiclesOnPage();
             }
         }
 
-        public async Task CreateVehicle()
+        public void LoadVehiclesOnPage()
         {
-            var newVehicle = new Vehicle()
+            PageVehicles.Clear();
+            
+            int ItemsPerPage = 4;
+     
+            MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(vehicleList.Count) / Convert.ToDouble(ItemsPerPage)));
+            if (MaxPage == 0)
+            {
+                MaxPage = 1;
+            }
+            
+            for (int i = (CurrentPage - 1) * ItemsPerPage; i < (CurrentPage - 1) * ItemsPerPage + ItemsPerPage; i++)
+            {
+                if (i > vehicleList.Count - 1)
+                {
+                    break;
+                }
+                PageVehicles.Add(vehicleList[i]);
+            }
+        }
+
+        [ObservableProperty]
+        public int maxPage;
+
+        public int CurrentPage
+        {
+            get => _currentPage;
+            set
+            {
+                _currentPage = value;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+            }
+        }
+
+        [RelayCommand]
+        public async void NextPage()
+        {
+            if (CurrentPage < MaxPage)
+            {
+                CurrentPage++;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+            }
+        }
+
+        [RelayCommand]
+        public async void PreviousPage()
+        {
+            if (CurrentPage > 1)
+            {
+                CurrentPage--;
+                LoadVehiclesOnPage();
+                OnPropertyChanged();
+            }
+        }
+
+
+
+
+
+
+        public async Task<bool> CreateVehicle()
+        {
+            var newVehicle  = new Vehicle()
             {
                 Model = selectedVehicle.Model,
                 Fuel = selectedVehicle.Fuel,
 
             };
 
-            var result = await _vehicleService.CreateVehicleAsync(newVehicle);
+            var result = await _ivehicleDealershipService.CreateVehicleAsync(newVehicle);
             if (result.Success)
+            {
                 await GetVehicles();
+                return true;
+            }
             else
+            {
                 _messageDialogService.ShowMessage(result.Message);
+                return false;
+            }
         }
 
-        public async Task UpdateVehicle()
+        public async Task<bool> UpdateVehicle()
         {
             var vehicleToUpdate = new Vehicle()
             {
@@ -85,14 +151,28 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
             };
 
-            await _vehicleService.UpdateVehicleAsync(vehicleToUpdate);
+            var res = await _ivehicleDealershipService.UpdateVehicleAsync(vehicleToUpdate);
             GetVehicles();
+
+            if (!res.Success)
+            {
+                _messageDialogService.ShowMessage(res.Message);
+            }
+
+            return res.Success;
         }
 
-        public async Task DeleteVehicle()
+        public async Task<bool> DeleteVehicle()
         {
-            await _vehicleService.DeleteVehicleAsync(selectedVehicle.Id);
+            var res = await _ivehicleDealershipService.DeleteVehicleAsync(selectedVehicle.Id);
             await GetVehicles();
+
+            if (!res.Success)
+            {
+                _messageDialogService.ShowMessage(res.Message);
+            }
+
+            return res.Success;
         }
 
         [RelayCommand]
@@ -109,21 +189,27 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         [RelayCommand]
         public async Task Save()
         {
+            bool success;
             if (selectedVehicle.Id == 0)
             {
-                CreateVehicle();
+                success = await CreateVehicle();
             }
             else
             {
-                UpdateVehicle();
+                success = await UpdateVehicle();
             }
-
+            if (success)
+                _vehicleDetailsView.Hide();
         }
 
         [RelayCommand]
         public async Task Delete()
         {
-            DeleteVehicle();
+            bool success = await DeleteVehicle();
+            if (success)
+            {
+                _vehicleDetailsView.Hide();
+            }
         }
 
         [RelayCommand]
@@ -136,45 +222,5 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             SelectedVehicle = new Vehicle();
         }
 
-
-
-
-
-
-
-
-
-        private void LoadCurrentPage()
-        {
-            Vehicles.Clear();
-            int startIndex = _currentPage * PageSize;
-            int endIndex = Math.Min(startIndex + PageSize, _allVehicles.Count);
-
-            for (int i = startIndex; i < endIndex; i++)
-            {
-                Vehicles.Add(_allVehicles[i]);
-            }
-        }
-
-
-        public RelayCommand NextPageCommand => new RelayCommand(() =>
-        {
-            if ((_currentPage + 1) * PageSize < _allVehicles.Count)
-            {
-                _currentPage++;
-                LoadCurrentPage();
-            }
-        });
-
-        public RelayCommand PreviousPageCommand => new RelayCommand(() =>
-        {
-            if (_currentPage > 0)
-            {
-                _currentPage--;
-                LoadCurrentPage();
-            }
-        });
-
     }
 }
-

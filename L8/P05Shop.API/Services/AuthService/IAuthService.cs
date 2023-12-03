@@ -1,4 +1,4 @@
-using P06Shop.Shared;
+﻿using P06Shop.Shared;
 using P06Shop.Shared.Auth;
 
 namespace P05Shop.API.Services.AuthService

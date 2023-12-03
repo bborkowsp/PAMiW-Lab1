@@ -30,28 +30,28 @@ namespace P06Shop.Shared.Shop
         public string Title { get; set; }
 
 
-        // public string Barcode { get; set; }
+        public string Barcode { get; set; }
 
-        // public double Price { get; set; }
+        public double Price { get; set; }
 
-        // public DateTime ReleaseDate { get; set; }
-
-
-        // private string _description;
+        public DateTime ReleaseDate { get; set; }
 
 
-        // public string Description
-        // {
-        //     get { return _description; }
-        //     set
-        //     {
-        //         if (_description != value)
-        //         {
-        //             _description = value;
-        //             OnPropertyChanged(nameof(Description));
-        //         }
-        //     }
-        // }
+        private string _description;
+
+
+        public string Description
+        {
+            get { return _description; }
+            set
+            {
+                if (_description != value)
+                {
+                    _description = value;
+                    OnPropertyChanged(nameof(Description));
+                }
+            }
+        }
 
 
 
@@ -62,5 +62,14 @@ namespace P06Shop.Shared.Shop
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public Category? Category { get; set; }
+        public int? CategoryId { get; set; }
+
+        public int? ProductDetailsId { get; set; }
+
+        public ProductDetails? ProductDetails { get; set;}
+
+        public ICollection<ProductSuppliers>? ProductSuppliers { get; set; }
     }
 }

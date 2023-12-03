@@ -18,9 +18,9 @@
             <Setter Property="Foreground" Value="DarkBlue"/>
         </Style>
         <Style x:Key="mainLabelStyle" TargetType="Label">
-            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontSize" Value="18"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="DarkRed"/>
+            <Setter Property="Foreground" Value="Black"/>
         </Style>
     </Window.Resources>
 
@@ -37,7 +37,7 @@
         <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
             <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
             <Button DockPanel.Dock="Top" Content="Manage Favorite Cities" Command="{Binding OpenFavotireCitiesCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
-            <Button DockPanel.Dock="Top" Content="Open vehicle dealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
+            <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
             <Label DockPanel.Dock="Top" Content="City:" Style="{StaticResource mainLabelStyle}"></Label>
             <TextBox DockPanel.Dock="Top" x:Name="txtCity"></TextBox>
             <Button DockPanel.Dock="Top" x:Name="btnSearch" Content="Search" Command="{Binding LoadCitiesCommand}" CommandParameter="{Binding Text, ElementName=txtCity}" Style="{StaticResource mainButtonStyle}" ></Button>

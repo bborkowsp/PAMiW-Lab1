@@ -69,7 +69,7 @@ namespace P12MAUI.Client
             var appSettings = _configuration.GetSection(nameof(AppSettings));
             var appSettingsSection = appSettings.Get<AppSettings>();
 
-            //Debug.WriteLine("" + appSettingsSection.LibraryEndpoints.Base_url);
+            //Debug.WriteLine("" + appSettingsSection.VehicleDealershipEndpoints.Base_url);
             //foreach (var setting in _configuration.GetSection("AppSettings").GetChildren())
             //{
             //    Debug.WriteLine($"{setting.Key}: {setting.Value}");

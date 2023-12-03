@@ -1,4 +1,4 @@
-<Window x:Class="P04WeatherForecastAPI.Client.LoginView"
+﻿<Window x:Class="P04WeatherForecastAPI.Client.LoginView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
-        Title="LoginView" Height="150" Width="200">
+        Title="LoginView" Height="150" Width="300">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />

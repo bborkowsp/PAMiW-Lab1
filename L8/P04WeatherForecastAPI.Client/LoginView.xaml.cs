@@ -1,4 +1,4 @@
-using P04WeatherForecastAPI.Client.ViewModels;
+﻿using P04WeatherForecastAPI.Client.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

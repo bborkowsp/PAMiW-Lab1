@@ -1,4 +1,4 @@
-@page "/Login"
+﻿@page "/Login"
 @using Blazored.LocalStorage;
 @using Microsoft.AspNetCore.Components.Authorization;
 @using P06Shop.Shared.Auth;
@@ -24,7 +24,7 @@
 
 @if (!string.IsNullOrEmpty(message))
 {
-    <p>@message</p>
+    <p style="color: red;">@message</p>
 }
 
 @code {

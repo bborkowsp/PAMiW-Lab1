@@ -10,26 +10,24 @@ namespace P05Shop.API.Controllers
     [ApiController]
     public class VehicleController : Controller
     {
-        private readonly IVehicleDealershipService _vehicleDealershipService;
-                private readonly ILogger<VehicleController> _logger;
-
-        public VehicleController(IVehicleDealershipService vehicleDealershipService, ILogger<VehicleController> logger)
+        private readonly IVehicleDealershipService _iVehicleDealershipService;
+        private readonly ILogger<VehicleController> _logger;
+        public VehicleController(IVehicleDealershipService iVehicleDealershipService, ILogger<VehicleController> logger)
         {
-            _vehicleDealershipService = vehicleDealershipService;
-                        _logger = logger;
-
+            _iVehicleDealershipService = iVehicleDealershipService;
+            _logger = logger;
         }
 
         [HttpGet]
         public async Task<ActionResult<ServiceResponse<List<Vehicle>>>> GetVehicles()
         {
 
-            var result = await _vehicleDealershipService.GetVehiclesAsync();
+            var result = await _iVehicleDealershipService.GetVehiclesAsync();
 
             if (result.Success)
                 return Ok(result);
             else
-                return StatusCode(500, $"Internal server error {result.Message}");
+                return  StatusCode(500, $"Internal server error {result.Message}");
         }
 
 
@@ -37,8 +35,8 @@ namespace P05Shop.API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> GetVehicle(int id)
         {
-
-            var result = await _vehicleDealershipService.GetVehicleByIdAsync(id);
+          
+            var result = await _iVehicleDealershipService.GetVehicleByIdAsync(id);
 
             if (result.Success)
                 return Ok(result);
@@ -50,8 +48,8 @@ namespace P05Shop.API.Controllers
         [HttpPut]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> UpdateVehicle([FromBody] Vehicle product)
         {
-
-            var result = await _vehicleDealershipService.UpdateVehicleAsync(product);
+            
+            var result = await _iVehicleDealershipService.UpdateVehicleAsync(product);
 
             if (result.Success)
                 return Ok(result);
@@ -61,9 +59,8 @@ namespace P05Shop.API.Controllers
 
         [HttpPost]
         public async Task<ActionResult<ServiceResponse<Vehicle>>> CreateVehicle([FromBody] Vehicle product)
-        {            Console.WriteLine("p05 controller create");
-
-            var result = await _vehicleDealershipService.CreateVehicleAsync(product);
+        {
+            var result = await _iVehicleDealershipService.CreateVehicleAsync(product);
 
             if (result.Success)
                 return Ok(result);
@@ -76,7 +73,7 @@ namespace P05Shop.API.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<ServiceResponse<bool>>> DeleteVehicle([FromRoute] int id)
         {
-            var result = await _vehicleDealershipService.DeleteVehicleAsync(id);
+            var result = await _iVehicleDealershipService.DeleteVehicleAsync(id);
 
             if (result.Success)
                 return Ok(result);
@@ -89,14 +86,15 @@ namespace P05Shop.API.Controllers
         [HttpGet("search/{page}/{pageSize}")]
         public async Task<ActionResult<ServiceResponse<List<Vehicle>>>> SearchVehicles(string? text = null, int page = 1, int pageSize = 10)
         {
-            _logger.Log(LogLevel.Information, "Invoked GetVehicles Method in controller");
-            Console.WriteLine("p05 controller");
-            var result = await _vehicleDealershipService.SearchVehiclesAsync(text, page, pageSize);
+
+            var result = await _iVehicleDealershipService.SearchVehiclesAsync(text, page, pageSize);
 
             if (result.Success)
                 return Ok(result);
             else
                 return StatusCode(500, $"Internal server error {result.Message}");
         }
+
+
     }
 }

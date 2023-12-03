@@ -14,6 +14,7 @@ namespace P07Shop.DataSeeder
                 .RuleFor(x => x.Fuel, x => x.Vehicle.Fuel())
                 .RuleFor(x => x.Id, x => productId++);
 
+
             return productFaker.Generate(50).ToList();
         }
     }
