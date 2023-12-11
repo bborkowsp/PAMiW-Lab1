@@ -1,0 +1,95 @@
+﻿<Window x:Class="P04WeatherForecastAPI.Client.VehicleDealershipView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
+    mc:Ignorable="d"
+    Title="ShopProductsWindow" Height="480" Width="900">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
+        <Style x:Key="mainButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="Foreground" Value="DarkBlue"/>
+        </Style>
+        <Style x:Key="mainLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
+        <ListView ItemsSource="{Binding PageVehicles}" Height="350" DockPanel.Dock="Top">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Padding="10" Margin="5">
+                        <Grid Width="300">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!--Pierwszy wiersz-->
+                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                <Label Content="{Binding Id}" FontWeight="Bold" Margin="0 0 10 0"></Label>
+                                <Label Content="{Binding Model}" FontSize="16" FontWeight="Bold" Foreground="Navy"></Label>
+                                <Label Content="{Binding Fuel}" FontSize="16" FontWeight="Bold" Foreground="Blue"></Label>
+                            </StackPanel>
+                            <!--Drugi wiersz-->
+                            <!--Trzeci wiersz-->
+                            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                <TextBlock Foreground="DarkGreen" Margin="0 0 10 0">
+
+                                </TextBlock>
+                            </StackPanel>
+                            <Button Grid.Row="3" 
+Command="{Binding DataContext.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=ListView}}" 
+CommandParameter="{Binding}"  Content="Edit" >
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="border" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="SkyBlue" />
+                                                <Setter Property="Foreground" Value="White" />
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                                <Button.Style>
+                                    <Style TargetType="Button">
+                                        <Setter Property="Background" Value="SteelBlue" />
+                                        <Setter Property="Foreground" Value="White" />
+                                        <Setter Property="Cursor" Value="Hand" />
+                                        <Setter Property="Padding" Value="10,5" />
+                                        <Setter Property="FontSize" Value="14" />
+                                        <Setter Property="FontWeight" Value="Bold" />
+                                    </Style>
+                                </Button.Style>
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button DockPanel.Dock="Left" Content="New vehicle" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Button DockPanel.Dock="Left" Content="Previous page" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Button DockPanel.Dock="Left" Content="Next page" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Label DockPanel.Dock="Left" Content="Page number: " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}" Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+        <Label DockPanel.Dock="Left" Content=" / " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+        <Label DockPanel.Dock="Left" Content=" " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+    </DockPanel>
+
+</Window>
