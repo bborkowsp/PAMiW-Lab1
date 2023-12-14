@@ -35,7 +35,6 @@
         <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
             <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
             <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
-            <Label DockPanel.Dock="Top" Content="City:" Style="{StaticResource mainLabelStyle}"></Label>
         </DockPanel>
 
     </Grid>

@@ -2,7 +2,6 @@
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.DependencyInjection;
 using P04WeatherForecastAPI.Client.Commands;
-using P04WeatherForecastAPI.Client.Models;
 using P06Shop.Shared.MessageBox;
 using System;
 using System.Collections.Generic;
@@ -19,9 +18,6 @@ namespace P04WeatherForecastAPI.Client.ViewModels
     // przekazywanie wartosci do innego formularza 
     public partial class MainViewModelV4 : ObservableObject
     {
-
-        //favorite city 
-        //public ICommand LoadCitiesCommand { get;  }
         private readonly IServiceProvider _serviceProvider;
         private readonly IMessageDialogService _messageDialogService;
 
