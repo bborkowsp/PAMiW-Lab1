@@ -4,7 +4,6 @@ C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\VehicleDealershipView.g.cs
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\VehicleDetailsView.g.cs
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\App.g.cs
-C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client_MarkupCompile.cache
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client_MarkupCompile.lref
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\bin\Debug\net7.0-windows\P04WeatherForecastAPI.Client.exe
