@@ -1,8 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using P04WeatherForecastAPI.Client.Models;
-using P04WeatherForecastAPI.Client.Services.SpeechService;
-using P04WeatherForecastAPI.Client.Services.WeatherServices;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.VehicleDealership;

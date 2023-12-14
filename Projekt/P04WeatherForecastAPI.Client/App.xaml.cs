@@ -2,8 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using P04WeatherForecastAPI.Client.MessageBox;
 
-using P04WeatherForecastAPI.Client.Services.SpeechService;
-using P04WeatherForecastAPI.Client.Services.WeatherServices;
+
 using P04WeatherForecastAPI.Client.ViewModels;
 using P06Shop.Shared.Configuration;
 using P06Shop.Shared.MessageBox;
@@ -70,8 +69,7 @@ namespace P04WeatherForecastAPI.Client
         private void ConfigureAppServices(IServiceCollection services)
         {
             // konfiguracja serwisów 
-            services.AddSingleton<IAccuWeatherService, AccuWeatherService>();
-            services.AddSingleton<IFavoriteCityService, FavoriteCityService>();
+
             services.AddSingleton<IVehicleDealershipService, VehicleDealershipService>();
             services.AddSingleton<IMessageDialogService, WpfMesageDialogService>();
         }
@@ -81,7 +79,6 @@ namespace P04WeatherForecastAPI.Client
 
             // konfiguracja viewModeli 
             services.AddSingleton<MainViewModelV4>();
-            services.AddSingleton<FavoriteCityViewModel>();
             services.AddSingleton<VehiclesViewModel>();
             services.AddSingleton<LoginViewModel>();
             // services.AddSingleton<BaseViewModel,MainViewModelV3>();
@@ -91,7 +88,6 @@ namespace P04WeatherForecastAPI.Client
         {
             // konfiguracja okienek 
             services.AddTransient<MainWindow>();
-            services.AddTransient<FavoriteCitiesView>();
             services.AddTransient<VehicleDealershipView>();
             services.AddTransient<VehicleDetailsView>();
             services.AddTransient<LoginView>();
