@@ -49,7 +49,7 @@ namespace P05Shop.API.Services.VehicleService
                 return new ServiceResponse<List<Vehicle>>()
                 {
                     Data = null,
-                    Message = "Problem with dataseeder library",
+                    Message = "Problem with dataseeder",
                     Success = false
                 };
             }
@@ -60,9 +60,9 @@ namespace P05Shop.API.Services.VehicleService
         {
             try
             {
-                var newId = _vehicles.Count > 0 ? _vehicles.Max(v => v.Id) + 1 : 1; // Sprawdza, czy istnieją już pojazdy w liście
-                newVehicle.Id = newId; // Przypisuje nowy identyfikator nowemu pojazdowi
-                _vehicles.Add(newVehicle); // Dodaje nowy pojazd do listy
+                var newId = _vehicles.Count > 0 ? _vehicles.Max(v => v.Id) + 1 : 1; 
+                newVehicle.Id = newId; 
+                _vehicles.Add(newVehicle);
 
                 var response = new ServiceResponse<Vehicle>()
                 {

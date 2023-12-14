@@ -52,17 +52,6 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
 
 
 
-        //// skopiowane z postmana 
-        //public async Task<ServiceResponse<List<Vehicle>>> GetBooksAsync()
-        //{
-        //    //var client = new HttpClient();   
-        //    var request = new HttpRequestMessage(HttpMethod.Get, _appSettings.VehicleDealershipEndpoints.GetVehiclesEndpoint);
-        //    var response = await _httpClient.SendAsync(request);
-        //    response.EnsureSuccessStatusCode();        
-        //    var json = await response.Content.ReadAsStringAsync();
-        //    var result = JsonConvert.DeserializeObject<ServiceResponse<List<Vehicle>>>(json);
-        //    return result;
-        //}
 
 
         // alternatywny sposób pobierania danych 
@@ -132,14 +121,6 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
         }
 
 
-        // wersja 1 
-        //public async Task<ServiceResponse<Vehicle>> UpdateBookAsync(Vehicle vehicle)
-        //{
-        //    var response = await _httpClient.PutAsJsonAsync(_appSettings.VehicleDealershipEndpoints.GetVehiclesEndpoint, vehicle);
-        //    var json = await response.Content.ReadAsStringAsync();
-        //    var result = JsonConvert.DeserializeObject<ServiceResponse<Vehicle>>(json);
-        //    return result;
-        //}
 
         // wersja 2 
         public async Task<ServiceResponse<Vehicle>> UpdateVehicleAsync(Vehicle vehicle)
@@ -161,7 +142,7 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
                 Console.WriteLine("Check 1");
                 string searchUrl = string.IsNullOrWhiteSpace(text) ? "" : $"/{text}";
                 Console.WriteLine("Check 2");
-                var url = _appSettings.BaseAPIUrl + "/" + _appSettings.VehicleDealershipEndpoints.SearchBooksEndpoint + searchUrl + $"/{page}/{pageSize}";
+                var url = _appSettings.BaseAPIUrl + "/" + _appSettings.VehicleDealershipEndpoints.SearchVehiclesEndpoint + searchUrl + $"/{page}/{pageSize}";
                 Console.WriteLine("Sending request to " + url);
                 var response = await _httpClient.GetAsync(url);
                 Console.WriteLine("Result: " + response.IsSuccessStatusCode + " -> " +  response.RequestMessage);

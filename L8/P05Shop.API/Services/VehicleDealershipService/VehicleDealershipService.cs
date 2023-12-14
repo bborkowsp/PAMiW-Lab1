@@ -37,9 +37,7 @@ namespace P05Shop.API.Services.VehicleDealershipService
 
         public async Task<ServiceResponse<bool>> DeleteVehicleAsync(int id)
         {
-            // sposób 1 (najpierw znajdujemy potem go usuwamy): 
-            //var bookToDelete = _dataContext.Books.FirstOrDefault(x => x.Id == id);
-            //_dataContext.Books.Remove(bookToDelete);  
+
 
             // sposób 2: (uzywamy attach : tylko jedno zapytanie do bazy)
             var vehicle = new Vehicle() { Id = id };
@@ -77,13 +75,13 @@ namespace P05Shop.API.Services.VehicleDealershipService
 
         public async Task<ServiceResponse<List<Vehicle>>> GetVehiclesAsync()
         {
-            var books = await _dataContext.Vehicles.ToListAsync();
+            var vehicles = await _dataContext.Vehicles.ToListAsync();
 
             try
             {
                 var response = new ServiceResponse<List<Vehicle>>()
                 {
-                    Data = books,
+                    Data = vehicles,
                     Message = "Ok",
                     Success = true
                 };
@@ -109,7 +107,7 @@ namespace P05Shop.API.Services.VehicleDealershipService
             if (!string.IsNullOrEmpty(text))
                 query = query.Where(x => x.Model.Contains(text) || x.Fuel.Contains(text));
 
-            var books = await query
+            var vehicles = await query
                 .Skip(pageSize * (page - 1))
                 .Take(pageSize)
                 .ToListAsync();
@@ -118,7 +116,7 @@ namespace P05Shop.API.Services.VehicleDealershipService
             {
                 var response = new ServiceResponse<List<Vehicle>>()
                 {
-                    Data = books,
+                    Data = vehicles,
                     Message = "Ok",
                     Success = true
                 };
@@ -140,15 +138,15 @@ namespace P05Shop.API.Services.VehicleDealershipService
         {
             try
             {
-                var bookToEdit = new Vehicle() { Id = vehicle.Id };
-                _dataContext.Vehicles.Attach(bookToEdit);
+                var vehicleToEdit = new Vehicle() { Id = vehicle.Id };
+                _dataContext.Vehicles.Attach(vehicleToEdit);
 
-                bookToEdit.Model = vehicle.Model;
-                bookToEdit.Fuel = vehicle.Fuel;
+                vehicleToEdit.Model = vehicle.Model;
+                vehicleToEdit.Fuel = vehicle.Fuel;
 
 
                 await _dataContext.SaveChangesAsync();
-                return new ServiceResponse<Vehicle> { Data = bookToEdit, Success = true };
+                return new ServiceResponse<Vehicle> { Data = vehicleToEdit, Success = true };
             }
             catch (Exception)
             {

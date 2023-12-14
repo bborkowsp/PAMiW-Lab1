@@ -14,7 +14,7 @@ namespace P06Shop.Shared.Configuration
         public string UpdateVehicleEndpoint { get; set; }
         public string DeleteVehicleEndpoint { get; set; }
         public string AddVehicleEndpoint { get; set; }
-        public string SearchBooksEndpoint { get; set; }
+        public string SearchVehiclesEndpoint { get; set; }
 
     }
 }
