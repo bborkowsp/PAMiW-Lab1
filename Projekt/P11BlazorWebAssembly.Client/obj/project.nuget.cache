@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "urfp+MLNf7l78IcQVs2LmXzxF5tTNwgxf9TMv9RTxOL0jEBWdgPWO2SoCZbDNPNui6kfnapP09KSgw/gojuvOg==",
+  "dgSpecHash": "lshxxSHnbGi8+QB0TRp5g0PYo/ksTJ840MgTn35ErhcuPwIFZEwd2prm44ngmZb3XnX6tBSRW8rQ1IHFsCPJdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\OneDrive - Politechnika Warszawska\\Sem5\\PAMiW\\PAMiW-Lab\\L8\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\blazored.localstorage\\4.4.0\\blazored.localstorage.4.4.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.14\\microsoft.aspnetcore.authorization.7.0.14.nupkg.sha512",
