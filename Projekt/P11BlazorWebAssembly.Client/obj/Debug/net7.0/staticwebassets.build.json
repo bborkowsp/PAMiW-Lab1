@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C1pxKxW95cwTZ9dcgUkij/QeC0pQ6wMXBJgGAtMLFoM=",
+  "Hash": "ofF8hVRs4jPf87wg+ZDb2N0H6slgNJzWATeli1VeRxU=",
   "Source": "P11BlazorWebAssembly.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -8356,6 +8356,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\js\\site.js",
+      "SourceId": "P11BlazorWebAssembly.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\manifest.json",

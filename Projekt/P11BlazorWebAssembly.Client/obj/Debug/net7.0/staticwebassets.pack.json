@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
       "Id": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },

@@ -54,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcVmVoaWNsZUxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Shared/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

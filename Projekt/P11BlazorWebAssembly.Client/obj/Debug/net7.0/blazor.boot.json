@@ -1,7 +1,7 @@
 {
   "entryAssembly": "P11BlazorWebAssembly.Client",
   "resources": {
-    "hash": "sha256-epSR573fdPNppcShInMXdhH/Q78yuq0XhEGtvyMCgPM=",
+    "hash": "sha256-TB/vpoOSkTTI71b5+kaPhW6TxN7LpoN7VdYEUBzyJ2M=",
     "runtime": {
       "dotnet.7.0.14.f8ia1wfuq2.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -206,12 +206,12 @@
       "mscorlib.dll": "sha256-YcsJInaT/kw3Vrm+SESegPxvT/Lr9RE6rE/KnxWIIc0=",
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
-      "P06Shop.Shared.dll": "sha256-KK40/TaS4e7stpCT6vUVrihgouLTCL579ktex7V6Yx8=",
-      "P11BlazorWebAssembly.Client.dll": "sha256-ZmM2BaAc/kpIHYxCvRKk58sGUKPy2I6NG3F+RgSAcVg="
+      "P06Shop.Shared.dll": "sha256-Zgv1mbX+T5MRu9PvME2geblbURclYg7W2glMe6VTygk=",
+      "P11BlazorWebAssembly.Client.dll": "sha256-YEhToNy6cSBTdB7XYjl/96uxfEtHQhMVfqxJC81NnNs="
     },
     "pdb": {
-      "P06Shop.Shared.pdb": "sha256-krvDdulQC93xFsp1UcDtZ/oloKBsQH0xF2AMXPYR3J8=",
-      "P11BlazorWebAssembly.Client.pdb": "sha256-rkayQa3scPoP/K6MhaJ75ZNvh5Lchnbr8HCrl1QDJ1w="
+      "P06Shop.Shared.pdb": "sha256-1FI7RIo+2rB83zy5XwI8L1Mj8p0ruIvviFYZtzHvGP4=",
+      "P11BlazorWebAssembly.Client.pdb": "sha256-HCDdgEiJjL2JIJN0Ug6xPhciNCoWkk2/djLd7ZHpkt4="
     },
     "runtimeAssets": {
       "dotnet.wasm": {
