@@ -79,12 +79,3 @@ main[b-e3ashidzry] {
         padding-right: 1.5rem !important;
     }
 }
-
-.dark-mode[b-e3ashidzry] {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode .top-row[b-e3ashidzry] {
-    background-color: rgba(0,0,0,0.4);
-}

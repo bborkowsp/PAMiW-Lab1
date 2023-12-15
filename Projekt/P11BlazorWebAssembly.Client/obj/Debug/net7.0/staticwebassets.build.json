@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jtNGlLFJGLX2zQf26gD/TOb04j1uT0CijO4YMYUHxAo=",
+  "Hash": "C1pxKxW95cwTZ9dcgUkij/QeC0pQ6wMXBJgGAtMLFoM=",
   "Source": "P11BlazorWebAssembly.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -8375,6 +8375,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manifest.json"
+    },
+    {
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\sample-data\\weather.json",
+      "SourceId": "P11BlazorWebAssembly.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "sample-data/weather.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ]
 }
