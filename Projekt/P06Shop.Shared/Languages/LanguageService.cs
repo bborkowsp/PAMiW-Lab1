@@ -148,6 +148,11 @@ namespace P06Shop.Shared.Languages
                      "UpdateButton",
                      "Update"
                   },
+                  { "NavbarBrand", "Vehicle dealership" },
+    { "NavigationMenuTitle", "Navigation menu" },
+    { "HomeNavLink", "Home" },
+    { "VehiclesNavLink", "Vehicles" },
+    { "SettingsNavLink", "Settings" }
                }
             },
             {
@@ -266,6 +271,11 @@ namespace P06Shop.Shared.Languages
                      "UpdateButton",
                      "Aktualizuj"
                   },
+                      { "NavbarBrand", "Salon samochodowy" },
+    { "NavigationMenuTitle", "Menu nawigacyjne" },
+    { "HomeNavLink", "Strona główna" },
+    { "VehiclesNavLink", "Pojazdy" },
+    { "SettingsNavLink", "Ustawienia" }
                }
             }
          };
