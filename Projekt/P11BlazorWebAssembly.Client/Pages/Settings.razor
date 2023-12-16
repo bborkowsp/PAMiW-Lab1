@@ -6,23 +6,27 @@
 @inject IJSRuntime JSRuntime
 @inject ILocalStorageService LocalStorage
 
-<div class="container">
-    <h3>Settings</h3>
-    <p>Choose your language:</p>
-    <select class="form-control" @bind="language">
-        <option value="polish">Polish</option>
-        <option value="english">English</option>
-    </select>
-    <button class="btn btn-primary mt-3" @onclick="SaveLanguage">Save</button>
-</div>
 
+@if (selectedLanguage != null)
+{
+<div class="container">
+    <h3>@LanguageService.GetLanguage(selectedLanguage, "SettingsTitle")</h3>
+    <p>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
+    <select class="form-control" @bind="language">
+        <option value="polish">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
+        <option value="english">@LanguageService.GetLanguage(selectedLanguage, "EnglishOption")</option>
+    </select>
+    <button class="btn btn-primary mt-3" @onclick="SaveLanguage">@LanguageService.GetLanguage(selectedLanguage, "SaveButton")</button>
+</div>
+}
 @code {
     private string language;
+    private string selectedLanguage;
 
     protected override async Task OnInitializedAsync()
     {
-        // Pobierz aktualny język z lokalnego magazynu przy ładowaniu strony
-        language = await LocalStorage.GetItemAsync<string>("language") ?? "polish";
+        selectedLanguage = await LocalStorage.GetItemAsync<string>("language") ?? "english";
+        language = selectedLanguage;
     }
 
     private async Task SaveLanguage()
