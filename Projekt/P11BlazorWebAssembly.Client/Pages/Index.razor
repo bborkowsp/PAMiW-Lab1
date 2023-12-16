@@ -1,7 +1,28 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject ILanguageService LanguageService
 
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+@code {
+    private string selectedLanguage;
 
-Welcome to your new app.
+    protected override async Task OnInitializedAsync()
+    {
+        // Initialize the selected language from local storage or a default value
+        selectedLanguage = await LocalStorage.GetItemAsync<string>("language") ?? "english";
+    }
+}
+
+@if (selectedLanguage != null)
+{
+    <h1>@LanguageService.GetLanguage(selectedLanguage, "WelcomeTitle")</h1>
+    <!-- Add similar usage for other translated strings -->
+
+    <p>@LanguageService.GetLanguage(selectedLanguage, "DealershipDescription")</p>
+}
+else
+{
+    <p>Selected language is null.</p>
+}

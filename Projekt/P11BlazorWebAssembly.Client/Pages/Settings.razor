@@ -1,0 +1,34 @@
+@page "/settings"
+@using Blazored.LocalStorage
+@using Microsoft.AspNetCore.Components.Web.Extensions
+
+@inject ILanguageService LanguageService
+@inject IJSRuntime JSRuntime
+@inject ILocalStorageService LocalStorage
+
+<div class="container">
+    <h3>Settings</h3>
+    <p>Choose your language:</p>
+    <select class="form-control" @bind="language">
+        <option value="polish">Polish</option>
+        <option value="english">English</option>
+    </select>
+    <button class="btn btn-primary mt-3" @onclick="SaveLanguage">Save</button>
+</div>
+
+@code {
+    private string language;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Pobierz aktualny język z lokalnego magazynu przy ładowaniu strony
+        language = await LocalStorage.GetItemAsync<string>("language") ?? "polish";
+    }
+
+    private async Task SaveLanguage()
+    {
+        MainLayout.Language = language;
+        await LocalStorage.SetItemAsync("language", MainLayout.Language);
+        JSRuntime.InvokeVoidAsync("location.reload");
+    }
+}

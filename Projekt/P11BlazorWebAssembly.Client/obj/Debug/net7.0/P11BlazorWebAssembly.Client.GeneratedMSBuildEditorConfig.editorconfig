@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Pages/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Pages/Vehicles/CreateVehicle.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcQ3JlYXRlVmVoaWNsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,8 +58,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcVmVoaWNsZUxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Shared/Settings.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNldHRpbmdzLnJhem9y
+[C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Shared/LanguageSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExhbmd1YWdlU2VsZWN0b3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Paweł/Downloads/github/PAMiW-Lab/Projekt/P11BlazorWebAssembly.Client/Shared/SurveyPrompt.razor]

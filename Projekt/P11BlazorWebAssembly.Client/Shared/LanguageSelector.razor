@@ -1,0 +1,36 @@
+<!-- LanguageSelector.razor -->
+@using Blazored.LocalStorage
+
+@inject ILanguageService LanguageService
+@inject IJSRuntime JSRuntime
+@inject ILocalStorageService LocalStorage
+
+<div class="language-selector">
+    <label for="language-select">Select Language:</label>
+<select id="language-select" @bind="selectedLanguage">
+    @foreach (var language in availableLanguages)
+    {
+        <option value="@language">@language</option>
+    }
+</select>
+</div>
+
+@code {
+    private List<string> availableLanguages = new List<string> { "english", "polish" };
+    private string selectedLanguage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Initialize the selected language from local storage or a default value
+        selectedLanguage = await LocalStorage.GetItemAsync<string>("language") ?? "english";
+    }
+
+    private async Task ChangeLanguage(ChangeEventArgs e)
+    {
+        selectedLanguage = e.Value.ToString();
+        await LocalStorage.SetItemAsync("language", selectedLanguage);
+
+        // Notify other components about the language change (optional)
+        await JSRuntime.InvokeVoidAsync("location.reload");
+    }
+}

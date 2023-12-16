@@ -2,6 +2,8 @@
 @using System.Security.Claims;
 @inherits LayoutComponentBase
 
+
+@inject ILanguageService LanguageService
 @inject ILocalStorageService LocalStorageService
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
@@ -18,20 +20,20 @@
 
                     <div>
                         @context.User.Identity.Name |
-                        @context.User.Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault().Value
+                        @LanguageService.GetLanguage(MainLayout.Language, context.User.Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault().Value)
                         @context.User.Claims.Where(c => c.Type == "DateCreated").FirstOrDefault().Value
                     </div>
 
-                    <a href="#" @onclick="Logout">Logout</a>
+                    <a href="#" @onclick="Logout">@LanguageService.GetLanguage(MainLayout.Language, "Logout")</a>
                 </Authorized>
                 <NotAuthorized>
-                    <a href="/login">Login</a>
-                    <a href="/register">Register</a>
+                    <a href="/login">@LanguageService.GetLanguage(MainLayout.Language, "Login")</a>
+                    <a href="/register">@LanguageService.GetLanguage(MainLayout.Language, "Register")</a>
                 </NotAuthorized>
             </AuthorizeView>
 
 
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">@LanguageService.GetLanguage(MainLayout.Language, "About") </a>
         </div>
 
         <article class="content px-4">
@@ -43,6 +45,7 @@
 
 @code {
 
+    public static string Language = "english";
 
     private async Task Logout()
     {
@@ -50,4 +53,5 @@
         await AuthenticationStateProvider.GetAuthenticationStateAsync();
         NavigationManager.NavigateTo("/login");
     }
+
 }
