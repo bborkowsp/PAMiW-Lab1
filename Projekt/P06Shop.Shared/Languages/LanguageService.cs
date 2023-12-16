@@ -180,6 +180,8 @@ namespace P06Shop.Shared.Languages {
                      "AboutTitle",
                      "About"
                   },
+                      { "ToggleThemeLabel", "Toggle Dark Theme" },
+
 
                }
             },
@@ -338,7 +340,9 @@ namespace P06Shop.Shared.Languages {
                   {
                      "AboutTitle",
                      "O nas"
-                  }
+                  },
+                      { "ToggleThemeLabel", "Przełącz ciemny motyw" },
+
 
                }
             }

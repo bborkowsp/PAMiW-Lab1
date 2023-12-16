@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\css\\dark-theme.css",
+      "PackagePath": "staticwebassets\\css\\dark-theme.css"
+    },
+    {
       "Id": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "PackagePath": "staticwebassets\\css\\open-iconic"
     },

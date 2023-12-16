@@ -6,33 +6,56 @@
 @inject IJSRuntime JSRuntime
 @inject ILocalStorageService LocalStorage
 
-
 @if (selectedLanguage != null)
 {
-<div class="container">
-    <h3>@LanguageService.GetLanguage(selectedLanguage, "SettingsTitle")</h3>
-    <p>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
-    <select class="form-control" @bind="language">
-        <option value="polish">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
-        <option value="english">@LanguageService.GetLanguage(selectedLanguage, "EnglishOption")</option>
-    </select>
-    <button class="btn btn-primary mt-3" @onclick="SaveLanguage">@LanguageService.GetLanguage(selectedLanguage, "SaveButton")</button>
-</div>
+    <div class="container">
+        <h3>@LanguageService.GetLanguage(selectedLanguage, "SettingsTitle")</h3>
+        <p>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
+        <select class="custom-select" @bind="language">
+            <option value="polish">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
+            <option value="english">@LanguageService.GetLanguage(selectedLanguage, "EnglishOption")</option>
+        </select>
+
+        <div class="form-check mt-3">
+            <input type="checkbox" class="form-check-input" @bind="isDarkTheme" />
+            <label class="form-check-label" for="themeToggle">@LanguageService.GetLanguage(selectedLanguage, "ToggleThemeLabel")</label>
+        </div>
+
+        <button class="btn btn-primary mt-3" @onclick="SaveSettings">@LanguageService.GetLanguage(selectedLanguage, "SaveButton")</button>
+    </div>
 }
+
 @code {
     private string language;
+    private bool isDarkTheme;
     private string selectedLanguage;
 
     protected override async Task OnInitializedAsync()
     {
         selectedLanguage = await LocalStorage.GetItemAsync<string>("language") ?? "english";
         language = selectedLanguage;
+
+        // Load theme preference from local storage
+        isDarkTheme = await LocalStorage.GetItemAsync<bool>("isDarkTheme");
     }
 
-    private async Task SaveLanguage()
+    private async Task SaveSettings()
     {
         MainLayout.Language = language;
-        await LocalStorage.SetItemAsync("language", MainLayout.Language);
+
+        // Save theme preference to local storage
+        await LocalStorage.SetItemAsync("isDarkTheme", isDarkTheme);
+
+        // Apply the theme immediately
+        ApplyTheme();
+
+        // Reload the page to ensure styles are updated
         JSRuntime.InvokeVoidAsync("location.reload");
     }
+
+private void ApplyTheme()
+{
+    // Use JSRuntime to invoke a JavaScript function to toggle the theme
+    JSRuntime.InvokeVoidAsync("toggleTheme", isDarkTheme);
+}
 }
