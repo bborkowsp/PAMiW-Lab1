@@ -152,7 +152,10 @@ namespace P06Shop.Shared.Languages
     { "NavigationMenuTitle", "Navigation menu" },
     { "HomeNavLink", "Home" },
     { "VehiclesNavLink", "Vehicles" },
-    { "SettingsNavLink", "Settings" }
+    { "SettingsNavLink", "Settings" },
+       { "IdColumn", "Id" },
+    { "ModelColumn", "Model" },
+    { "FuelColumn", "Fuel" },
                }
             },
             {
@@ -275,7 +278,10 @@ namespace P06Shop.Shared.Languages
     { "NavigationMenuTitle", "Menu nawigacyjne" },
     { "HomeNavLink", "Strona główna" },
     { "VehiclesNavLink", "Pojazdy" },
-    { "SettingsNavLink", "Ustawienia" }
+    { "SettingsNavLink", "Ustawienia" },
+       { "IdColumn", "Id" },
+    { "ModelColumn", "Model" },
+    { "FuelColumn", "Paliwo" },
                }
             }
          };

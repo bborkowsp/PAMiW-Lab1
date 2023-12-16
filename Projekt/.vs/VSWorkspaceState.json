@@ -5,6 +5,6 @@
     "\\P11BlazorWebAssembly.Client\\Pages",
     "\\P11BlazorWebAssembly.Client\\Pages\\Vehicles"
   ],
-  "SelectedNode": "\\P11BlazorWebAssembly.Client\\Pages\\Vehicles\\VehicleList.razor",
+  "SelectedNode": "\\P11BlazorWebAssembly.Client\\App.razor",
   "PreviewInSolutionExplorer": false
 }

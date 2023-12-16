@@ -961,23 +961,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-s+TfB1Posrblkd3\/Apnk4jpEtDAfDxXYcZc3DAIG0l8=",
+      "hash": "sha256-0flaJQ4U4BDF94Cx3oGM9o1m\/aMtXRAAAiDnal2tiCQ=",
       "url": "_framework\/P06Shop.Shared.dll"
     },
     {
-      "hash": "sha256-nVnGi7WbohLjmpm0Z9ai2l06qz5qjyinz5AMOErYAlM=",
+      "hash": "sha256-im5tXmRue5H6C+xN4L8tz7ApNIqEhBmLmbxW7SNidm4=",
       "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-rc7oRmZuFYWS6hXuT8CWoJCME+WQgvShrdEc98jH1UU=",
+      "hash": "sha256-NynkNxlUcsBHIBzpxcA15mEVr1Lu3aPT9R3yTBU79GY=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-0mO9TLGiInAB\/vUukkNGR8oPVFyW1B52mLiL5xBXUvQ=",
+      "hash": "sha256-kZYtUj4nWexlueLNpHYOtpB2SwetnlHXkETq1UxsAe0=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-KO+A44\/xL+8oZtk\/fnwXjA2D3EqJLTQwsXPXQjshMdo=",
+      "hash": "sha256-h31usmWiTsnPikoI\/5I+\/qT7aQJY8GlIWzN3DJfx3Us=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -985,5 +985,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "PhvxzOQm"
+  "version": "Jw\/rK0Gt"
 };
