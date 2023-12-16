@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\P11BlazorWebAssembly.Client",
+    "\\P11BlazorWebAssembly.Client\\Pages",
+    "\\P11BlazorWebAssembly.Client\\Pages\\Vehicles"
   ],
-  "SelectedNode": "\\Dzien18.sln",
+  "SelectedNode": "\\P11BlazorWebAssembly.Client\\Pages\\Vehicles\\VehicleList.razor",
   "PreviewInSolutionExplorer": false
 }
