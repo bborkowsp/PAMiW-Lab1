@@ -2,8 +2,20 @@
 
 @inject IVehicleDealershipService VehicleDealershipService
 @inject NavigationManager NavigationManager
-
-<h3>Create Vehicle</h3>
+@inject ILanguageService LanguageService
+@using Blazored.LocalStorage;
+@using Microsoft.AspNetCore.Components.Authorization;
+@using P06Shop.Shared.Auth;
+@using P06Shop.Shared.Services.AuthService;
+@inject IJSRuntime JSRuntime
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject IAuthService AuthService
+@inject ILocalStorageService LocalStorageService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@if (selectedLanguage != null)
+{
+<h3>@LanguageService.GetLanguage(selectedLanguage, "CreateVehicleTitle")</h3>
 
 @if (message != null)
 {
@@ -13,10 +25,17 @@ else
 {
     <VehicleForm vehicle="vehicle" OnValidSubmit="HandleValidSubmit"></VehicleForm>
 }
-
+}
 @code {
     private Vehicle vehicle = new Vehicle();
     private string? message = null;
+
+    private string selectedLanguage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
+    }
 
     async Task HandleValidSubmit()
     {
@@ -26,6 +45,4 @@ else
         else
             message = response.Message;
     }
-
-
 }

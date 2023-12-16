@@ -78,6 +78,7 @@ namespace P06Shop.Shared.Languages {
                 { "DeleteButton", "Delete" },
                 { "LoadingVehicles", "Loading vehicles..." },
 
+
                }
             },
             {
