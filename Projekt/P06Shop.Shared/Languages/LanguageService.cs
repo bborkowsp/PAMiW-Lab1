@@ -77,7 +77,12 @@ namespace P06Shop.Shared.Languages {
                                    { "EditVehicleTitle", "Edit Vehicle" },
                 { "DeleteButton", "Delete" },
                 { "LoadingVehicles", "Loading vehicles..." },
-
+   { "VehiclesListTitle", "Full list of vehicles" },
+    { "CreateNewVehicleLink", "Create new vehicle" },
+    { "SearchButton", "Search" },
+    { "EditButton", "Edit" },
+    { "PreviousButton", "Previous" },
+    { "NextButton", "Next" }
 
                }
             },
@@ -134,6 +139,12 @@ namespace P06Shop.Shared.Languages {
                                   { "EditVehicleTitle", "Edytuj Pojazd" },
                 { "DeleteButton", "Usuń" },
                 { "LoadingVehicles", "Ładowanie pojazdów..." },
+                    { "VehiclesListTitle", "Pełna lista pojazdów" },
+    { "CreateNewVehicleLink", "Utwórz nowy pojazd" },
+    { "SearchButton", "Szukaj" },
+    { "EditButton", "Edytuj" },
+    { "PreviousButton", "Poprzedni" },
+    { "NextButton", "Następny" }
                }
             }
          };

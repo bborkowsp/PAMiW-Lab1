@@ -3,73 +3,82 @@
 @attribute [Authorize]
 @inject IVehicleDealershipService VehicleDealershipService
 @inject NavigationManager NavigationManager
+@inject ILanguageService LanguageService
+@using Blazored.LocalStorage;
+@using Microsoft.AspNetCore.Components.Authorization;
+@using P06Shop.Shared.Auth;
+@using P06Shop.Shared.Services.AuthService;
+@inject IJSRuntime JSRuntime
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject IAuthService AuthService
+@inject ILocalStorageService LocalStorageService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
 
-<h3>Full list of vehicles</h3>
-
-
-<p>
-    <a href="vehicles/createvehicle">Create new vehicle</a>
-</p>
-
-@if (vehicles == null)
+@if (selectedLanguage != null)
 {
-    <div class="spinner"></div>
+    <h3>@LanguageService.GetLanguage(selectedLanguage, "VehiclesListTitle")</h3>
 
-}
+    <p>
+        <a href="vehicles/createvehicle">@LanguageService.GetLanguage(selectedLanguage, "CreateNewVehicleLink")</a>
+    </p>
 
-else
-{
-    <div>
-        <InputText @bind-Value=searchTerm></InputText>
-        <button class="btn btn-primary" @onclick=Search>Search</button>
-    </div>
-    
+    @if (vehicles == null)
+    {
+        <div class="spinner"></div>
+    }
+    else
+    {
+        <div>
+            <InputText @bind-Value=searchTerm></InputText>
+            <button class="btn btn-primary" @onclick=Search>@LanguageService.GetLanguage(selectedLanguage, "SearchButton")</button>
+        </div>
 
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Model</th>
-                <th>Fuel</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var vehicle in vehicles)
-            {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td>@vehicle.Id</td>
-                    <td>@vehicle.Model</td>
-                    <td>@vehicle.Fuel</td>
-
-                    <td>
-                        <button class="btn btn-primary" @onclick="()=> GoToEdit(vehicle.Id)">Edit</button>
-                    </td>
+                    <th>Id</th>
+                    <th>Model</th>
+                    <th>Fuel</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var vehicle in vehicles)
+                {
+                    <tr>
+                        <td>@vehicle.Id</td>
+                        <td>@vehicle.Model</td>
+                        <td>@vehicle.Fuel</td>
 
-    <button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">Previous</button>
-    <span>@currentPage</span>
-    <button class="btn btn-primary" @onclick="NextPage">Next</button>
+                        <td>
+                            <button class="btn btn-primary" @onclick="()=> GoToEdit(vehicle.Id)">@LanguageService.GetLanguage(selectedLanguage, "EditButton")</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary" disabled="@(currentPage==1)" @onclick="PreviousPage">@LanguageService.GetLanguage(selectedLanguage, "PreviousButton")</button>
+        <span>@currentPage</span>
+        <button class="btn btn-primary" @onclick="NextPage">@LanguageService.GetLanguage(selectedLanguage, "NextButton")</button>
+    }
 }
-
-
 
 @code {
     private List<Vehicle> vehicles;
-    private string message = "Loading vehicles...";
+    private string message;
 
     private int currentPage = 1;
     private const int pageSize = 10;
 
     private string searchTerm = "";
+    private string selectedLanguage;
 
     protected override async Task OnInitializedAsync()
     {
-        await  LoadVehicles();
+        selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
+        message = LanguageService.GetLanguage(selectedLanguage, "LoadingVehicles");
+        await LoadVehicles();
     }
 
     private async Task LoadVehicles()
@@ -78,13 +87,14 @@ else
         if (response.Success)
         {
             vehicles = response.Data;
+            message = null;
         }
         else
         {
+            vehicles = null;
             message = response.Message;
         }
     }
-
 
     void GoToEdit(int id)
     {
@@ -99,6 +109,7 @@ else
             await LoadVehicles();
         }
     }
+
     private async Task NextPage()
     {
         currentPage++;
