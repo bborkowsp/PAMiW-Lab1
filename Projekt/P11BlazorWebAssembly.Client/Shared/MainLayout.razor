@@ -7,6 +7,9 @@
 @inject ILocalStorageService LocalStorageService
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
+
+@if (MainLayout.Language != null)
+{
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -24,16 +27,16 @@
                         @context.User.Claims.Where(c => c.Type == "DateCreated").FirstOrDefault().Value
                     </div>
 
-                    <a href="#" @onclick="Logout">@LanguageService.GetLanguage(MainLayout.Language, "Logout")</a>
+                    <a href="#" @onclick="Logout">@LanguageService.GetLanguage(MainLayout.Language, "LogoutTitle")</a>
                 </Authorized>
                 <NotAuthorized>
-                    <a href="/login">@LanguageService.GetLanguage(MainLayout.Language, "Login")</a>
-                    <a href="/register">@LanguageService.GetLanguage(MainLayout.Language, "Register")</a>
+                    <a href="/login">@LanguageService.GetLanguage(MainLayout.Language, "LoginTitle")</a>
+                    <a href="/register">@LanguageService.GetLanguage(MainLayout.Language, "RegisterTitle")</a>
                 </NotAuthorized>
             </AuthorizeView>
 
 
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">@LanguageService.GetLanguage(MainLayout.Language, "About") </a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">@LanguageService.GetLanguage(MainLayout.Language, "AboutTitle") </a>
         </div>
 
         <article class="content px-4">
@@ -42,7 +45,7 @@
     </main>
 </div>
 
-
+}
 @code {
 
     public static string Language = "english";

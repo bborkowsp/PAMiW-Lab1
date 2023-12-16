@@ -1,27 +1,20 @@
-namespace P06Shop.Shared.Languages
-{
-   public class LanguageService : ILanguageService
-   {
-      public Dictionary<string, Dictionary<string, string>> loadedLanguages = new Dictionary<string, Dictionary<string, string>>();
+namespace P06Shop.Shared.Languages {
+   public class LanguageService: ILanguageService {
+      public Dictionary < string, Dictionary < string, string >> loadedLanguages = new Dictionary < string, Dictionary < string, string >> ();
 
-      public LanguageService()
-      {
+      public LanguageService() {
          LoadLanguages();
       }
 
-      public string GetLanguage(string language, string keyWord)
-      {
-         if (keyWord == null)
-         {
+      public string GetLanguage(string language, string keyWord) {
+         if (keyWord == null) {
             return keyWord;
          }
 
          if (loadedLanguages.TryGetValue(language, out
-               var languageTranslations))
-         {
+               var languageTranslations)) {
             if (languageTranslations.TryGetValue(keyWord, out
-                  var translation))
-            {
+                  var translation)) {
                return translation;
             }
          }
@@ -29,9 +22,8 @@ namespace P06Shop.Shared.Languages
          return keyWord;
       }
 
-      public void LoadLanguages()
-      {
-         loadedLanguages = new Dictionary<string, Dictionary<string, string>> {
+      public void LoadLanguages() {
+         loadedLanguages = new Dictionary < string, Dictionary < string, string >> {
             {
                "english",
                new Dictionary < string,
@@ -82,7 +74,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "ChooseLanguageLabel",
-                     "Choose your language:"
+                     "Choose your language"
                   },
                   {
                      "PolishOption",
@@ -148,14 +140,47 @@ namespace P06Shop.Shared.Languages
                      "UpdateButton",
                      "Update"
                   },
-                  { "NavbarBrand", "Vehicle dealership" },
-    { "NavigationMenuTitle", "Navigation menu" },
-    { "HomeNavLink", "Home" },
-    { "VehiclesNavLink", "Vehicles" },
-    { "SettingsNavLink", "Settings" },
-       { "IdColumn", "Id" },
-    { "ModelColumn", "Model" },
-    { "FuelColumn", "Fuel" },
+                  {
+                     "NavbarBrand",
+                     "Vehicle dealership"
+                  },
+                  {
+                     "NavigationMenuTitle",
+                     "Navigation menu"
+                  },
+                  {
+                     "HomeNavLink",
+                     "Home"
+                  },
+                  {
+                     "VehiclesNavLink",
+                     "Vehicles"
+                  },
+                  {
+                     "SettingsNavLink",
+                     "Settings"
+                  },
+                  {
+                     "IdColumn",
+                     "Id"
+                  },
+                  {
+                     "ModelColumn",
+                     "Model"
+                  },
+                  {
+                     "FuelColumn",
+                     "Fuel"
+                  },
+                  {
+                     "LogoutTitle",
+                     "Logout"
+                  },
+                  {
+                     "AboutTitle",
+                     "About"
+                  },
+
                }
             },
             {
@@ -208,7 +233,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "ChooseLanguageLabel",
-                     "Wybierz język:"
+                     "Wybierz język"
                   },
                   {
                      "PolishOption",
@@ -274,14 +299,47 @@ namespace P06Shop.Shared.Languages
                      "UpdateButton",
                      "Aktualizuj"
                   },
-                      { "NavbarBrand", "Salon samochodowy" },
-    { "NavigationMenuTitle", "Menu nawigacyjne" },
-    { "HomeNavLink", "Strona główna" },
-    { "VehiclesNavLink", "Pojazdy" },
-    { "SettingsNavLink", "Ustawienia" },
-       { "IdColumn", "Id" },
-    { "ModelColumn", "Model" },
-    { "FuelColumn", "Paliwo" },
+                  {
+                     "NavbarBrand",
+                     "Salon samochodowy"
+                  },
+                  {
+                     "NavigationMenuTitle",
+                     "Menu nawigacyjne"
+                  },
+                  {
+                     "HomeNavLink",
+                     "Strona główna"
+                  },
+                  {
+                     "VehiclesNavLink",
+                     "Pojazdy"
+                  },
+                  {
+                     "SettingsNavLink",
+                     "Ustawienia"
+                  },
+                  {
+                     "IdColumn",
+                     "Id"
+                  },
+                  {
+                     "ModelColumn",
+                     "Model"
+                  },
+                  {
+                     "FuelColumn",
+                     "Paliwo"
+                  },
+                  {
+                     "LogoutTitle",
+                     "Wyloguj"
+                  },
+                  {
+                     "AboutTitle",
+                     "O nas"
+                  }
+
                }
             }
          };
