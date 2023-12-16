@@ -62,6 +62,8 @@
         <span>@currentPage</span>
         <button class="btn btn-primary" @onclick="NextPage">@LanguageService.GetLanguage(selectedLanguage, "NextButton")</button>
     }
+} else{
+            <div class="spinner"></div>
 }
 
 @code {
