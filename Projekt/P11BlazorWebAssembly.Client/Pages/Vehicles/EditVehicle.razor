@@ -2,8 +2,21 @@
 
 @inject IVehicleDealershipService VehicleDealershipService
 @inject NavigationManager NavigationManager
-
-<h3>Edit Vehicle</h3>
+@inject ILanguageService LanguageService
+@using Blazored.LocalStorage;
+@using Microsoft.AspNetCore.Components.Authorization;
+@using P06Shop.Shared.Auth;
+@using P06Shop.Shared.Services.AuthService;
+@inject IJSRuntime JSRuntime
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject ILanguageService LanguageService
+@inject IAuthService AuthService
+@inject ILocalStorageService LocalStorageService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@if (selectedLanguage != null)
+{
+<h3>@LanguageService.GetLanguage(selectedLanguage, "EditVehicleTitle")</h3>
 
 @if (vehicle == null)
 {
@@ -12,25 +25,33 @@
 else
 {
     <VehicleForm vehicle="vehicle" OnValidSubmit="HandleValidSubmit"></VehicleForm>
-    <button class="btn btn-danger" @onclick=HandleDelete>Delete</button>
+    <button class="btn btn-danger" @onclick=HandleDelete>@LanguageService.GetLanguage(selectedLanguage, "DeleteButton")</button>
 }
-
-
-
+}
 @code {
     [Parameter]
     public int Id { get; set; }
 
     private Vehicle vehicle;
-    private string message = "Loading vehicles...";
+    private string message;
+
+    private string selectedLanguage;
 
     protected override async Task OnInitializedAsync()
     {
+        selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
+
         var response = await VehicleDealershipService.GetVehicleByIdAsync(Id);
         if (response.Success)
+        {
             vehicle = response.Data;
+            message = null;
+        }
         else
+        {
+            vehicle = null;
             message = response.Message;
+        }
     }
 
     async Task HandleValidSubmit()

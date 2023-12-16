@@ -68,6 +68,16 @@ namespace P06Shop.Shared.Languages {
                      "RegisterButton",
                      "Register"
                   },
+                                  { "SettingsTitle", "Settings" },
+                { "ChooseLanguageLabel", "Choose your language:" },
+                { "PolishOption", "Polish" },
+                { "EnglishOption", "English" },
+                { "SaveButton", "Save" },
+                                { "CreateVehicleTitle", "Create Vehicle" },
+                                   { "EditVehicleTitle", "Edit Vehicle" },
+                { "DeleteButton", "Delete" },
+                { "LoadingVehicles", "Loading vehicles..." },
+
                }
             },
             {
@@ -114,6 +124,15 @@ namespace P06Shop.Shared.Languages {
                      "RegisterButton",
                      "Zarejestruj"
                   },
+                                  { "SettingsTitle", "Ustawienia" },
+                { "ChooseLanguageLabel", "Wybierz język:" },
+                { "PolishOption", "Polski" },
+                { "EnglishOption", "Angielski" },
+                { "SaveButton", "Zapisz" },
+                                { "CreateVehicleTitle", "Utwórz Pojazd" },
+                                  { "EditVehicleTitle", "Edytuj Pojazd" },
+                { "DeleteButton", "Usuń" },
+                { "LoadingVehicles", "Ładowanie pojazdów..." },
                }
             }
          };
