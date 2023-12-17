@@ -180,6 +180,10 @@ namespace P06Shop.Shared.Languages {
                      "AboutTitle",
                      "About"
                   },
+                  {
+                     "ChooseTheme",
+                     "Choose theme"
+                  },
 
                }
             },
@@ -338,7 +342,12 @@ namespace P06Shop.Shared.Languages {
                   {
                      "AboutTitle",
                      "O nas"
-                  }
+                  },
+                                    {
+                     "ChooseTheme",
+                     "Wybierz motyw"
+                  },
+
 
                }
             }

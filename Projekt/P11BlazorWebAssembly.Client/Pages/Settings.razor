@@ -10,9 +10,16 @@
 {
     <div class="container">
         <h3>@LanguageService.GetLanguage(selectedLanguage, "SettingsTitle")</h3>
-
         <div>
-            <p>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
+            <p>>@LanguageService.GetLanguage(selectedLanguage, "ChooseTheme"):</p>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="themeSwitch" @bind="isDarkTheme" @oninput="ToggleTheme" />
+                <label class="form-check-label" for="themeSwitch">@GetThemeLabel()</label>
+            </div>
+        </div>
+        <hr class="separator" />
+        <div>
+            <p>>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
             <select class="form-control" @bind="language">
                 <option value="polish">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
                 <option value="english">@LanguageService.GetLanguage(selectedLanguage, "EnglishOption")</option>
@@ -20,13 +27,6 @@
             <button class="btn btn-primary mt-3" @onclick="SaveLanguage">@LanguageService.GetLanguage(selectedLanguage, "SaveButton")</button>
         </div>
 
-        <div>
-            <p>Choose Theme:</p>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="themeSwitch" @bind="isDarkTheme" @oninput="ToggleTheme" />
-                <label class="form-check-label" for="themeSwitch">@GetThemeLabel()</label>
-            </div>
-        </div>
     </div>
 }
 
@@ -65,6 +65,9 @@
 
     private string GetThemeLabel()
     {
+        if(selectedLanguage == "english")
         return isDarkTheme ? "Dark Theme" : "Light Theme";
+
+        return isDarkTheme ? "Tryb ciemny" : "Tryb jasny";
     }
 }
