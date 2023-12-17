@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P11BlazorWebAssembly.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3230ba55b5b8cd0e03e8267ee42ef43eecbdea8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("P11BlazorWebAssembly.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P11BlazorWebAssembly.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
