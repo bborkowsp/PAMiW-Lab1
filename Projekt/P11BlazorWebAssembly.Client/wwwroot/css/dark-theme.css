@@ -1,7 +1,122 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+.sidebar {
+    background-image: linear-gradient(180deg, rgb(28, 25, 40), rgb(2, 2, 2));
+}
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
+.page {
+    background-color: #1C1928;
+    color: white;
+}
+
+.main {
+    flex: 1;
+    background-color: rgb(20, 22, 24);
+}
+
+.top-row {
+    background-color: rgb(20, 22, 24);
+    border-bottom: 1px solid rgba(214, 213, 213, 0.4);
+}
+
+.contact-list-item{
+    background-color: rgb(50, 68, 71);
+    color: white;
+}
+
+.book-container {
+    background-color: rgb(40, 40, 60);
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+    .book-container:hover {
+        background-color: rgb(50, 50, 70);
+    }
+
+
+.row {
+    display: block;
+    width: 100%;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.button-primary {
+    background-color: rgb(57, 77, 107);
+    color: white;
+}
+
+    .button-primary:hover {
+        background-color: rgb(41, 127, 255);
+        color: white;
+    }
+
+.separator {
+    width: 100%;
+}
+
+.search-span {
+    width: 4.5rem;
+    text-align: center;
+}
+
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+
+.loader {
+    border: 0.4rem solid rgb(50, 50, 70);
+    border-top: 0.4rem solid rgb(41, 127, 255);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.text-field {
+    background-color: transparent;
+    color: white;
+}
+
+    .text-field:focus {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+    
+.bottom-button {
+    margin-top: 1rem;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
 }
