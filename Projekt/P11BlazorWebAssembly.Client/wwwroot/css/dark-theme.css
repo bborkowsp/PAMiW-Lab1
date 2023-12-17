@@ -22,18 +22,8 @@
     color: white;
 }
 
-.book-container {
-    background-color: rgb(40, 40, 60);
-    color: white;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 1rem;
-    padding: 1rem;
-}
 
-    .book-container:hover {
-        background-color: rgb(50, 50, 70);
-    }
+
 
 
 .row {
