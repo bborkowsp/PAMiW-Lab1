@@ -1,7 +1,7 @@
-/* Add your dark theme styles here */
-body {
-    background-color: #202020;
-    color: #ffffff;
-}
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-/* Add more styles as needed */
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+}

@@ -13,8 +13,12 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-Ojq2YDr7oxI6dXqpTr3WnENLJ9EvJkAEJkDXP9zvECw=",
+      "hash": "sha256-Y19y8eNUQm8TAby9SXWYh8Xa2bjtjmAF7a6QcqXGDU4=",
       "url": "css\/dark-theme.css"
+    },
+    {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "css\/light-theme.css"
     },
     {
       "hash": "sha256-+Q44zfEaCMmXduni5Td+IgCbk8sSUQwES2nWs+KKQz0=",
@@ -65,12 +69,12 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-zNZYiOwu3wCSTvh0vU+dB7Zjfr13jM+G\/6i2LgeJBcQ=",
+      "hash": "sha256-dOLd8thw5nZT\/ylIQf5wvbplgfGl2D\/johqaT3zKmhY=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-rkzE0KyPh8KxSgrRWkJahSVr8tpnEjiSingtWHcYW7U=",
-      "url": "js\/site.js"
+      "hash": "sha256-HMC\/1h8+Z6QI0zufBw+ye0o88g\/RdgtSJLrSDqQ2WTA=",
+      "url": "js\/themeSwitcher.js"
     },
     {
       "hash": "sha256-s+eiogPLfcjpwbqhu4rTsZhVgBq\/eNEwKR5JkJ3IBB4=",
@@ -965,23 +969,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-5tc9xyXUfE1Tyo\/AZtivjfkmhNg6te+j\/rmzqoOW5Nk=",
+      "hash": "sha256-xktJmYKdV3\/RXVV5vh4MYqKXK6OFkkbPAT7tB57ixmY=",
       "url": "_framework\/P06Shop.Shared.dll"
     },
     {
-      "hash": "sha256-wyn6CLfKqg6ALAlOCitvk3WKsNUBlzv6h8i5Du4XCsk=",
+      "hash": "sha256-nE\/FO8sdvbGVCucxTADX+DWJjV1laNr8Hpj0nMGzyVM=",
       "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-gO1F8glkmDYjAXsCUdEGQ\/KD+6wKimUHfza3XLCbeio=",
+      "hash": "sha256-NawR3jGmbfsINdAchVDZE81sjVvIdfomk1z43t0Ax8g=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-Pv+gUFLwBUHegxDO49EDicjp+alf0U6a3yO1dY6bt20=",
+      "hash": "sha256-wyw2UmGJG0Jc5rAT0kilfo\/IVzVe35Kwm4HdGYzEbtc=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-eAxGYICeol\/SgXmRrIDX8++dsxTZlij9CFe2yFWs1mo=",
+      "hash": "sha256-ddAFwh0Rxk0KNpjNkYSEMxGlmfC+6KMN7OeewaTDNe0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -989,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "CcIdzdeD"
+  "version": "61G6+WCX"
 };
