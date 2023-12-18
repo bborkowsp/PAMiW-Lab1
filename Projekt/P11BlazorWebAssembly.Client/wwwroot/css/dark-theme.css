@@ -1,9 +1,5 @@
-.sidebar {
-    background-image: linear-gradient(180deg, rgb(28, 25, 40), rgb(2, 2, 2));
-}
-
 .page {
-    background-color: #1C1928;
+    background-color: #110909;
     color: white;
 }
 
@@ -12,28 +8,22 @@
     background-color: rgb(20, 22, 24);
 }
 
+.sidebar {
+    background-image: linear-gradient(180deg, #1a1a1a 0%, #0b010e 70%);
+    color: #fff;
+}
+
+.table {
+    color: #ffffff;
+}
+/* column names */
+.table th {
+    color: #ffffff;
+}
+
 .top-row {
-    background-color: rgb(20, 22, 24);
-    border-bottom: 1px solid rgba(214, 213, 213, 0.4);
-}
-
-.contact-list-item{
-    background-color: rgb(50, 68, 71);
-    color: white;
-}
-
-
-
-
-
-.row {
-    display: block;
-    width: 100%;
-}
-
-.title {
-    font-size: 1rem;
-    font-weight: bold;
+    background-image: linear-gradient(180deg, #1a1a1a 0%, #0b010e 70%);
+    border-bottom: 1px solid #d6d5d5;
 }
 
 .buttons-row {
@@ -52,10 +42,10 @@
     color: white;
 }
 
-    .button-primary:hover {
-        background-color: rgb(41, 127, 255);
-        color: white;
-    }
+.button-primary:hover {
+    background-color: rgb(0, 3, 7);
+    color: white;
+}
 
 .separator {
     width: 100%;
@@ -97,11 +87,11 @@
     color: white;
 }
 
-    .text-field:focus {
-        background-color: rgba(255, 255, 255, 0.1);
-        color: white;
-    }
-    
+.text-field:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
 .bottom-button {
     margin-top: 1rem;
 }

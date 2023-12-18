@@ -1,20 +1,27 @@
-namespace P06Shop.Shared.Languages {
-   public class LanguageService: ILanguageService {
-      public Dictionary < string, Dictionary < string, string >> loadedLanguages = new Dictionary < string, Dictionary < string, string >> ();
+namespace P06Shop.Shared.Languages
+{
+   public class LanguageService : ILanguageService
+   {
+      public Dictionary<string, Dictionary<string, string>> loadedLanguages = new Dictionary<string, Dictionary<string, string>>();
 
-      public LanguageService() {
+      public LanguageService()
+      {
          LoadLanguages();
       }
 
-      public string GetLanguage(string language, string keyWord) {
-         if (keyWord == null) {
+      public string GetLanguage(string language, string keyWord)
+      {
+         if (keyWord == null)
+         {
             return keyWord;
          }
 
          if (loadedLanguages.TryGetValue(language, out
-               var languageTranslations)) {
+               var languageTranslations))
+         {
             if (languageTranslations.TryGetValue(keyWord, out
-                  var translation)) {
+                  var translation))
+            {
                return translation;
             }
          }
@@ -22,8 +29,9 @@ namespace P06Shop.Shared.Languages {
          return keyWord;
       }
 
-      public void LoadLanguages() {
-         loadedLanguages = new Dictionary < string, Dictionary < string, string >> {
+      public void LoadLanguages()
+      {
+         loadedLanguages = new Dictionary<string, Dictionary<string, string>> {
             {
                "english",
                new Dictionary < string,
@@ -184,7 +192,38 @@ namespace P06Shop.Shared.Languages {
                      "ChooseTheme",
                      "Choose theme"
                   },
-
+                  {
+                     "UserNotLoggedInTitle",
+                     "Whoops! You're not allowed to see this page."
+                  },
+                  {
+                     "Please",
+                     "Please"
+                  },
+                  {
+                     "LoginTitleApp",
+                     "login"
+                  },
+                  {
+                     "Or",
+                     "or"
+                  },
+                                  {
+                     "RegisterTitleApp",
+                     "register"
+                  },
+                  {
+                     "NewAccount",
+                     "for a new account."
+                  },
+                  {
+                     "PageNotFound",
+                     "Page not found!"
+                  },
+                  {
+                     "PageNotFoundSubtitle",
+                     "Sorry, there's nothing at this address..."
+                  }
                }
             },
             {
@@ -347,6 +386,38 @@ namespace P06Shop.Shared.Languages {
                      "ChooseTheme",
                      "Wybierz motyw"
                   },
+                                    {
+                     "UserNotLoggedInTitle",
+                     "Jesteś niezalogowany!"
+                  },
+                                    {
+                     "Please",
+                     "Proszę"
+                  },
+                                    {
+                     "LoginTitleApp",
+                     "zaloguj się"
+                  },
+                  {
+                     "Or",
+                     "lub"
+                  },
+                  {
+                     "RegisterTitleApp",
+                     "załóż konto"
+                  },
+                                    {
+                     "NewAccount",
+                     "."
+                  },
+                                    {
+                     "PageNotFound",
+                     "Strona nieistnieje!"
+                  },
+                  {
+                     "PageNotFoundSubtitle",
+                     "Przepraszamy, ale strona o takim adresie nie istnieje..."
+                  }
 
 
                }

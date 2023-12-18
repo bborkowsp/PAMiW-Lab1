@@ -37,3 +37,16 @@ C:\Users\Paweł\Downloads\github2\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net
 C:\Users\Paweł\Downloads\github2\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
 C:\Users\Paweł\Downloads\github2\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
 C:\Users\Paweł\Downloads\github2\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.deps.json
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.AssemblyReference.cache
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfoInputs.cache
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.AssemblyInfo.cs
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.sourcelink.json
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\refint\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\P06Shop.Shared.pdb
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\obj\Debug\net7.0\ref\P06Shop.Shared.dll

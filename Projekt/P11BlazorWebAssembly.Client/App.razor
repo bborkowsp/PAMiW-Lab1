@@ -1,24 +1,56 @@
-﻿@inject ILanguageService LanguageService
+﻿@using Blazored.LocalStorage
+@using Microsoft.AspNetCore.Components.Web.Extensions
 
+@inject ILanguageService LanguageService
+@inject IJSRuntime JSRuntime
+@inject ILocalStorageService LocalStorage
+@inject ILanguageService LanguageService
+@inject IVehicleDealershipService VehicleDealershipService
+@inject NavigationManager NavigationManager
+@inject ILanguageService LanguageService
+@using Blazored.LocalStorage;
+@using Microsoft.AspNetCore.Components.Authorization;
+@using P06Shop.Shared.Auth;
+@using P06Shop.Shared.Services.AuthService;
+@inject IJSRuntime JSRuntime
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@inject ILanguageService LanguageService
+@inject IAuthService AuthService
+@inject ILocalStorageService LocalStorageService
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@if (selectedLanguage != null)
+{
 <CascadingAuthenticationState>
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
                 <NotAuthorized>
-                    <h3>@LanguageService.GetLanguage(MainLayout.Language, "UserNotLoggedInTitle")</h3>
-                    <h5>@LanguageService.GetLanguage(MainLayout.Language, "UserNotLoggedInSubtitle")</h5>
-                    <h3>Whoops! You're not allowed to see this page.</h3>
-                    <h5>Please <a href="login">login</a> or <a href="register">register</a> for a new account.</h5>
+                    <h3>@LanguageService.GetLanguage(selectedLanguage, "UserNotLoggedInTitle")</h3>
+                    <h5>@LanguageService.GetLanguage(selectedLanguage, "Please") 
+                        <a href="login">@LanguageService.GetLanguage(selectedLanguage, "LoginTitleApp")</a> @LanguageService.GetLanguage(selectedLanguage, "Or")
+                        <a href="register">@LanguageService.GetLanguage(selectedLanguage, "RegisterTitleApp")</a>
+                         @LanguageService.GetLanguage(selectedLanguage, "NewAccount")</h5>
                 </NotAuthorized>
             </AuthorizeRouteView>
             <FocusOnNavigate RouteData="@routeData" Selector="h1" />
         </Found>
         <NotFound>
-            <PageTitle>Not found</PageTitle>
+            <PageTitle>@LanguageService.GetLanguage(selectedLanguage, "PageNotFound")</PageTitle>
             <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
+                <p role="alert">@LanguageService.GetLanguage(selectedLanguage, "PageNotFoundSubtitle")</p>
             </LayoutView>
         </NotFound>
     </Router>
 </CascadingAuthenticationState>
+}
+@code {
+
+    private string selectedLanguage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
+    }
+}
 
