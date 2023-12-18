@@ -223,7 +223,9 @@ namespace P06Shop.Shared.Languages
                   {
                      "PageNotFoundSubtitle",
                      "Sorry, there's nothing at this address..."
-                  }
+                  },
+                                    {"Customer",
+                  "Customer"}
                }
             },
             {
@@ -417,7 +419,9 @@ namespace P06Shop.Shared.Languages
                   {
                      "PageNotFoundSubtitle",
                      "Przepraszamy, ale strona o takim adresie nie istnieje..."
-                  }
+                  },
+                  {"Customer",
+                  "Klient"}
 
 
                }

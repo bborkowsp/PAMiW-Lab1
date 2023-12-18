@@ -8,7 +8,7 @@
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
 
-@if (MainLayout.Language != null)
+@if (selectedLanguage != null)
 {
 <div class="page">
     <div class="sidebar">
@@ -23,20 +23,20 @@
 
                     <div>
                         @context.User.Identity.Name |
-                        @LanguageService.GetLanguage(MainLayout.Language, context.User.Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault().Value)
+                        @LanguageService.GetLanguage(selectedLanguage, context.User.Claims.Where(c => c.Type == ClaimTypes.Role).FirstOrDefault().Value)
                         @context.User.Claims.Where(c => c.Type == "DateCreated").FirstOrDefault().Value
                     </div>
 
-                    <a href="#" @onclick="Logout">@LanguageService.GetLanguage(MainLayout.Language, "LogoutTitle")</a>
+                    <a href="#" @onclick="Logout">@LanguageService.GetLanguage(selectedLanguage, "LogoutTitle")</a>
                 </Authorized>
                 <NotAuthorized>
-                    <a href="/login">@LanguageService.GetLanguage(MainLayout.Language, "LoginTitle")</a>
-                    <a href="/register">@LanguageService.GetLanguage(MainLayout.Language, "RegisterTitle")</a>
+                    <a href="/login">@LanguageService.GetLanguage(selectedLanguage, "LoginTitle")</a>
+                    <a href="/register">@LanguageService.GetLanguage(selectedLanguage, "RegisterTitle")</a>
                 </NotAuthorized>
             </AuthorizeView>
 
 
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">@LanguageService.GetLanguage(MainLayout.Language, "AboutTitle") </a>
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">@LanguageService.GetLanguage(selectedLanguage, "AboutTitle") </a>
         </div>
 
         <article class="content px-4">
@@ -49,6 +49,13 @@
 @code {
 
     public static string Language = "english";
+
+    private string selectedLanguage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
+    }
 
     private async Task Logout()
     {
