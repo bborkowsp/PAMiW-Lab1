@@ -3,6 +3,7 @@
 @attribute [Authorize]
 @inject IVehicleDealershipService VehicleDealershipService
 @inject ILanguageService LanguageService
+@inject ILocalStorageService LocalStorage
 @using Blazored.LocalStorage;
 @using Microsoft.AspNetCore.Components.Authorization;
 @using P06Shop.Shared.Auth;
@@ -76,10 +77,19 @@
     private string searchTerm = "";
     private string selectedLanguage;
 
+    private bool isDarkTheme;
+    private string selectedTheme;
+
     protected override async Task OnInitializedAsync()
     {
         selectedLanguage = await LocalStorageService.GetItemAsync<string>("language") ?? "english";
         message = LanguageService.GetLanguage(selectedLanguage, "LoadingVehicles");
+
+        selectedTheme = await LocalStorage.GetItemAsync<string>("theme") ?? "light";
+        isDarkTheme = selectedTheme == "dark";
+
+        // Set the initial theme using JSInterop
+        await JSRuntime.InvokeVoidAsync("themeSwitcher.setTheme", selectedTheme);
         await LoadVehicles();
     }
 

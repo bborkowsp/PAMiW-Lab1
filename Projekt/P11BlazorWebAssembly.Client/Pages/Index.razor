@@ -8,10 +8,18 @@
 @code {
     private string selectedLanguage;
 
+    private bool isDarkTheme;
+    private string selectedTheme;
+
     protected override async Task OnInitializedAsync()
     {
         // Initialize the selected language from local storage or a default value
         selectedLanguage = await LocalStorage.GetItemAsync<string>("language") ?? "english";
+        selectedTheme = await LocalStorage.GetItemAsync<string>("theme") ?? "light";
+        isDarkTheme = selectedTheme == "dark";
+
+        // Set the initial theme using JSInterop
+        await JSRuntime.InvokeVoidAsync("themeSwitcher.setTheme", selectedTheme);
     }
 }
 
