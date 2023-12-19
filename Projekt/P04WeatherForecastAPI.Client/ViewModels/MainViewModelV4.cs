@@ -29,8 +29,6 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
             _serviceProvider = serviceProvider;
 
-
-
             _messageDialogService = messageDialogService;
 
         }
@@ -63,6 +61,12 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
             loginView.Show();
 
+        }
+
+        [RelayCommand]
+        public void ChangeTheme()
+        {
+            Settings.ToggleTheme();
         }
     }
 }

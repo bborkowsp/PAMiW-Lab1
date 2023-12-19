@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="420" Width="400">
+        Title="MainWindow" Height="540" Width="640">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
         <Style x:Key="mainButtonStyle" TargetType="Button">
@@ -22,20 +22,21 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+    <Grid Background="{DynamicResource ThemeBackgroundColor}">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
 
-        <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
-            <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
-            <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" ></Button>
-        </DockPanel>
+    <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
+        <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" HorizontalAlignment="Center" />
+        <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" HorizontalAlignment="Center" />
+        <Button DockPanel.Dock="Top" Content="Change theme" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" HorizontalAlignment="Center" />
+        <Button DockPanel.Dock="Top" Content="Toggle language"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
+    </DockPanel>
+</Grid>
 
-    </Grid>
 </Window>

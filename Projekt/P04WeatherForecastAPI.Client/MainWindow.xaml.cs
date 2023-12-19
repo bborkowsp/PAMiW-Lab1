@@ -31,12 +31,6 @@ namespace P04WeatherForecastAPI.Client
             DataContext = _viewModel;
         }
 
-        
-
-
-
-
-
 
     }
 }
