@@ -32,13 +32,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
         <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
             <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" Width="222" />
             <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" Width="222" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button DockPanel.Dock="Top" Content="Change theme" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,5,0" HorizontalAlignment="Center" />
-                <Button DockPanel.Dock="Top" Content="Toggle language"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
+                <Button DockPanel.Dock="Top" Content="{DynamicResource ChangeLanguage}" Command="{Binding ChangeLanguageCommand}"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
             </StackPanel>
         </DockPanel>
     </Grid>

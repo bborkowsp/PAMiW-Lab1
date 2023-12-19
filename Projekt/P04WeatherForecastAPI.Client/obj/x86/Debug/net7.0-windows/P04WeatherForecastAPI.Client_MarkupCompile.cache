@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\App.xaml
-6-429841421
+8822084065
 
-131191980130
+14-1712464220
 2201981517348
-LoginView.xaml;MainWindow.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;VehicleDealershipView.xaml;VehicleDetailsView.xaml;
+Languages\Strings.en-US.xaml;Languages\Strings.pl-PL.xaml;LoginView.xaml;MainWindow.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;VehicleDealershipView.xaml;VehicleDetailsView.xaml;
 
 True
 

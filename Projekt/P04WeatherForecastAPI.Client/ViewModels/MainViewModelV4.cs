@@ -5,6 +5,8 @@ using P04WeatherForecastAPI.Client.Commands;
 using P06Shop.Shared.MessageBox;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -67,6 +69,14 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         public void ChangeTheme()
         {
             Settings.ToggleTheme();
+
+        }
+
+        [RelayCommand]
+        public void ChangeLanguage()
+        {
+            LanguageManager.ToggleLanguage();
+
         }
     }
 }

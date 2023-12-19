@@ -15,6 +15,7 @@ namespace P04WeatherForecastAPI.Client
         public static void ApplyTheme()
         {
             Uri themeUri = new Uri("Themes/" + (IsDarkThemeEnabled ? "Dark" : "Light") + "Theme.xaml", UriKind.Relative);
+
             Application.Current.Resources.Clear();
             Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = themeUri });
         }
@@ -29,5 +30,7 @@ namespace P04WeatherForecastAPI.Client
             IsDarkThemeEnabled = enableDarkTheme;
             ApplyTheme();
         }
+
+        
     }
 }
