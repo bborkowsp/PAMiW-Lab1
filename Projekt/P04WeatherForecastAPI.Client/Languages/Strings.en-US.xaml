@@ -15,6 +15,7 @@
 <system:String x:Key="SaveVehicle">Save</system:String>
 <system:String x:Key="DeleteVehicle">Delete</system:String>
 <system:String x:Key="Fuel">Fuel:</system:String>
+<system:String x:Key="LoggedIn">Logged in successfully!</system:String>
 
 
 </ResourceDictionary>

@@ -81,6 +81,8 @@ namespace P04WeatherForecastAPI.Client
             services.AddSingleton<MainViewModelV4>();
             services.AddSingleton<VehiclesViewModel>();
             services.AddSingleton<LoginViewModel>();
+            services.AddSingleton<LoggedInViewModel>();
+
             // services.AddSingleton<BaseViewModel,MainViewModelV3>();
         }
 
@@ -91,6 +93,8 @@ namespace P04WeatherForecastAPI.Client
             services.AddTransient<VehicleDealershipView>();
             services.AddTransient<VehicleDetailsView>();
             services.AddTransient<LoginView>();
+            services.AddTransient<LoggedInView>();
+
         }
 
         private void ConfigureHttpClients(IServiceCollection services, AppSettings appSettingsSection)

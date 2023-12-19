@@ -527,3 +527,5 @@ C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.pdb
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\P04WeatherForecastAPI.Client.genruntimeconfig.cache
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\ref\P04WeatherForecastAPI.Client.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\LoggedInView.g.cs
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\Debug\net7.0-windows\LoggedInView.baml

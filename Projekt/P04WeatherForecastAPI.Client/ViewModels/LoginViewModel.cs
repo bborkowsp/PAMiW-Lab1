@@ -18,14 +18,17 @@ namespace P04WeatherForecastAPI.Client.ViewModels
     {
         private readonly IAuthService _authService;
         private readonly IMessageDialogService _wpfMesageDialogService;
+                private readonly IServiceProvider _serviceProvider;
+
         public static string Token { get; set; } = string.Empty;
 
 
         [ObservableProperty]
         private string password = string.Empty;
 
-        public LoginViewModel(IAuthService authService, IMessageDialogService wpfMesageDialogService)
-        {
+        public LoginViewModel( IServiceProvider serviceProvider,IAuthService authService, IMessageDialogService wpfMesageDialogService)
+        {            _serviceProvider = serviceProvider;
+
             UserLoginDTO = new UserLoginDTO();
             _authService = authService;
             _wpfMesageDialogService = wpfMesageDialogService;
@@ -35,14 +38,17 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         private UserLoginDTO userLoginDTO;
 
 
-        
+
         public async Task Login(string password)
         {
             UserLoginDTO.Password = password;
             var response = await _authService.Login(UserLoginDTO);
             if (response.Success)
             {
-                _wpfMesageDialogService.ShowMessage("Zalogowano");
+       LoggedInView vehicleDealershipView = (LoggedInView)_serviceProvider.GetService(typeof(LoggedInView));
+        LoggedInViewModel vehiclesViewModel = (LoggedInViewModel)_serviceProvider.GetService(typeof(LoggedInViewModel));
+
+                vehicleDealershipView.Show();
                 Token = response.Data;
             }
             else
@@ -50,13 +56,13 @@ namespace P04WeatherForecastAPI.Client.ViewModels
                 _wpfMesageDialogService.ShowMessage("Błąd logowania: " + response.Message);
                 Token = string.Empty;
             }
-            
+
         }
 
         [RelayCommand]
         public async Task MouseEnter()
         {
-             
+
         }
 
 

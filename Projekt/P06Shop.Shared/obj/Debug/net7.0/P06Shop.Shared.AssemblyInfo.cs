@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P06Shop.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f8a3596a68840c830edbffc3be51ae0785ed012")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b99d0d5a58eee7fc8a4dc885756596863c9e3ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("P06Shop.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P06Shop.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

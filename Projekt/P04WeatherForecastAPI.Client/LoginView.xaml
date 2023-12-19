@@ -6,18 +6,16 @@
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
-        Title="LoginView" Height="150" Width="300">
-            <Window.Resources>
+        Title="LoginView" Height="190" Width="300">
+    <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
         <Style x:Key="mainButtonStyle" TargetType="Button">
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Padding" Value="10"/>
             <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
             <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
             <Setter Property="BorderThickness" Value="1"/>
-             <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="Cursor" Value="Hand" />
 
 
         </Style>
@@ -37,10 +35,10 @@
         <Label Content="Email:" Grid.Row="0" Grid.Column="0" Foreground="{DynamicResource LabelForeground}" />
         <TextBox x:Name="EmailTextBox" Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding UserLoginDTO.Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-<Label Content="{DynamicResource Password}" Grid.Row="1" Grid.Column="0" Foreground="{DynamicResource LabelForeground}" />
+        <Label Content="{DynamicResource Password}" Grid.Row="1" Grid.Column="0" Foreground="{DynamicResource LabelForeground}" />
         <PasswordBox x:Name="PasswordBox" Grid.Row="1" Grid.Column="1" Margin="5" PasswordChar="*" />
 
-        <Button   Click="Button_Click" Content="{DynamicResource Login}" Style="{StaticResource mainButtonStyle}" Grid.Row="2" Grid.Column="1" Margin="5"   >
+        <Button   Click="Button_Click" Content="{DynamicResource Login}" Height="40" Style="{StaticResource mainButtonStyle}" Grid.Row="2" Margin="36,18,36,20" Grid.ColumnSpan="2"   >
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseEnter">
                     <i:InvokeCommandAction Command="{Binding MouseEnterCommand}" />

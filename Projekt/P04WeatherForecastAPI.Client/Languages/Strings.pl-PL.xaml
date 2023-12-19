@@ -15,6 +15,7 @@
 <system:String x:Key="SaveVehicle">Zapisz</system:String>
 <system:String x:Key="DeleteVehicle">Usuń</system:String>
 <system:String x:Key="Fuel">Paliwo:</system:String>
+<system:String x:Key="LoggedIn">Zalogowano pomyślnie!</system:String>
 
 
 </ResourceDictionary>
