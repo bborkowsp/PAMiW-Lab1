@@ -11,6 +11,8 @@
 <system:String x:Key="NextPage">Następna strona</system:String>
 <system:String x:Key="PageNumber">Numer strony :</system:String>
 <system:String x:Key="CurrentPage">Aktualna strona :</system:String>
+<system:String x:Key="EditVehicle">Edytuj</system:String>
+
 
 
 

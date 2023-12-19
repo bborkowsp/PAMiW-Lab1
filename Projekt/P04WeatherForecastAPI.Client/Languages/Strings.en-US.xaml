@@ -11,6 +11,7 @@
 <system:String x:Key="NextPage">Next page</system:String>
 <system:String x:Key="PageNumber">Page number :</system:String>
 <system:String x:Key="CurrentPage">Current page :</system:String>
+<system:String x:Key="EditVehicle">Edit</system:String>
 
 
 </ResourceDictionary>

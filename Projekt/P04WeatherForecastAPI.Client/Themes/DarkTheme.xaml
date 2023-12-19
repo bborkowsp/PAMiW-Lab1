@@ -5,6 +5,8 @@
     <SolidColorBrush Color="#FFFFFF" x:Key="ButtonForeground" />
         <SolidColorBrush Color="#FFFFFF" x:Key="ButtonBorder" />
             <SolidColorBrush Color="#FFFFFF" x:Key="LabelForeground" />
+            <SolidColorBrush Color="#C7D4F2" x:Key="ModelForeground" />
+            <SolidColorBrush Color="#6DABF3" x:Key="FuelForeground" />
 
 
     

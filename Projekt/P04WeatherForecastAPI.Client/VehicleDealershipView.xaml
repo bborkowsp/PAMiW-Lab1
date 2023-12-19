@@ -40,9 +40,9 @@
 
                             <!--Pierwszy wiersz-->
                             <StackPanel Grid.Row="0" Orientation="Horizontal">
-                                <Label Content="{Binding Id}" FontWeight="Bold" Margin="0 0 10 0"></Label>
-                                <Label Content="{Binding Model}" FontSize="16" FontWeight="Bold" Foreground="Navy"></Label>
-                                <Label Content="{Binding Fuel}" FontSize="16" FontWeight="Bold" Foreground="Blue"></Label>
+                                <Label Content="{Binding Id}" FontWeight="Bold" Margin="0 0 10 0" Foreground="{DynamicResource LabelForeground}"></Label>
+                                <Label Content="{Binding Model}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource ModelForeground}"></Label>
+                                <Label Content="{Binding Fuel}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource FuelForeground}"></Label>
                             </StackPanel>
                             <!--Drugi wiersz-->
                             <!--Trzeci wiersz-->
@@ -53,7 +53,7 @@
                             </StackPanel>
                             <Button Grid.Row="3" 
 Command="{Binding DataContext.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=ListView}}" 
-CommandParameter="{Binding}"  Content="Edit" >
+CommandParameter="{Binding}" Style="{StaticResource mainButtonStyle}"  Content="{DynamicResource EditVehicle}" >
                                 <Button.Template>
                                     <ControlTemplate TargetType="Button">
                                         <Border x:Name="border" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Background="{TemplateBinding Background}">
@@ -67,16 +67,6 @@ CommandParameter="{Binding}"  Content="Edit" >
                                         </ControlTemplate.Triggers>
                                     </ControlTemplate>
                                 </Button.Template>
-                                <Button.Style>
-                                    <Style TargetType="Button">
-                                        <Setter Property="Background" Value="SteelBlue" />
-                                        <Setter Property="Foreground" Value="White" />
-                                        <Setter Property="Cursor" Value="Hand" />
-                                        <Setter Property="Padding" Value="10,5" />
-                                        <Setter Property="FontSize" Value="14" />
-                                        <Setter Property="FontWeight" Value="Bold" />
-                                    </Style>
-                                </Button.Style>
                             </Button>
                         </Grid>
                     </Border>

@@ -977,15 +977,15 @@
       "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-Qu9\/f72WLJL22i6CYcGp3jCnVFmmcdfgA570cdIYIGo=",
+      "hash": "sha256-mndpNlUSF0ZKsdPsc0uhuDj2DEzZzWHKp8p08VN\/aqs=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-dlRK0Fdn0iREeWIzFk\/X\/yQbcm4tFlChQYgax63MxSk=",
+      "hash": "sha256-j8RCvZZJ2hiU+MMmk\/IG1LY8veY2jM\/X+G7u45\/g3\/k=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-YcDF3BFreqsKCxwjN\/AQEKBgI0uXoznvbUOW\/1s8jfA=",
+      "hash": "sha256-Ton7jATIKFIZ4AX2RCgfH+Mk92FPDYwNLOA9mfjUD8A=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "qBeYGN8C"
+  "version": "9BuRBSZr"
 };
