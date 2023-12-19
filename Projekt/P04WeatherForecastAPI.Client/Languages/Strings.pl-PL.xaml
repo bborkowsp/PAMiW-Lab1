@@ -5,15 +5,16 @@
     <system:String x:Key="OpenVehicleDealership">Przeglądaj samochody</system:String>
     <system:String x:Key="ChangeTheme">Zmień motyw</system:String>
     <system:String x:Key="ChangeLanguage">Zmień język</system:String>
-<system:String x:Key="Password">Hasło</system:String>
+<system:String x:Key="Password">Hasło:</system:String>
 <system:String x:Key="NewVehicle">Nowy samochód</system:String>
 <system:String x:Key="PrevPage">Poprzednia strona</system:String>
 <system:String x:Key="NextPage">Następna strona</system:String>
 <system:String x:Key="PageNumber">Numer strony :</system:String>
 <system:String x:Key="CurrentPage">Aktualna strona :</system:String>
 <system:String x:Key="EditVehicle">Edytuj</system:String>
-
-
+<system:String x:Key="SaveVehicle">Zapisz</system:String>
+<system:String x:Key="DeleteVehicle">Usuń</system:String>
+<system:String x:Key="Fuel">Paliwo:</system:String>
 
 
 </ResourceDictionary>

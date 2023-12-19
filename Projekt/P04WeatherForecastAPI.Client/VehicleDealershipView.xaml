@@ -17,6 +17,8 @@
             <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
             <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
             <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand" />
+
         </Style>
         <Style x:Key="mainLabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="18"/>
@@ -26,6 +28,7 @@
     </Window.Resources>
 
     <DockPanel Grid.Column="0" Grid.Row="0" Background="{DynamicResource ThemeBackgroundColor}" >
+
         <ListView ItemsSource="{Binding PageVehicles}" Height="350" DockPanel.Dock="Top" Background="{DynamicResource ThemeBackgroundColor}">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -40,6 +43,7 @@
 
                             <!--Pierwszy wiersz-->
                             <StackPanel Grid.Row="0" Orientation="Horizontal">
+
                                 <Label Content="{Binding Id}" FontWeight="Bold" Margin="0 0 10 0" Foreground="{DynamicResource LabelForeground}"></Label>
                                 <Label Content="{Binding Model}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource ModelForeground}"></Label>
                                 <Label Content="{Binding Fuel}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource FuelForeground}"></Label>
@@ -74,14 +78,18 @@ CommandParameter="{Binding}" Style="{StaticResource mainButtonStyle}"  Content="
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button DockPanel.Dock="Left" Content="{DynamicResource NewVehicle}" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Button DockPanel.Dock="Left" Content="{DynamicResource PrevPage}" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Button DockPanel.Dock="Left" Content="{DynamicResource NextPage}" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Label DockPanel.Dock="Left" Content="{DynamicResource PageNumber}"  VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}"></Label>
-        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}"   Foreground="{DynamicResource LabelForeground}" VerticalAlignment="Center" ></Label>
-        <Label DockPanel.Dock="Left" Content=" / " VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
-        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NewVehicle}" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+
+        <Button DockPanel.Dock="Left" Content="{DynamicResource PrevPage}" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+        
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NextPage}" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+
+        <Label DockPanel.Dock="Left" Content="{DynamicResource PageNumber}"  FontWeight="Bold" VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}"  FontWeight="Bold" Foreground="{DynamicResource LabelForeground}" VerticalAlignment="Center" ></Label>
+        <Label DockPanel.Dock="Left" Content=" / "  FontWeight="Bold" VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource LabelForeground}"></Label>
         <Label DockPanel.Dock="Left" Content=" " VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}" ></Label>
+
     </DockPanel>
 
 </Window>

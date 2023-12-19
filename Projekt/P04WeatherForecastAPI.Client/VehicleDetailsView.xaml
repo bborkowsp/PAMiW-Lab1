@@ -5,9 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
         mc:Ignorable="d"
-        Title="ProductDetailsView" Height="250" Width="300" Closing="Window_Closing">
-    <StackPanel>
-        <Grid DataContext="{Binding SelectedVehicle}"  Margin="10">
+        Title="ProductDetailsView" Height="200" Width="300" Closing="Window_Closing">
+
+    <Window.Resources >
+        <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
+        <Style x:Key="mainButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style x:Key="mainLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel Background="{DynamicResource ThemeBackgroundColor}">
+        <Grid DataContext="{Binding SelectedVehicle}"  Margin="10" Background="{DynamicResource ThemeBackgroundColor}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -23,21 +43,22 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Model:" Grid.Row="0" Grid.Column="0"/>
-            <TextBox Text="{Binding Model}" Grid.Row="0" Grid.Column="1"/>
+            <TextBlock Text="Model:" Grid.Row="0" Grid.Column="0" Foreground="{DynamicResource LabelForeground}"/>
+            <TextBox Text="{Binding Model}" Grid.Row="0" Grid.Column="1" Margin="20,0,0,18" Grid.RowSpan="2"/>
 
-            <TextBlock Text="Fuel:" Grid.Row="1" Grid.Column="0"/>
-            <TextBox Text="{Binding Fuel}" Grid.Row="1" Grid.Column="1"/>
+            <TextBlock Text="{DynamicResource Fuel}" Grid.Row="1" Grid.Column="0" Foreground="{DynamicResource LabelForeground}"/>
+            <TextBox Text="{Binding Fuel}" Grid.Row="1" Grid.Column="1" Margin="20,0,0,16" Grid.RowSpan="6"/>
 
 
 
-            <TextBlock Text="ID:" Grid.Row="6" Grid.Column="0"/>
-            <TextBlock Text="{Binding Id}" Grid.Row="6" Grid.Column="1"/>
+            <TextBlock Text="ID:" Grid.Row="6" Grid.Column="0" Foreground="{DynamicResource LabelForeground}"/>
+            <TextBlock Text="{Binding Id}" Grid.Row="6" Grid.Column="1" Margin="20,0,0,0"/>
+            <TextBox Text="{Binding Fuel}" Grid.Row="1" Grid.Column="1" Margin="20,0,0,0"/>
         </Grid>
         <StackPanel >
             <Button  Margin="0 10 0 10"
         Command="{Binding SaveCommand}" 
-           Content="Save" >
+           Content="{DynamicResource SaveVehicle}" Style="{StaticResource mainButtonStyle}" Width="100">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border x:Name="border" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Background="{TemplateBinding Background}">
@@ -51,20 +72,10 @@
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Button.Template>
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="SteelBlue" />
-                        <Setter Property="Foreground" Value="White" />
-                        <Setter Property="Cursor" Value="Hand" />
-                        <Setter Property="Padding" Value="10,5" />
-                        <Setter Property="FontSize" Value="14" />
-                        <Setter Property="FontWeight" Value="Bold" />
-                    </Style>
-                </Button.Style>
             </Button>
             <Button  
         Command="{Binding DeleteCommand}" 
-           Content="Delete" >
+           Content="{DynamicResource DeleteVehicle}" Style="{StaticResource mainButtonStyle}" Width="100">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
                         <Border x:Name="border" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Background="{TemplateBinding Background}">
@@ -78,23 +89,14 @@
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Button.Template>
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="SteelBlue" />
-                        <Setter Property="Foreground" Value="White" />
-                        <Setter Property="Cursor" Value="Hand" />
-                        <Setter Property="Padding" Value="10,5" />
-                        <Setter Property="FontSize" Value="14" />
-                        <Setter Property="FontWeight" Value="Bold" />
-                    </Style>
-                </Button.Style>
+
             </Button>
         </StackPanel>
     </StackPanel>
-   
 
-   
-    
 
-    
+
+
+
+
 </Window>
