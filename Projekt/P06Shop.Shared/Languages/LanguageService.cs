@@ -98,7 +98,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "CreateVehicleTitle",
-                     "Create Vehicle"
+                     "Create new vehicle"
                   },
                   {
                      "EditVehicleTitle",
@@ -146,7 +146,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "UpdateButton",
-                     "Update"
+                     "Save"
                   },
                   {
                      "NavbarBrand",
@@ -294,7 +294,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "CreateVehicleTitle",
-                     "Utwórz Pojazd"
+                     "Stwórz nowy pojazd"
                   },
                   {
                      "EditVehicleTitle",
@@ -342,7 +342,7 @@ namespace P06Shop.Shared.Languages
                   },
                   {
                      "UpdateButton",
-                     "Aktualizuj"
+                     "Zapisz"
                   },
                   {
                      "NavbarBrand",
