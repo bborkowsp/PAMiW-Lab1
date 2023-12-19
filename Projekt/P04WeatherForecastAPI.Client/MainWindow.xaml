@@ -32,14 +32,24 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
-            <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" Width="222" />
-            <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" Width="222" />
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button DockPanel.Dock="Top" Content="Change theme" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,5,0" HorizontalAlignment="Center" />
-                <Button DockPanel.Dock="Top" Content="{DynamicResource ChangeLanguage}" Command="{Binding ChangeLanguageCommand}"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
-            </StackPanel>
-        </DockPanel>
+    <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
+        <Button DockPanel.Dock="Top" Content="{DynamicResource Login}" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" Width="242" RenderTransformOrigin="0.5,0.5" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.158"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.331"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button DockPanel.Dock="Top" Content="{DynamicResource OpenVehicleDealership}" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" Width="243" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button DockPanel.Dock="Top" Content="{DynamicResource ChangeTheme}" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,5,0" HorizontalAlignment="Center" Width="120" />
+            <Button DockPanel.Dock="Top" Content="{DynamicResource ChangeLanguage}" Command="{Binding ChangeLanguageCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" Width="120" />
+        </StackPanel>
+    </DockPanel>
+
     </Grid>
 
 

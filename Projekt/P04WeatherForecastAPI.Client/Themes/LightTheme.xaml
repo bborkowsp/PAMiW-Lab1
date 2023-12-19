@@ -4,4 +4,6 @@
     <SolidColorBrush Color="#d4d5dd" x:Key="ButtonBackground" />
     <SolidColorBrush Color="#000000" x:Key="ButtonForeground" />
     <SolidColorBrush Color="#bababa" x:Key="ButtonBorder" />
+                <SolidColorBrush Color="#000000" x:Key="LabelForeground" />
+
 </ResourceDictionary>
