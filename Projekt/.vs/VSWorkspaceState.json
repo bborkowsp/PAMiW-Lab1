@@ -1,10 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\P04WeatherForecastAPI.Client",
     "\\P11BlazorWebAssembly.Client",
     "\\P11BlazorWebAssembly.Client\\Pages",
     "\\P11BlazorWebAssembly.Client\\Pages\\Vehicles"
   ],
-  "SelectedNode": "\\P11BlazorWebAssembly.Client\\App.razor",
+  "SelectedNode": "\\P04WeatherForecastAPI.Client\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
