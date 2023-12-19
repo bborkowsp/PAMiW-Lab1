@@ -31,6 +31,9 @@ namespace P04WeatherForecastAPI.Client
             DataContext = _viewModel;
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }

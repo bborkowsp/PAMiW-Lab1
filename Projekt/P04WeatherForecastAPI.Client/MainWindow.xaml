@@ -8,13 +8,15 @@
         Title="MainWindow" Height="540" Width="640">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
-<Style x:Key="mainButtonStyle" TargetType="Button">
-    <Setter Property="Margin" Value="5"/>
-    <Setter Property="Padding" Value="10"/>
-    <Setter Property="FontWeight" Value="Bold"/>
-    <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
-    <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
-</Style>
+        <Style x:Key="mainButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
         <Style x:Key="mainLabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -23,20 +25,23 @@
     </Window.Resources>
 
     <Grid Background="{DynamicResource ThemeBackgroundColor}">
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="*" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-    <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
-        <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" HorizontalAlignment="Center" />
-        <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" HorizontalAlignment="Center" />
-        <Button DockPanel.Dock="Top" Content="Change theme" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" HorizontalAlignment="Center" />
-        <Button DockPanel.Dock="Top" Content="Toggle language"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
-    </DockPanel>
-</Grid>
+        <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
+            <Button DockPanel.Dock="Top" Content="Login" Command="{Binding OpenLoginWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,300,0,5" Width="222" />
+            <Button DockPanel.Dock="Top" Content="Open vehicleDealership" Command="{Binding OpenVehicleDealershipWindowCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,0,5" Width="222" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button DockPanel.Dock="Top" Content="Change theme" Command="{Binding ChangeThemeCommand}" Style="{StaticResource mainButtonStyle}" Margin="0,0,5,0" HorizontalAlignment="Center" />
+                <Button DockPanel.Dock="Top" Content="Toggle language"  Style="{StaticResource mainButtonStyle}" Margin="0,0,0,0" HorizontalAlignment="Center" />
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+
 
 </Window>
