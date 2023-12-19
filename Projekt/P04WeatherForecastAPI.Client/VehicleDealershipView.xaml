@@ -5,16 +5,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:P04WeatherForecastAPI.Client"
     mc:Ignorable="d"
-    Title="ShopProductsWindow" Height="480" Width="900">
+    Title="ShopProductsWindow" Height="471" Width="900">
 
-    <Window.Resources>
+    <Window.Resources >
         <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
         <Style x:Key="mainButtonStyle" TargetType="Button">
             <Setter Property="Margin" Value="5"/>
             <Setter Property="Padding" Value="10"/>
             <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="LightBlue"/>
-            <Setter Property="Foreground" Value="DarkBlue"/>
+            <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
         </Style>
         <Style x:Key="mainLabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="18"/>
@@ -23,8 +25,8 @@
         </Style>
     </Window.Resources>
 
-    <DockPanel Grid.Column="0" Grid.Row="0" Margin="10">
-        <ListView ItemsSource="{Binding PageVehicles}" Height="350" DockPanel.Dock="Top">
+    <DockPanel Grid.Column="0" Grid.Row="0" Background="{DynamicResource ThemeBackgroundColor}" >
+        <ListView ItemsSource="{Binding PageVehicles}" Height="350" DockPanel.Dock="Top" Background="{DynamicResource ThemeBackgroundColor}">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Padding="10" Margin="5">
@@ -82,14 +84,14 @@ CommandParameter="{Binding}"  Content="Edit" >
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button DockPanel.Dock="Left" Content="New vehicle" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Button DockPanel.Dock="Left" Content="Previous page" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Button DockPanel.Dock="Left" Content="Next page" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
-        <Label DockPanel.Dock="Left" Content="Page number: " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
-        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}" Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
-        <Label DockPanel.Dock="Left" Content=" / " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
-        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
-        <Label DockPanel.Dock="Left" Content=" " Style="{StaticResource mainLabelStyle}" VerticalAlignment="Center"></Label>
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NewVehicle}" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Button DockPanel.Dock="Left" Content="{DynamicResource PrevPage}" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NextPage}" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="100" Height="50"/>
+        <Label DockPanel.Dock="Left" Content="{DynamicResource PageNumber}"  VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}"   Foreground="{DynamicResource LabelForeground}" VerticalAlignment="Center" ></Label>
+        <Label DockPanel.Dock="Left" Content=" / " VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content=" " VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}" ></Label>
     </DockPanel>
 
 </Window>
