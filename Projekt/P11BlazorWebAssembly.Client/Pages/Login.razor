@@ -21,7 +21,7 @@
     <p>@LanguageService.GetLanguage(selectedLanguage, "EmailLabel")</p>
     <InputText @bind-Value="userLoginDTO.Email" id="email"></InputText>
     <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel")</p>
-    <InputText @bind-Value="userLoginDTO.Password" id="password"></InputText>
+    <InputText @bind-Value="userLoginDTO.Password" id="password" type="password" style="color: 	#000000;"></InputText>
 
     <button type="submit">@LanguageService.GetLanguage(selectedLanguage, "LoginButton")</button>
 

@@ -21,9 +21,10 @@
     <p>@LanguageService.GetLanguage(selectedLanguage, "UsernameLabel")</p>
     <InputText @bind-Value="userRegisterDTO.Username" id="username"></InputText>
     <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel")</p>
-    <InputText @bind-Value="userRegisterDTO.Password" id="password"></InputText>
-    <p>@LanguageService.GetLanguage(selectedLanguage, "ConfirmPasswordLabel")</p>
-    <InputText @bind-Value="userRegisterDTO.ConfirmPassword" id="confirmPassword"></InputText>
+        <InputText @bind-Value="userRegisterDTO.Password" id="password" type="password" style="color: 	#000000;"></InputText>
+        <p>@LanguageService.GetLanguage(selectedLanguage, "ConfirmPasswordLabel")</p>
+        <InputText @bind-Value="userRegisterDTO.ConfirmPassword" id="confirmPassword" type="password" style="color: 	#000000;"></InputText>
+
     <button type="submit">@LanguageService.GetLanguage(selectedLanguage, "RegisterButton")</button>
 </EditForm>
 }
