@@ -1142,6 +1142,10 @@
       },
       "P06Shop.Shared/1.0.0": {
         "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
           "Microsoft.Extensions.Options": "7.0.0",
           "Newtonsoft.Json": "13.0.3"
         },

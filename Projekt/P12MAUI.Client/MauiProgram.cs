@@ -47,11 +47,6 @@ namespace P12MAUI.Client
 
         private static AppSettings ConfigureAppSettings(IServiceCollection services)
         {
-            // pobranie appsettings z konfiguracji i zmapowanie na klase AppSettings 
-            //Microsoft.Extensions.Options.ConfigurationExtensions
-            //var appSettings = _configuration.GetSection(nameof(AppSettings));
-            //var appSettingsSection = appSettings.Get<AppSettings>();
-            // services.Configure<AppSettings>(appSettings);
 
             string workingDirectory = AppContext.BaseDirectory;
             string projectDir = Directory.GetParent(workingDirectory).Parent.Parent.Parent.Parent.Parent.FullName;
@@ -66,9 +61,31 @@ namespace P12MAUI.Client
             var appSettings = _configuration.GetSection(nameof(AppSettings));
             var appSettingsSection = appSettings.Get<AppSettings>();
 
-
-
             services.AddSingleton(appSettingsSection);
+
+
+            // string baseUrl;
+            // if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "production")
+            // {
+            //     baseUrl = "https://localhost:7230";
+            // }
+
+            // var appSettingsSection = new AppSettings()
+            // {
+            //     BaseAPIUrl = "https://localhost:7230",
+            //     VehicleDealershipEndpoints = new VehicleDealershipEndpoints()
+            //     {
+            //         Base_url = "api/Vehicle/",
+            //         GetVehiclesEndpoint= "api/Vehicle",
+            //         GetVehicleEndpoint= "api/Vehicle/{0}",
+            //         UpdateVehicleEndpoint= "api/Vehicl/{0}",
+            //         DeleteVehicleEndpoint= "api/Vehicle/{0}",
+            //         AddVehicleEndpoint= "api/Vehicle",
+            //         SearchVehiclesEndpoint= "api/Vehicle/search"
+            //     },
+
+            // };
+            //  services.AddSingleton(appSettingsSection);
 
 
             return appSettingsSection;
@@ -101,7 +118,7 @@ namespace P12MAUI.Client
         private static void ConfigureViews(IServiceCollection services)
         {
             // konfiguracja okienek 
-            services.AddSingleton<MainPage>();    
+            services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
             //services.AddTransient<LoginView>();
         }

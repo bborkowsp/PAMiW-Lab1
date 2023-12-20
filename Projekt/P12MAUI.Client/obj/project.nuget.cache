@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BxBVqj4XtChkf9Bzo7WNqxoZzrIE4dSyHDmeXzDdPGlAHZG2ZD2mnDwPdaqR3x35ymi/4jNOoX2qPXYVORKQkg==",
+  "dgSpecHash": "crOknYUGMTUkRdFcjesByuBfUVEN1pHkOd9dUJr32fKQoV/ytYP+IC91ZAonkdvEoyijjyy6cJ1LyEEUl/Z3dQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P12MAUI.Client\\P12MAUI.Client.csproj",
+  "projectFilePath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P12MAUI.Client\\P12MAUI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
