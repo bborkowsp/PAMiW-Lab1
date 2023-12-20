@@ -21,8 +21,35 @@ namespace P04WeatherForecastAPI.Client.ViewModels
     // przekazywanie wartosci do innego formularza 
     public partial class LoggedInViewModel : ObservableObject
     {
-        private readonly IServiceProvider _serviceProvider;
-        private readonly IMessageDialogService _messageDialogService;
+    private readonly IServiceProvider _serviceProvider;
+    private readonly IMessageDialogService _messageDialogService;
+
+           private string _message;
+
+        public string Message
+        {
+            get { return _message; }
+            set
+            {
+                if (_message != value)
+                {
+                    _message = value;
+                    OnPropertyChanged(nameof(Message));
+                }
+            }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public void setMessage(string _message)
+        {
+            Message = _message;
+        }
 
         public LoggedInViewModel(
 
@@ -38,8 +65,8 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         [RelayCommand]
         public void CloseWindow()
         {
-    Window currentWindow = Application.Current.Windows.OfType<LoggedInView>().FirstOrDefault();
-    currentWindow?.Close();
+            Window currentWindow = Application.Current.Windows.OfType<LoggedInView>().FirstOrDefault();
+            currentWindow?.Close();
 
         }
     }

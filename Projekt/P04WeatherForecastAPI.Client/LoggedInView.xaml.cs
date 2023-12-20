@@ -20,7 +20,7 @@ namespace P04WeatherForecastAPI.Client
     /// </summary>
     public partial class LoggedInView : Window
     {
-        private readonly  LoggedInViewModel _loginViewModel;
+        private readonly LoggedInViewModel _loginViewModel;
         public LoggedInView(LoggedInViewModel loginViewModel)
         {
             _loginViewModel = loginViewModel;
@@ -30,6 +30,6 @@ namespace P04WeatherForecastAPI.Client
 
 
 
-       
+
     }
 }

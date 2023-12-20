@@ -56,15 +56,15 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         public void LoadVehiclesOnPage()
         {
             PageVehicles.Clear();
-            
+
             int ItemsPerPage = 4;
-     
+
             MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(vehicleList.Count) / Convert.ToDouble(ItemsPerPage)));
             if (MaxPage == 0)
             {
                 MaxPage = 1;
             }
-            
+
             for (int i = (CurrentPage - 1) * ItemsPerPage; i < (CurrentPage - 1) * ItemsPerPage + ItemsPerPage; i++)
             {
                 if (i > vehicleList.Count - 1)
@@ -118,7 +118,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
 
         public async Task<bool> CreateVehicle()
         {
-            var newVehicle  = new Vehicle()
+            var newVehicle = new Vehicle()
             {
                 Model = selectedVehicle.Model,
                 Fuel = selectedVehicle.Fuel,

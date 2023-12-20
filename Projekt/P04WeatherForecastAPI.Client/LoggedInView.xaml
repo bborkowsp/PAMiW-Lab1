@@ -28,7 +28,7 @@
 
     <Grid  Background="{DynamicResource ThemeBackgroundColor}">
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <Label Content="{DynamicResource LoggedIn}" Foreground="{DynamicResource LabelForeground}" Height="32" />
+            <Label Content="{Binding Message}" Foreground="{DynamicResource LabelForeground}" Height="32" />
             <Button Content="Ok" Style="{StaticResource mainButtonStyle}" Command="{Binding CloseWindowCommand}" />
         </StackPanel>
     </Grid>
