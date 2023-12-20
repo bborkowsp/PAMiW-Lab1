@@ -4,6 +4,6 @@
     "\\P04WeatherForecastAPI.Client",
     "\\P04WeatherForecastAPI.Client\\ViewModels"
   ],
-  "SelectedNode": "\\Dzien18.sln",
+  "SelectedNode": "\\P04WeatherForecastAPI.Client\\ViewModels\\LoginViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

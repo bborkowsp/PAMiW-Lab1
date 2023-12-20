@@ -29,5 +29,10 @@ namespace P04WeatherForecastAPI.Client
             e.Cancel = true;
             this.Hide();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

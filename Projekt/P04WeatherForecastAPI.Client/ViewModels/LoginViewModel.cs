@@ -52,9 +52,9 @@ namespace P04WeatherForecastAPI.Client.ViewModels
     {
         if (response.Success)
         {
-                        LoggedInViewModel loggedInViewModel = (LoggedInViewModel)_serviceProvider.GetService(typeof(LoggedInViewModel));
+            LoggedInViewModel loggedInViewModel = (LoggedInViewModel)_serviceProvider.GetService(typeof(LoggedInViewModel));
 
-                        if (LanguageManager.GetActualLanguage() == "en-US")
+            if (LanguageManager.GetActualLanguage() == "en-US")
             {
                 loggedInViewModel.setMessage("Logged in successfully!");
             }
@@ -71,9 +71,9 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         }
         else
         {
-                        LoggedInViewModel loggedInViewModel = (LoggedInViewModel)_serviceProvider.GetService(typeof(LoggedInViewModel));
+            LoggedInViewModel loggedInViewModel = (LoggedInViewModel)_serviceProvider.GetService(typeof(LoggedInViewModel));
 
-                        if (LanguageManager.GetActualLanguage() == "en-US")
+            if (LanguageManager.GetActualLanguage() == "en-US")
             {
                 loggedInViewModel.setMessage("Error, wrong login credentials!");
             }

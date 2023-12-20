@@ -52,7 +52,7 @@
 
 
             <TextBlock Text="ID:" Grid.Row="6" Grid.Column="0" Foreground="{DynamicResource LabelForeground}"/>
-            <TextBlock Text="{Binding Id}" Grid.Row="6" Grid.Column="1" Margin="20,0,0,0"/>
+            <TextBlock Text="{Binding Id}" Grid.Row="6" Grid.Column="1" Margin="20,0,0,0" Foreground="{DynamicResource LabelForeground}"/>
             <TextBox Text="{Binding Fuel}" Grid.Row="1" Grid.Column="1" Margin="20,0,0,0"/>
         </Grid>
         <StackPanel >
