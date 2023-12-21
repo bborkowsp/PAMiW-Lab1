@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8JlGAvowKqzYMATI51iwG4tlFQIvJOf3uxDLGEEMdfSXdr6s0vTCcguAtQZhToVl+V/ZAeYPscj9b/J4xGP01A==",
+  "dgSpecHash": "jfBT1f89SzlCFy+OCNTUeUHUCZ5yBcSmjwxuiysoaBtcKjidLoPhPoia2TKg5TBmr2IFUjpJ+hE/QueIRo7mGg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",

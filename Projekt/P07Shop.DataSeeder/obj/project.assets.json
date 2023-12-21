@@ -729,11 +729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+      "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
       "projectName": "P07Shop.DataSeeder",
-      "projectPath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+      "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
       "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\obj\\",
+      "outputPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -755,8 +755,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
             }
           }
         }

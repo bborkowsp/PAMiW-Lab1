@@ -1,48 +1,54 @@
-﻿using Blazored.LocalStorage;
-using Microsoft.AspNetCore.Components.Authorization;
+﻿using Microsoft.AspNetCore.Components.Authorization;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Text.Json;
-using static System.Net.WebRequestMethods;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
+using Microsoft.Extensions.DependencyInjection;
+using P12MAUI.Client.ViewModels;
+using P12MAUI.Client;
 
-namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
+namespace P12MAUI.Client.Services.CustomAuthStateProvider
 {
     public class CustomAuthStateProvider : AuthenticationStateProvider
     {
-        private readonly ILocalStorageService _localStorageService;
         private readonly HttpClient _httpClient;
 
-        public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient httpClient)
+        public CustomAuthStateProvider(HttpClient httpClient)
         {
             _httpClient = httpClient;
-            _localStorageService = localStorageService;
         }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
-            string authToken = await _localStorageService.GetItemAsStringAsync("authToken");
+            string authToken = AppCurrentResources.Token;
 
             var identity = new ClaimsIdentity();
-            _httpClient.DefaultRequestHeaders.Authorization = null;
 
             if (!string.IsNullOrEmpty(authToken))
             {
                 try
                 {
                     identity = new ClaimsIdentity(ParseClaimsFromJwt(authToken), "jwt");
-                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken.Replace("\"", ""));
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    await _localStorageService.RemoveItemAsync("authToken");
+                    AppCurrentResources.SetToken("");
                     identity = new ClaimsIdentity();
                 }
+            }
+            else
+            {
             }
 
             var user = new ClaimsPrincipal(identity);
             var state = new AuthenticationState(user);
             NotifyAuthenticationStateChanged(Task.FromResult(state));
-            return state;    
+            return state;
         }
 
         private IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
