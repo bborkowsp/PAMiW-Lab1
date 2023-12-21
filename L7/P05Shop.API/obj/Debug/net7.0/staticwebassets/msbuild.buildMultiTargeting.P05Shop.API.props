@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\P05Shop.API.props" />
-</Project>
