@@ -48,7 +48,7 @@ namespace P12MAUI.Client.Services.CustomAuthStateProvider
             var user = new ClaimsPrincipal(identity);
             var state = new AuthenticationState(user);
             NotifyAuthenticationStateChanged(Task.FromResult(state));
-            return state;    
+            return state;
         }
 
         private IEnumerable<Claim> ParseClaimsFromJwt(string jwt)

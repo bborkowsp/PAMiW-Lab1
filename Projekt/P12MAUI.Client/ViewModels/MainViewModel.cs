@@ -61,26 +61,26 @@ namespace P12MAUI.Client.ViewModels
             }
 
 
-                UserLoginDTO userLoginDTO = new UserLoginDTO();
-                userLoginDTO.Email = UserLoginDTO.Email;
-                userLoginDTO.Password = UserLoginDTO.Password;
-                Trace.WriteLine("Loguje si�");
+            UserLoginDTO userLoginDTO = new UserLoginDTO();
+            userLoginDTO.Email = UserLoginDTO.Email;
+            userLoginDTO.Password = UserLoginDTO.Password;
+            Trace.WriteLine("Loguje si�");
 
-                var response = await _authService.Login(userLoginDTO);
+            var response = await _authService.Login(userLoginDTO);
 
-                if (response.Success)
-                {
-                    Trace.WriteLine("Sukces");
+            if (response.Success)
+            {
+                Trace.WriteLine("Sukces");
 
-                    LoggedIn(response.Data);
+                LoggedIn(response.Data);
 
-                }
-                else
-                {
-                    Trace.WriteLine("porazka");
+            }
+            else
+            {
+                Trace.WriteLine("porazka");
 
-                    LoggedOut();
-                }
+                LoggedOut();
+            }
 
         }
 
@@ -89,11 +89,11 @@ namespace P12MAUI.Client.ViewModels
             Debug.WriteLine("Logged in!");
 
             AppCurrentResources.SetToken(token);
-            Trace.WriteLine("token,:  ",token);
-            
+            Trace.WriteLine("token,:  ", token);
 
 
-                                VehiclesPage loginView = _serviceProvider.GetService<VehiclesPage>();
+
+            VehiclesPage loginView = _serviceProvider.GetService<VehiclesPage>();
             VehiclesViewModel loginViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
 
@@ -103,9 +103,6 @@ namespace P12MAUI.Client.ViewModels
             });
 
             MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
-
-
-
 
             mainViewModel.GetAuthenticationState();
         }

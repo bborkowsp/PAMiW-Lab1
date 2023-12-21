@@ -112,7 +112,7 @@ namespace P12MAUI.Client
 
             services.AddSingleton<VehiclesViewModel>();
             services.AddTransient<VehicleDetailsViewModel>();
-                        services.AddSingleton<MainViewModel>();
+            services.AddSingleton<MainViewModel>();
 
             //services.AddSingleton<LoginViewModel>();
 
@@ -123,7 +123,7 @@ namespace P12MAUI.Client
             // konfiguracja okienek 
             services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
-                        services.AddSingleton<VehiclesPage>();
+            services.AddSingleton<VehiclesPage>();
 
             //services.AddTransient<LoginView>();
         }
@@ -136,7 +136,7 @@ namespace P12MAUI.Client
             //Microsoft.Extensions.Http
             services.AddHttpClient<IVehicleDealershipService, VehicleDealershipService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = uriBuilder.Uri);
-                        services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+            services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
 
         }
     }

@@ -4,11 +4,24 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:P12MAUI.Client"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutHeaderBehavior="CollapseOnScroll">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader>
+        <!-- Header of the Flyout (optional) -->
+        <Label Text="User Settings" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+    </Shell.FlyoutHeader>
+
+    <ShellItem Title="Main">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </ShellItem>
+
+    <!-- Add a new ShellItem for User Settings -->
+    <ShellItem Title="User Settings">
+        <ShellContent>
+            <!-- Your user settings page goes here -->
+            <local:UserSettingsPage />
+        </ShellContent>
+    </ShellItem>
 
 </Shell>

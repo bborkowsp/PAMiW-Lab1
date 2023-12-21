@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = P12MAUI.Client.Resources.S
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Paweł/Downloads/github3/PAMiW-Lab/Projekt/P12MAUI.Client/UserSettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = P12MAUI.Client.UserSettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserSettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserSettingsPage.xaml
+
 [C:/Users/Paweł/Downloads/github3/PAMiW-Lab/Projekt/P12MAUI.Client/VehicleDetailsView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = P12MAUI.Client.VehicleDetailsView.xaml

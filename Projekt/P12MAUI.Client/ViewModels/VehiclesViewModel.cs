@@ -18,8 +18,8 @@ using static System.Reflection.Metadata.BlobBuilder;
 
 namespace P12MAUI.Client.ViewModels
 {
-   
- public partial class VehiclesViewModel : ObservableObject
+
+    public partial class VehiclesViewModel : ObservableObject
     {
         private readonly IVehicleDealershipService _vehicleDealershipService;
         private readonly VehicleDetailsView _vehicleDetailsView;
@@ -49,20 +49,20 @@ namespace P12MAUI.Client.ViewModels
         public async Task GetVehicles()
         {
             AllVehicles.Clear();
-            
+
             if (_connectivity.NetworkAccess != NetworkAccess.Internet)
             {
                 _messageDialogService.ShowMessage("Internet not available!");
                 return;
             }
-            
+
             var vehiclesResult = await _vehicleDealershipService.GetVehiclesAsync();
-                                        Trace.WriteLine(vehiclesResult);
+            Trace.WriteLine(vehiclesResult);
 
             if (vehiclesResult.Success)
             {
 
-                            Trace.WriteLine("Get vehicles SUCCESSSSSSS");
+                Trace.WriteLine("Get vehicles SUCCESSSSSSS");
 
                 foreach (var p in vehiclesResult.Data)
                 {
@@ -74,7 +74,7 @@ namespace P12MAUI.Client.ViewModels
             }
             else
             {
-                                            Trace.WriteLine("Get vehicles PORAZKA");
+                Trace.WriteLine("Get vehicles PORAZKA");
 
                 _messageDialogService.ShowMessage(vehiclesResult.Message);
             }
