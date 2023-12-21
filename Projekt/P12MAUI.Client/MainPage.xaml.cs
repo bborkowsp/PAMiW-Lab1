@@ -1,17 +1,13 @@
-﻿using P04WeatherForecastAPI.Client.ViewModels;
+﻿using P12MAUI.Client.ViewModels;
 
 namespace P12MAUI.Client
 {
     public partial class MainPage : ContentPage
     {
-       
-        public MainPage(VehiclesViewModel vehiclesViewModel)
+        public MainPage(MainViewModel mainViewModel)
         {
-            
             InitializeComponent();
-            BindingContext = vehiclesViewModel;
+            BindingContext = mainViewModel;
         }
-
-       
     }
 }

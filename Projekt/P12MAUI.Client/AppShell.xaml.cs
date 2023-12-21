@@ -7,7 +7,8 @@
             InitializeComponent();
 
             Routing.RegisterRoute(nameof(VehicleDetailsView), typeof(VehicleDetailsView));
-         
+            Routing.RegisterRoute(nameof(VehiclesPage), typeof(VehiclesPage));
+
         }
     }
 }

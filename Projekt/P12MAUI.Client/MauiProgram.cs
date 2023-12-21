@@ -2,13 +2,14 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls;
-using P04WeatherForecastAPI.Client.ViewModels;
+using P12MAUI.Client.ViewModels;
 using P06Shop.Shared.Configuration;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P12MAUI.Client.MessageBox;
-using P12MAUI.Client.ViewModels;
+using Microsoft.AspNetCore.Components.Authorization;
+using P12MAUI.Client.Services.CustomAuthStateProvider;
 using System.Diagnostics;
 
 namespace P12MAUI.Client
@@ -111,6 +112,8 @@ namespace P12MAUI.Client
 
             services.AddSingleton<VehiclesViewModel>();
             services.AddTransient<VehicleDetailsViewModel>();
+                        services.AddSingleton<MainViewModel>();
+
             //services.AddSingleton<LoginViewModel>();
 
         }
@@ -120,6 +123,8 @@ namespace P12MAUI.Client
             // konfiguracja okienek 
             services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
+                        services.AddSingleton<VehiclesPage>();
+
             //services.AddTransient<LoginView>();
         }
 
@@ -131,6 +136,8 @@ namespace P12MAUI.Client
             //Microsoft.Extensions.Http
             services.AddHttpClient<IVehicleDealershipService, VehicleDealershipService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = uriBuilder.Uri);
+                        services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+
         }
     }
 }

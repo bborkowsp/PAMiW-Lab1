@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\P11BlazorWebAssembly.Client.props" />
+</Project>

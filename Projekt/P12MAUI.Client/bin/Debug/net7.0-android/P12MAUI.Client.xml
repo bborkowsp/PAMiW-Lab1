@@ -24,42 +24,42 @@
         <member name="P:P12MAUI.Client.ViewModels.VehicleDetailsViewModel.DeleteCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehicleDetailsViewModel.Delete"/>.</summary>
         </member>
-        <member name="T:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel">
+        <member name="T:P12MAUI.Client.ViewModels.VehiclesViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.SelectedVehicle">
-            <inheritdoc cref="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.selectedVehicle"/>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.SelectedVehicle">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.VehiclesViewModel.selectedVehicle"/>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.MaxPage">
-            <inheritdoc cref="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.maxPage"/>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.MaxPage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.VehiclesViewModel.maxPage"/>
         </member>
-        <member name="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.nextPageCommand">
-            <summary>The backing field for <see cref="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.NextPageCommand"/>.</summary>
+        <member name="F:P12MAUI.Client.ViewModels.VehiclesViewModel.nextPageCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.NextPageCommand"/>.</summary>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.NextPageCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.NextPage"/>.</summary>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.NextPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.NextPage"/>.</summary>
         </member>
-        <member name="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.previousPageCommand">
-            <summary>The backing field for <see cref="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.PreviousPageCommand"/>.</summary>
+        <member name="F:P12MAUI.Client.ViewModels.VehiclesViewModel.previousPageCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.PreviousPageCommand"/>.</summary>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.PreviousPageCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.PreviousPage"/>.</summary>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.PreviousPageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.PreviousPage"/>.</summary>
         </member>
-        <member name="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.showDetailsCommand">
-            <summary>The backing field for <see cref="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand"/>.</summary>
+        <member name="F:P12MAUI.Client.ViewModels.VehiclesViewModel.showDetailsCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand"/>.</summary>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.ShowDetails(P06Shop.Shared.VehicleDealership.Vehicle)"/>.</summary>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetails(P06Shop.Shared.VehicleDealership.Vehicle)"/>.</summary>
         </member>
-        <member name="F:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.newCommand">
-            <summary>The backing field for <see cref="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.NewCommand"/>.</summary>
+        <member name="F:P12MAUI.Client.ViewModels.VehiclesViewModel.newCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.NewCommand"/>.</summary>
         </member>
-        <member name="P:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.NewCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P04WeatherForecastAPI.Client.ViewModels.VehiclesViewModel.New"/>.</summary>
+        <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.NewCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.New"/>.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
             <summary>

@@ -11,11 +11,12 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows;
 using static System.Reflection.Metadata.BlobBuilder;
 
 
-namespace P04WeatherForecastAPI.Client.ViewModels
+namespace P12MAUI.Client.ViewModels
 {
    
  public partial class VehiclesViewModel : ObservableObject
@@ -35,6 +36,7 @@ namespace P04WeatherForecastAPI.Client.ViewModels
         public VehiclesViewModel(IVehicleDealershipService vehicleDealership, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService,
             IConnectivity connectivity)
         {
+            Trace.WriteLine("konsturktor VehiclesViewModel");
             _messageDialogService = messageDialogService;
             _vehicleDetailsView = vehicleDetailsView;
             _vehicleDealershipService = vehicleDealership;
@@ -55,22 +57,33 @@ namespace P04WeatherForecastAPI.Client.ViewModels
             }
             
             var vehiclesResult = await _vehicleDealershipService.GetVehiclesAsync();
+                                        Trace.WriteLine(vehiclesResult);
+
             if (vehiclesResult.Success)
             {
+
+                            Trace.WriteLine("Get vehicles SUCCESSSSSSS");
+
                 foreach (var p in vehiclesResult.Data)
                 {
                     AllVehicles.Add(p);
+                    Trace.WriteLine(p.Fuel);
+
                 }
                 LoadVehiclesOnPage();
             }
             else
             {
+                                            Trace.WriteLine("Get vehicles PORAZKA");
+
                 _messageDialogService.ShowMessage(vehiclesResult.Message);
             }
         }
 
         public void LoadVehiclesOnPage()
         {
+
+
             PageVehicles.Clear();
 
             int ItemsPerPage = 700;

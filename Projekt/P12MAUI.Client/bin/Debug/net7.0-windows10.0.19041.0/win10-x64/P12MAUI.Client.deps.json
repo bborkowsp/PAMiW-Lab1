@@ -10,6 +10,7 @@
       "P12MAUI.Client/1.0": {
         "dependencies": {
           "CommunityToolkit.Mvvm": "8.2.0",
+          "Microsoft.AspNetCore.Components.Authorization": "7.0.0",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.Binder": "8.0.0",
@@ -806,6 +807,52 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authorization/7.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "7.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components/7.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.0",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.0": {},
+      "Microsoft.AspNetCore.Components.Authorization/7.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/7.0.0": {
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51819"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -1192,6 +1239,41 @@
       "sha512": "sha512-F883u+B0AVUkRZS+VQBiZEJiqlGiiQhGA8Ejy1/Y8fl4ecBmSd+HYuDso0iiUhh+UxRDjp2aTQ7jGkuL2S4NrA==",
       "path": "communitytoolkit.mvvm/8.2.0",
       "hashPath": "communitytoolkit.mvvm.8.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0O7C7XHj+17Q0geMpnpRC0fnnALH2Yhaa2SAzX00OkeF2NZ/+zWoDymbSnepg1qhueufUivihZiVGtMeq5Zywg==",
+      "path": "microsoft.aspnetcore.authorization/7.0.0",
+      "hashPath": "microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8bz6m5cb5VJTftEbfMCLTcoH9+5tTAX8AuOf9z7Q86joRBkkkKYNrEozhZhZwjOStVbQIQzsYJZQQETaVALNQQ==",
+      "path": "microsoft.aspnetcore.components/7.0.0",
+      "hashPath": "microsoft.aspnetcore.components.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UIxDb79WhKacD2L3+h+iVjwMmj46bCNsikizqIgffpqZnB0WwtJJ17jxcqXcjp/oVkcRjzoEleaMEE5ysX4tvg==",
+      "path": "microsoft.aspnetcore.components.analyzers/7.0.0",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Authorization/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9YmIsHP+YRhTSsvHcuQkbk5LO322rj4vYgtBulp1UPfhak/cjnmnqAu6Lu7D4ayzAlEEC4KaR86PZjz8PKOWPA==",
+      "path": "microsoft.aspnetcore.components.authorization/7.0.0",
+      "hashPath": "microsoft.aspnetcore.components.authorization.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ut2azlKz7BQpCKu6AiwKEjMHpRWoD4qu2Ff/n6KagjFsyDAfZY7lgYJ158vr4O0jXet6pV1uF1q3jmXvki0OlA==",
+      "path": "microsoft.aspnetcore.metadata/7.0.0",
+      "hashPath": "microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
       "type": "package",

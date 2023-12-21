@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.ApplicationModel;
-using P04WeatherForecastAPI.Client.ViewModels;
+using P12MAUI.Client.ViewModels;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.VehicleDealership;

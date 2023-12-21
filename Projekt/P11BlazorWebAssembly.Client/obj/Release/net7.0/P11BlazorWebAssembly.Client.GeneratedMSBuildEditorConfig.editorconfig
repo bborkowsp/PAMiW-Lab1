@@ -1,0 +1,79 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = P11BlazorWebAssembly.Client
+build_property.RootNamespace = P11BlazorWebAssembly.Client
+build_property.ProjectDir = C:\Users\pamiw\Projekt\P11BlazorWebAssembly.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pamiw\Projekt\P11BlazorWebAssembly.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Settings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Vehicles/CreateVehicle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcQ3JlYXRlVmVoaWNsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Vehicles/EditVehicle.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcRWRpdFZlaGljbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Vehicles/VehicleForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcVmVoaWNsZUZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Pages/Vehicles/VehicleList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZXNcVmVoaWNsZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Shared/LanguageSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExhbmd1YWdlU2VsZWN0b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-e3ashidzry
+
+[C:/Users/pamiw/Projekt/P11BlazorWebAssembly.Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v8lhv7vnro

@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "BxBVqj4XtChkf9Bzo7WNqxoZzrIE4dSyHDmeXzDdPGlAHZG2ZD2mnDwPdaqR3x35ymi/4jNOoX2qPXYVORKQkg==",
+  "dgSpecHash": "kWBETQLaFkevbkaEtMGbbEWvGx6pVPo8KNiFE/nMBcopPT2EH7Gzg5NbqDJ79VmnW430RZZj4brobIiWtu05WA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P12MAUI.Client\\P12MAUI.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\microsoft.aspnetcore.components.7.0.0.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.0\\microsoft.aspnetcore.components.analyzers.7.0.0.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.0\\microsoft.aspnetcore.components.authorization.7.0.0.nupkg.sha512",
+    "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration.binder\\8.0.0\\microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",

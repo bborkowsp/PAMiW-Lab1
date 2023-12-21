@@ -3,6 +3,7 @@ using P06Shop.Shared.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,6 +43,16 @@ namespace P06Shop.Shared.Services.AuthService
             var result = await _httpClient.PostAsJsonAsync("api/auth/change-password/", newPassword);
 
             return await result.Content.ReadFromJsonAsync<ServiceResponse<bool>>();
+        }
+
+        public void SetAuthToken(string authToken)
+        {
+            if (authToken == null || authToken == "")
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = null;
+                return;
+            }
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
         }
     }
 }

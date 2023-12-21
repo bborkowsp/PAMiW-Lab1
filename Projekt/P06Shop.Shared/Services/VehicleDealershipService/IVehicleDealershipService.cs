@@ -15,5 +15,8 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
 
         Task<ServiceResponse<Vehicle>> GetVehicleByIdAsync(int id);
         Task<ServiceResponse<List<Vehicle>>> SearchVehiclesAsync(string text, int page, int pageSize);
+
+        void SetAuthToken(string authToken);
+
     }
 }

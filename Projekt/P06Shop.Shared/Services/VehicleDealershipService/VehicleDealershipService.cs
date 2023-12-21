@@ -11,6 +11,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Reflection.Metadata;
 using System.Text;
@@ -179,6 +180,17 @@ namespace P06Shop.Shared.Services.VehicleDealershipService
                     Message = "Network error"
                 };
             }
+        }
+
+        public void SetAuthToken(string authToken)
+        {
+            Debug.WriteLine("Setting auth token...");
+            if (authToken == null || authToken == "")
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = null;
+                return;
+            }
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
         }
     }
 }

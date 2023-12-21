@@ -156,9 +156,10 @@ namespace P05Shop.API.Services.VehicleDealershipService
                     Message = "An error occured while updating vehicle"
                 };
             }
-
-
-
+        }
+        public void SetAuthToken(string authToken)
+        {
+            throw new NotImplementedException();
         }
     }
 }
