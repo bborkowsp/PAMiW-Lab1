@@ -17,18 +17,18 @@
                     Text="Add new Vehicle" TextColor="Black">
 					<Button.Style>
 						<Style TargetType="Button">
-							<Setter Property="Background" Value="SteelBlue" />
+							<Setter Property="Background" Value="{DynamicResource ButtonBackColor}" />
 							<Setter Property="Padding" Value="10,5" />
 							<Setter Property="FontSize" Value="14" />
-							<Setter Property="Margin" Value="0,0,30,0" />
+							<Setter Property="Margin" Value="0,10,30,0" />
 						</Style>
 					</Button.Style>
 				</Button>
 			</HorizontalStackLayout>
-			<CollectionView ItemsSource="{Binding PageVehicles}">
+			<CollectionView ItemsSource="{Binding PageVehicles}" BackgroundColor="{DynamicResource ThemeVehiclesThemeColor}" >
 				<CollectionView.ItemTemplate>
 					<DataTemplate>
-						<Frame BackgroundColor="Blue" Padding="10" Margin="5">
+						<Frame Padding="10" Margin="5">
 							<Frame.GestureRecognizers>
 								<TapGestureRecognizer
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:VehiclesViewModel}}, Path=ShowDetailsCommand }"

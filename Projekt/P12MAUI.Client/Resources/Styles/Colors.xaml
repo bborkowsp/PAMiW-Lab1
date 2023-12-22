@@ -75,7 +75,8 @@
     <Color x:Key="EntryLightBackground">#e0dede</Color>
     <Color x:Key="EntryDarkBackground">#212121</Color>
 
-
+    <Color x:Key="LightVehiclesThemeColor">#e0dede</Color>
+    <Color x:Key="DarkVehiclesThemeColor">#CCCCCC</Color>
 
 
 
@@ -87,6 +88,7 @@
 
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightBackColor}, Dark={StaticResource DarkBackColor}}" x:Key="ThemeBackgroundColor" />
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSuggestionInFormColor}, Dark={StaticResource DarkSuggestionInFormColor}}" x:Key="SuggestionsInFormColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightVehiclesThemeColor}, Dark={StaticResource DarkVehiclesThemeColor}}" x:Key="ThemeVehiclesThemeColor" />
 
 
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightIconsColor}, Dark={StaticResource DarkIconsColor}}" x:Key="IconsColor" />
