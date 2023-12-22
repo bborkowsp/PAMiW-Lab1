@@ -9,6 +9,7 @@
     BackgroundColor="{DynamicResource ThemeBackgroundColor}">
 	<StackLayout>
 		<StackLayout>
+		    <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
 			<Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
 		</StackLayout>
 	</StackLayout>
