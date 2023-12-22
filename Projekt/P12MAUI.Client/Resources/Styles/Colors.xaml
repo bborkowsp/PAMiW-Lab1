@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Color x:Key="Primary">#512BD4</Color>
+    <Color x:Key="Primary">#00467f</Color>
     <Color x:Key="Secondary">#DFD8F7</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
     <Color x:Key="White">White</Color>
@@ -41,8 +41,8 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
-    <Color x:Key="ButtonTextColor">#ffffff</Color>
-    <Color x:Key="ButtonBackColor">#394d6b</Color>
+    <Color x:Key="ButtonTextColor">#000000</Color>
+    <Color x:Key="ButtonBackColor">#75bdff</Color>
     <Color x:Key="ButtonBackColorOnMouseOver">#297fff</Color>
 
 
@@ -63,8 +63,21 @@
     <Color x:Key="DarkTextColor">#ffffff</Color>
     <Color x:Key="LightTextColor">#000000</Color>
 
-    <Color x:Key="LightBackColor">#ffffff</Color>
-    <Color x:Key="DarkBackColor">#1C1928</Color>
+
+
+
+    <Color x:Key="LightBackColor">#f2f2f2</Color>
+    <Color x:Key="DarkBackColor">#212121</Color>
+
+    <Color x:Key="LightSuggestionInFormColor">#505050</Color>
+    <Color x:Key="DarkSuggestionInFormColor">#CCCCCC</Color>
+
+    <Color x:Key="EntryLightBackground">#e0dede</Color>
+    <Color x:Key="EntryDarkBackground">#212121</Color>
+
+
+
+
 
     <Color x:Key="LightIconsColor">#ffffff</Color>
     <Color x:Key="DarkIconsColor">#1C1928</Color>
@@ -73,6 +86,9 @@
     <Color x:Key="DarkItemsTextColor">#ffffff</Color>
 
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightBackColor}, Dark={StaticResource DarkBackColor}}" x:Key="ThemeBackgroundColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSuggestionInFormColor}, Dark={StaticResource DarkSuggestionInFormColor}}" x:Key="SuggestionsInFormColor" />
+
+
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightIconsColor}, Dark={StaticResource DarkIconsColor}}" x:Key="IconsColor" />
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsTextColor}, Dark={StaticResource DarkItemsTextColor}}" x:Key="ItemsTextColor" />
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsBackColor}, Dark={StaticResource DarkItemsBackColor}}" x:Key="ItemsBackgroundColor" />
