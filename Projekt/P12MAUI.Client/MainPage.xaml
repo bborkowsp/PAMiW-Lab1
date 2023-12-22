@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="P12MAUI.Client.MainPage"
-	xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
-	xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
+    xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
+    xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
     BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 
-	<StackLayout>
-		<Label Text="Login" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
-		<Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
-		<Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
-		<Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
-	</StackLayout>
+    <StackLayout>
+        <Label Text="Login" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        <Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
+        <Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
+        <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+
+        <!-- Add the error message label -->
+        <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+    </StackLayout>
 </ContentPage>

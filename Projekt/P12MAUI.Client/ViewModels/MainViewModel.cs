@@ -38,6 +38,12 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private UserLoginDTO userLoginDTO;
 
+        [ObservableProperty]
+        private string errorMessage = "";
+
+        [ObservableProperty]
+        private bool isErrorVisible;
+
         public void SetIsLogin(bool _isLogin)
         {
             IsLogin = _isLogin;
@@ -60,7 +66,8 @@ namespace P12MAUI.Client.ViewModels
             }
             else
             {
-                LoggedOut();
+                ErrorMessage = "Wrong credentials";
+                IsErrorVisible = true;
             }
         }
 
