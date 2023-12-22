@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
                  xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
 
-             BackgroundColor="{DynamicResource ThemeBackgroundColor}">
+    BackgroundColor="{DynamicResource ThemeBackgroundColor}">
 
    <StackLayout>
     <StackLayout>

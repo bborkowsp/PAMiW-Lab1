@@ -4,7 +4,7 @@
     x:Class="P12MAUI.Client.VehiclesPage"
     xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
         xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
-    BackgroundColor="Green">
+             BackgroundColor="{DynamicResource ThemeBackgroundColor}">
 
     <ScrollView>
         <VerticalStackLayout

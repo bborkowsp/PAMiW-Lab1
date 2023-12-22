@@ -1,21 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="P12MAUI.Client.MainPage"
-             xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
-                 xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
+<ContentPage
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="P12MAUI.Client.MainPage"
+	xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
+	xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
+    BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 
-             BackgroundColor="LightBlue">
-
-    <StackLayout>
-        <Label Text="Login" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
-
-        <Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20" />
-        <Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
-
-        <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
-
-        <!-- Add any additional UI elements as needed -->
-    </StackLayout>
-
+	<StackLayout>
+		<Label Text="Login" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+		<Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20" />
+		<Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
+		<Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+	</StackLayout>
 </ContentPage>

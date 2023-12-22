@@ -5,13 +5,13 @@ namespace P12MAUI.Client
 
         public static string Token = "";
         public static string Language = "english";
-        public static bool DarkTheme = false;
+        public static bool DarkTheme = true;
 
         public static void LoadSettings()
         {
             Token = Preferences.Get("token", "");
             Language = Preferences.Get("language", "english");
-            SetTheme(Preferences.Get("isDarkTheme", false), false);
+            SetTheme(Preferences.Get("isDarkTheme", true), true);
         }
 
         public static void SetToken(string token)
@@ -25,7 +25,7 @@ namespace P12MAUI.Client
 
         public static void ToggleTheme()
         {
-            SetTheme(!DarkTheme, true);
+            SetTheme(DarkTheme, true);
         }
 
         public static void SetTheme(bool DarkTheme, bool save)

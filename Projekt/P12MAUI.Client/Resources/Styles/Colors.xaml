@@ -8,7 +8,7 @@
     <Color x:Key="Secondary">#DFD8F7</Color>
     <Color x:Key="Tertiary">#2B0B98</Color>
     <Color x:Key="White">White</Color>
-    <Color x:Key="Black">LightBlue</Color>
+    <Color x:Key="Black">Black</Color>
     <Color x:Key="Gray100">#E1E1E1</Color>
     <Color x:Key="Gray200">#C8C8C8</Color>
     <Color x:Key="Gray300">#ACACAC</Color>
@@ -41,13 +41,14 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
-
-
-
-
-<Color x:Key="ButtonTextColor">#ffffff</Color>
+    <Color x:Key="ButtonTextColor">#ffffff</Color>
     <Color x:Key="ButtonBackColor">#394d6b</Color>
     <Color x:Key="ButtonBackColorOnMouseOver">#297fff</Color>
+
+
+
+
+    
 
     <Color x:Key="DarkItemsBackColor">#28283c</Color>
     <Color x:Key="DarkItemsBackColorOnMouseHover">#323246</Color>
@@ -78,7 +79,6 @@
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsBackColorOnMouseHover}, Dark={StaticResource DarkItemsBackColorOnMouseHover}}" x:Key="ItemsBackgroundColorOnMouseHover" />
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSpinnerInactiveColor}, Dark={StaticResource DarkSpinnerInactiveColor}}" x:Key="SpinnerInactiveBrush" />
     <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSpinnerActiveColor}, Dark={StaticResource DarkSpinnerActiveColor}}" x:Key="SpinnerActiveBrush" />
-
 
 
 </ResourceDictionary>
