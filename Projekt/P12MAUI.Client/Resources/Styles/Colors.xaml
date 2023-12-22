@@ -41,4 +41,44 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
+
+
+
+
+<Color x:Key="ButtonTextColor">#ffffff</Color>
+    <Color x:Key="ButtonBackColor">#394d6b</Color>
+    <Color x:Key="ButtonBackColorOnMouseOver">#297fff</Color>
+
+    <Color x:Key="DarkItemsBackColor">#28283c</Color>
+    <Color x:Key="DarkItemsBackColorOnMouseHover">#323246</Color>
+    <Color x:Key="DarkSpinnerInactiveColor">#28283c</Color>
+    <Color x:Key="DarkSpinnerActiveColor">#297fff</Color>
+
+    <Color x:Key="LightItemsBackColor">#dcdcf0</Color>
+    <Color x:Key="LightItemsBackColorOnMouseHover">#e6e6ff</Color>
+    <Color x:Key="LightSpinnerInactiveColor">#c8c8e6</Color>
+    <Color x:Key="LightSpinnerActiveColor">#297fff</Color>
+
+    <Color x:Key="DarkTextColor">#ffffff</Color>
+    <Color x:Key="LightTextColor">#000000</Color>
+
+    <Color x:Key="LightBackColor">#ffffff</Color>
+    <Color x:Key="DarkBackColor">#1C1928</Color>
+
+    <Color x:Key="LightIconsColor">#ffffff</Color>
+    <Color x:Key="DarkIconsColor">#1C1928</Color>
+
+    <Color x:Key="LightItemsTextColor">#000000</Color>
+    <Color x:Key="DarkItemsTextColor">#ffffff</Color>
+
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightBackColor}, Dark={StaticResource DarkBackColor}}" x:Key="ThemeBackgroundColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightIconsColor}, Dark={StaticResource DarkIconsColor}}" x:Key="IconsColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsTextColor}, Dark={StaticResource DarkItemsTextColor}}" x:Key="ItemsTextColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsBackColor}, Dark={StaticResource DarkItemsBackColor}}" x:Key="ItemsBackgroundColor" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightItemsBackColorOnMouseHover}, Dark={StaticResource DarkItemsBackColorOnMouseHover}}" x:Key="ItemsBackgroundColorOnMouseHover" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSpinnerInactiveColor}, Dark={StaticResource DarkSpinnerInactiveColor}}" x:Key="SpinnerInactiveBrush" />
+    <SolidColorBrush Color="{AppThemeBinding Light={StaticResource LightSpinnerActiveColor}, Dark={StaticResource DarkSpinnerActiveColor}}" x:Key="SpinnerActiveBrush" />
+
+
+
 </ResourceDictionary>

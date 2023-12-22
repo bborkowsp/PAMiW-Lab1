@@ -113,6 +113,9 @@ namespace P12MAUI.Client
             services.AddSingleton<VehiclesViewModel>();
             services.AddTransient<VehicleDetailsViewModel>();
             services.AddSingleton<MainViewModel>();
+            services.AddSingleton<TestViewModel>();
+
+
 
             //services.AddSingleton<LoginViewModel>();
 
@@ -124,6 +127,9 @@ namespace P12MAUI.Client
             services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
             services.AddSingleton<VehiclesPage>();
+            services.AddSingleton<TestPage>();
+
+
 
             //services.AddTransient<LoginView>();
         }
