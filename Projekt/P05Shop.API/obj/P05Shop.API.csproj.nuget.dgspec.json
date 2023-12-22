@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj": {}
+    "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj",
         "projectName": "P05Shop.API",
-        "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P05Shop.API\\P05Shop.API.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05Shop.API\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P05Shop.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
               },
-              "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
+              "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj"
               }
             }
           }
@@ -102,14 +102,14 @@
         }
       }
     },
-    "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "projectName": "P06Shop.Shared",
-        "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -188,14 +188,14 @@
         }
       }
     },
-    "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
+    "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+        "projectUniqueName": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
         "projectName": "P07Shop.DataSeeder",
-        "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
+        "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\P07Shop.DataSeeder.csproj",
         "packagesPath": "C:\\Users\\Paweł\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\obj\\",
+        "outputPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P07Shop.DataSeeder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -217,8 +217,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-                "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
+              "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
+                "projectPath": "C:\\Users\\Paweł\\Downloads\\github\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
               }
             }
           }

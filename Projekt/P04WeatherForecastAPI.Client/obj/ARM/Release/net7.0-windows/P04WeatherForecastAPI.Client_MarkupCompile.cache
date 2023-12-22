@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\ARM\Release\net7.0-windows\
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\obj\ARM\Release\net7.0-windows\
 P04WeatherForecastAPI.Client
 none
 false
 TRACE;RELEASE;NET;NET7_0;NETCOREAPP
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\App.xaml
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P04WeatherForecastAPI.Client\App.xaml
 91354077384
 
 16-1489711724
-2201291320603
+220-1191167940
 Languages\Strings.en-US.xaml;Languages\Strings.pl-PL.xaml;LoggedInView.xaml;LoginView.xaml;MainWindow.xaml;Themes\DarkTheme.xaml;Themes\LightTheme.xaml;VehicleDealershipView.xaml;VehicleDetailsView.xaml;
 
 True
