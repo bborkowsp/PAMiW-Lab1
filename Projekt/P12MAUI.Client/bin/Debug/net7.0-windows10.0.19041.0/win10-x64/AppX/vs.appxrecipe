@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-22T21:32:36.195</Modified>
+      <Modified>2023-12-22T21:40:49.938</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-22T21:32:35.504</Modified>
+      <Modified>2023-12-22T21:40:49.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.runtimeconfig.json">
       <PackagePath>P12MAUI.Client.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.dll">
       <PackagePath>P12MAUI.Client.dll</PackagePath>
-      <Modified>2023-12-22T21:32:32.765</Modified>
+      <Modified>2023-12-22T21:40:46.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>P12MAUI.Client.exe</PackagePath>
-      <Modified>2023-12-22T21:32:32.779</Modified>
+      <Modified>2023-12-22T21:40:46.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.deps.json">
       <PackagePath>P12MAUI.Client.deps.json</PackagePath>

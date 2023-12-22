@@ -44,6 +44,9 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private bool isErrorVisible;
 
+        [ObservableProperty]
+        private bool isLoggingIn;
+
         public void SetIsLogin(bool _isLogin)
         {
             IsLogin = _isLogin;
@@ -58,16 +61,26 @@ namespace P12MAUI.Client.ViewModels
             UserLoginDTO userLoginDTO = new UserLoginDTO();
             userLoginDTO.Email = UserLoginDTO.Email;
             userLoginDTO.Password = UserLoginDTO.Password;
-            var response = await _authService.Login(userLoginDTO);
 
-            if (response.Success)
+            try
             {
-                LoggedIn(response.Data);
+                IsLoggingIn = true; // Set the flag to indicate login in progress
+
+                var response = await _authService.Login(userLoginDTO);
+
+                if (response.Success)
+                {
+                    LoggedIn(response.Data);
+                }
+                else
+                {
+                    ErrorMessage = "Wrong credentials";
+                    IsErrorVisible = true;
+                }
             }
-            else
+            finally
             {
-                ErrorMessage = "Wrong credentials";
-                IsErrorVisible = true;
+                IsLoggingIn = false; // Reset the flag when login is completed or failed
             }
         }
 

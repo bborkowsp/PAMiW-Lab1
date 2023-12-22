@@ -13,7 +13,9 @@
         <Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
         <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
 
-        <!-- Add the error message label -->
+        <ActivityIndicator IsRunning="{Binding IsLoggingIn}" IsVisible="{Binding IsLoggingIn}" Color="Green" />
+
+
         <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
     </StackLayout>
 </ContentPage>
