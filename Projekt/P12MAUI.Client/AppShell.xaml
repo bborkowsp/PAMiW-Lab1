@@ -6,12 +6,13 @@
 	xmlns:local="clr-namespace:P12MAUI.Client"
     Shell.FlyoutBehavior="Flyout"
     FlyoutHeaderBehavior="CollapseOnScroll">
-	<ShellContent
+
+    <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
         
-	<FlyoutItem Title="Cats">
+	<FlyoutItem Title="Settings">
 		<Tab>
 			<ShellContent ContentTemplate="{DataTemplate local:TestPage}" />
 		</Tab>

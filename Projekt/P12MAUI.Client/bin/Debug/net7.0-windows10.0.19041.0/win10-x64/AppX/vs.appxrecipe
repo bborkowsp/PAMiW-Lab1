@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-22T18:44:54.103</Modified>
+      <Modified>2023-12-22T19:49:53.148</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-22T18:44:53.562</Modified>
+      <Modified>2023-12-22T19:49:52.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.runtimeconfig.json">
       <PackagePath>P12MAUI.Client.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.dll">
       <PackagePath>P12MAUI.Client.dll</PackagePath>
-      <Modified>2023-12-22T18:44:51.852</Modified>
+      <Modified>2023-12-22T19:49:51.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>P12MAUI.Client.exe</PackagePath>
-      <Modified>2023-12-22T18:44:51.863</Modified>
+      <Modified>2023-12-22T19:49:51.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.deps.json">
       <PackagePath>P12MAUI.Client.deps.json</PackagePath>
@@ -983,7 +983,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll">
       <PackagePath>P06Shop.Shared.dll</PackagePath>
-      <Modified>2023-12-21T21:37:25.659</Modified>
+      <Modified>2023-12-22T19:22:10.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\.nuget\packages\microsoft.maui.controls.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

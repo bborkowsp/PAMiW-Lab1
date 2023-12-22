@@ -60,11 +60,13 @@
     <Color x:Key="LightSpinnerInactiveColor">#c8c8e6</Color>
     <Color x:Key="LightSpinnerActiveColor">#297fff</Color>
 
+
+
+
+
+
     <Color x:Key="DarkTextColor">#ffffff</Color>
     <Color x:Key="LightTextColor">#000000</Color>
-
-
-
 
     <Color x:Key="LightBackColor">#f2f2f2</Color>
     <Color x:Key="DarkBackColor">#212121</Color>
@@ -74,6 +76,8 @@
 
     <Color x:Key="EntryLightBackground">#e0dede</Color>
     <Color x:Key="EntryDarkBackground">#212121</Color>
+
+
 
 
 
