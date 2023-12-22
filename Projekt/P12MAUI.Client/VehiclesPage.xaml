@@ -61,6 +61,13 @@
 					</DataTemplate>
 				</CollectionView.ItemTemplate>
 			</CollectionView>
+			<VerticalStackLayout HorizontalOptions="End" Spacing="5">
+				<HorizontalStackLayout HorizontalOptions="End" IsVisible="{Binding IsPaginationVisible}">
+					<Button Command="{Binding PreviousPageCommand}" Text="Previous Page" IsEnabled="{Binding IsPreviousButtonEnabled}" WidthRequest="110" />
+					<Label Text="{Binding CurrentPageText}" Margin="10" VerticalTextAlignment="Center" />
+					<Button Command="{Binding NextPageCommand}" Text="Next Page"  IsEnabled="{Binding IsNextButtonEnabled}" WidthRequest="100" />
+				</HorizontalStackLayout>
+			</VerticalStackLayout>
 		</VerticalStackLayout>
 	</ScrollView>
 </ContentPage>

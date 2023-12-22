@@ -15,7 +15,6 @@ using System.Diagnostics;
 using System.Windows;
 using static System.Reflection.Metadata.BlobBuilder;
 
-
 namespace P12MAUI.Client.ViewModels
 {
 
@@ -27,8 +26,16 @@ namespace P12MAUI.Client.ViewModels
         private readonly IConnectivity _connectivity;
 
         private int _currentPage = 1;
-        public List<Vehicle> AllVehicles { get; set; }
-        public ObservableCollection<Vehicle> PageVehicles { get; set; }
+        public List<Vehicle> AllVehicles
+        {
+            get;
+            set;
+        }
+        public ObservableCollection<Vehicle> PageVehicles
+        {
+            get;
+            set;
+        }
 
         [ObservableProperty]
         private Vehicle selectedVehicle;
@@ -36,11 +43,10 @@ namespace P12MAUI.Client.ViewModels
         public VehiclesViewModel(IVehicleDealershipService vehicleDealership, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService,
             IConnectivity connectivity)
         {
-            Trace.WriteLine("konsturktor VehiclesViewModel");
             _messageDialogService = messageDialogService;
             _vehicleDetailsView = vehicleDetailsView;
             _vehicleDealershipService = vehicleDealership;
-            _connectivity = connectivity; // set the _connectivity field
+            _connectivity = connectivity;
             PageVehicles = new ObservableCollection<Vehicle>();
             AllVehicles = new List<Vehicle>();
             GetVehicles();
@@ -61,9 +67,6 @@ namespace P12MAUI.Client.ViewModels
 
             if (vehiclesResult.Success)
             {
-
-                Trace.WriteLine("Get vehicles SUCCESSSSSSS");
-
                 foreach (var p in vehiclesResult.Data)
                 {
                     AllVehicles.Add(p);
@@ -74,19 +77,18 @@ namespace P12MAUI.Client.ViewModels
             }
             else
             {
-                Trace.WriteLine("Get vehicles PORAZKA");
-
                 _messageDialogService.ShowMessage(vehiclesResult.Message);
             }
+            OnPropertyChanged(nameof(CurrentPageText));
+
         }
 
         public void LoadVehiclesOnPage()
         {
 
-
             PageVehicles.Clear();
 
-            int ItemsPerPage = 700;
+            int ItemsPerPage = 8;
 
             MaxPage = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(AllVehicles.Count) / Convert.ToDouble(ItemsPerPage)));
             if (MaxPage == 0)
@@ -127,7 +129,10 @@ namespace P12MAUI.Client.ViewModels
                 LoadVehiclesOnPage();
                 OnPropertyChanged();
             }
+            OnPropertyChanged(nameof(CurrentPageText));
+
         }
+
 
         [RelayCommand]
         public async void PreviousPage()
@@ -138,8 +143,9 @@ namespace P12MAUI.Client.ViewModels
                 LoadVehiclesOnPage();
                 OnPropertyChanged();
             }
-        }
+            OnPropertyChanged(nameof(CurrentPageText));
 
+        }
 
         [RelayCommand]
         public async Task ShowDetails(Vehicle vehicle)
@@ -150,10 +156,15 @@ namespace P12MAUI.Client.ViewModels
                 return;
             }
 
-            await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object>
-            {
-                {"Vehicle", vehicle },
-                {nameof(VehiclesViewModel), this }
+            await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object> {
+                {
+                    "Vehicle",
+                    vehicle
+                },
+                {
+                    nameof(VehiclesViewModel),
+                    this
+                }
             });
             SelectedVehicle = vehicle;
         }
@@ -168,11 +179,21 @@ namespace P12MAUI.Client.ViewModels
             }
 
             SelectedVehicle = new Vehicle();
-            await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object>
-            {
-                {"Vehicle", SelectedVehicle },
-                {nameof(VehiclesViewModel), this }
+            await Shell.Current.GoToAsync(nameof(VehicleDetailsView), true, new Dictionary<string, object> {
+                {
+                    "Vehicle",
+                    SelectedVehicle
+                },
+                {
+                    nameof(VehiclesViewModel),
+                    this
+                }
             });
+        }
+
+        public string CurrentPageText
+        {
+            get { return CurrentPage + " / " + maxPage; }
         }
 
     }
