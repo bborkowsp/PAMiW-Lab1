@@ -19,16 +19,12 @@ namespace P12MAUI.Client.ViewModels
     {
         private readonly IVehicleDealershipService _vehicleDealershipService;
         private readonly IMessageDialogService _messageDialogService;
-        private readonly IGeolocation _geolocation;
-        private readonly IMap _map;
         private VehiclesViewModel _vehicleViewModel;
 
-        public VehicleDetailsViewModel(IVehicleDealershipService vehicleDealership, IMessageDialogService messageDialogService, IGeolocation geolocation, IMap map)
+        public VehicleDetailsViewModel(IVehicleDealershipService vehicleDealership, IMessageDialogService messageDialogService)
         {
-            _map = map;
             _vehicleDealershipService = vehicleDealership;
             _messageDialogService = messageDialogService;
-            _geolocation = geolocation;
         }
 
         public VehiclesViewModel VehiclesViewModel
@@ -42,7 +38,6 @@ namespace P12MAUI.Client.ViewModels
                 _vehicleViewModel = value;
             }
         }
-
 
         [ObservableProperty]
         Vehicle vehicle;
@@ -81,7 +76,6 @@ namespace P12MAUI.Client.ViewModels
             await _vehicleDealershipService.UpdateVehicleAsync(vehicleToUpdate);
             await _vehicleViewModel.GetVehicles();
         }
-
 
         [RelayCommand]
         public async Task Save()

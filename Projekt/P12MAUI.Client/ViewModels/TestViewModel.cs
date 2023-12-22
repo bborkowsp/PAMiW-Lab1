@@ -17,25 +17,18 @@ namespace P12MAUI.Client.ViewModels
 
         public static bool DarkTheme = true;
 
-
         [ObservableProperty]
         private bool myProperty;
-
 
         public TestViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
         {
             _serviceProvider = serviceProvider;
             _messageDialogService = messageDialogService;
-
-            // Retrieve the saved theme preference
             DarkTheme = Preferences.Get("isDarkTheme", true);
-
-            // Set the initial theme
             MyProperty = DarkTheme;
             SetTheme(DarkTheme);
             RefreshAllProperties();
         }
-
 
         public static void LoadSettings()
         {
@@ -44,19 +37,13 @@ namespace P12MAUI.Client.ViewModels
 
         public void OnToggledCommand(object sender, ToggledEventArgs e)
         {
-            Debug.WriteLine($"Switch toggled. New value: {e.Value}");
-
-            // Update the theme setting and save it
             DarkTheme = e.Value;
             Preferences.Set("isDarkTheme", DarkTheme);
-
-            // Set the theme based on the updated setting
             SetTheme(DarkTheme);
             RefreshAllProperties();
         }
         public static void SetTheme(bool DarkTheme)
         {
-            Trace.WriteLine("DarkTheme: ", DarkTheme.ToString());
             TestViewModel.DarkTheme = DarkTheme;
             UpdateResources();
             Preferences.Set("isDarkTheme", DarkTheme);
@@ -66,14 +53,10 @@ namespace P12MAUI.Client.ViewModels
         {
             if (DarkTheme)
             {
-                Trace.WriteLine("If darkTheme = true");
-
                 Application.Current.UserAppTheme = AppTheme.Dark;
             }
             else
             {
-                Trace.WriteLine("If darkTheme = false");  // Corrected log statement
-
                 Application.Current.UserAppTheme = AppTheme.Light;
             }
         }
@@ -87,7 +70,6 @@ namespace P12MAUI.Client.ViewModels
                 OnPropertyChanged(property.Name);
             }
         }
-
 
     }
 }

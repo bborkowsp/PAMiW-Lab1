@@ -20,22 +20,20 @@ namespace P12MAUI.Client
         {
             var builder = MauiApp.CreateBuilder();
             builder
-                .UseMauiApp<App>()
-                .ConfigureFonts(fonts =>
-                {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+              .UseMauiApp<App>()
+              .ConfigureFonts(fonts =>
+              {
+                  fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                  fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+              });
 
 #if DEBUG
-            builder.Logging.AddDebug();
+      builder.Logging.AddDebug();
 #endif
-
 
             ConfigureServices(builder.Services);
             return builder.Build();
         }
-
 
         private static void ConfigureServices(IServiceCollection services)
         {
@@ -64,7 +62,6 @@ namespace P12MAUI.Client
 
             services.AddSingleton(appSettingsSection);
 
-
             // string baseUrl;
             // if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "production")
             // {
@@ -88,7 +85,6 @@ namespace P12MAUI.Client
             // };
             //  services.AddSingleton(appSettingsSection);
 
-
             return appSettingsSection;
         }
 
@@ -97,8 +93,6 @@ namespace P12MAUI.Client
             services.AddSingleton<IConnectivity>(Connectivity.Current);
             services.AddSingleton<IGeolocation>(Geolocation.Default);
             services.AddSingleton<IMap>(Map.Default);
-
-            // konfiguracja serwisów 
             services.AddSingleton<IVehicleDealershipService, VehicleDealershipService>();
             services.AddSingleton<IMessageDialogService, MauiMessageDialogService>();
 
@@ -106,40 +100,23 @@ namespace P12MAUI.Client
 
         private static void ConfigureViewModels(IServiceCollection services)
         {
-
-            // konfiguracja viewModeli 
-
-
             services.AddSingleton<VehiclesViewModel>();
             services.AddTransient<VehicleDetailsViewModel>();
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<TestViewModel>();
-
-
-
-            //services.AddSingleton<LoginViewModel>();
-
         }
 
         private static void ConfigureViews(IServiceCollection services)
         {
-            // konfiguracja okienek 
             services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
             services.AddSingleton<VehiclesPage>();
             services.AddSingleton<TestPage>();
-
-
-
-            //services.AddTransient<LoginView>();
         }
 
         private static void ConfigureHttpClients(IServiceCollection services, AppSettings appSettingsSection)
         {
-            var uriBuilder = new UriBuilder(appSettingsSection.BaseAPIUrl)
-            {
-            };
-            //Microsoft.Extensions.Http
+            var uriBuilder = new UriBuilder(appSettingsSection.BaseAPIUrl) { };
             services.AddHttpClient<IVehicleDealershipService, VehicleDealershipService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();

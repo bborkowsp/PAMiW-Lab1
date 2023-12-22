@@ -21,32 +21,25 @@ namespace P12MAUI.Client.ViewModels
         public AuthenticationState AuthenticationState;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
-
-
         private bool IsLoadingWebView;
         private bool IsLogin = false;
 
         public MainViewModel(IServiceProvider serviceProvider, IAuthService authService,
-            IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider, IVehicleDealershipService vehicleDealershipService)
+          IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider, IVehicleDealershipService vehicleDealershipService)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
             _authService = authService;
             _mesageDialogService = wpfMesageDialogService;
             _authenticationStateProvider = authenticationStateProvider;
-
-            // Initialize _vehicleDealershipService
             _vehicleDealershipService = vehicleDealershipService;
         }
-
 
         [ObservableProperty]
         private UserLoginDTO userLoginDTO;
 
-
         public void SetIsLogin(bool _isLogin)
         {
-            Debug.WriteLine("SetIsLogin: " + _isLogin);
             IsLogin = _isLogin;
             RefreshAllProperties();
         }
@@ -54,56 +47,37 @@ namespace P12MAUI.Client.ViewModels
         [RelayCommand]
         public async Task Login()
         {
-            Trace.WriteLine("Logging in... with email: " + UserLoginDTO.Email + " and password " + UserLoginDTO.Password);
-
-            if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password))
-            {
-            }
-
+            if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password)) { }
 
             UserLoginDTO userLoginDTO = new UserLoginDTO();
             userLoginDTO.Email = UserLoginDTO.Email;
             userLoginDTO.Password = UserLoginDTO.Password;
-            Trace.WriteLine("Loguje si�");
-
             var response = await _authService.Login(userLoginDTO);
 
             if (response.Success)
             {
-                Trace.WriteLine("Sukces");
-
                 LoggedIn(response.Data);
-
             }
             else
             {
-                Trace.WriteLine("porazka");
-
                 LoggedOut();
             }
-
         }
 
         public async Task LoggedIn(string token)
         {
-            Debug.WriteLine("Logged in!");
-
             AppCurrentResources.SetToken(token);
-            Trace.WriteLine("token,:  ", token);
-
-
 
             VehiclesPage loginView = _serviceProvider.GetService<VehiclesPage>();
             VehiclesViewModel loginViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
-
-            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object>
-            {
-                {nameof(MainViewModel), this }
+            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object> {
+                {
+                nameof(MainViewModel), this
+                }
             });
 
             MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
-
             mainViewModel.GetAuthenticationState();
         }
 
