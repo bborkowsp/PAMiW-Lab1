@@ -8,7 +8,7 @@
     BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 
     <StackLayout>
-        <Label Text="Login" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        <Label Text="{Binding LoginText}" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
         <Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
         <Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
         <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />

@@ -8,6 +8,7 @@ using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P12MAUI.Client.MessageBox;
+using P06Shop.Shared.Languages;
 using Microsoft.AspNetCore.Components.Authorization;
 using P12MAUI.Client.Services.CustomAuthStateProvider;
 using System.Diagnostics;
@@ -95,7 +96,11 @@ namespace P12MAUI.Client
             services.AddSingleton<IMap>(Map.Default);
             services.AddSingleton<IVehicleDealershipService, VehicleDealershipService>();
             services.AddSingleton<IMessageDialogService, MauiMessageDialogService>();
-
+            services.AddSingleton<ILanguageService,LanguageService>();
+            services.AddSingleton<ILanguageService>(languageService =>
+            {
+                return new LanguageService();
+            });
         }
 
         private static void ConfigureViewModels(IServiceCollection services)

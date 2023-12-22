@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="P12MAUI.Client.TestPage"
-	xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
-	xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
-
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="P12MAUI.Client.TestPage"
+    xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
+    xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
     BackgroundColor="{DynamicResource ThemeBackgroundColor}">
-	<StackLayout>
-		<StackLayout>
-		    <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
-			<Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
-		</StackLayout>
-	</StackLayout>
+
+    <StackLayout>
+        <StackLayout>
+            <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Select Language" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Picker Title="ChooseLanguage" SelectedIndexChanged="OnLanguageSelected">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>English</x:String>
+                        <x:String>Polish</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

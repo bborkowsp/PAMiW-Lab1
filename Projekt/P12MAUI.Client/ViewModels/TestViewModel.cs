@@ -1,12 +1,16 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.AspNetCore.Components.Authorization;
-using System.Diagnostics;
+using System.Diagnostics;using P06Shop.Shared.Languages;
+
 using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using System.Reflection;
+using System;
+using System.Globalization;
+using Microsoft.Maui.Controls;
 
 namespace P12MAUI.Client.ViewModels
 {
@@ -16,6 +20,9 @@ namespace P12MAUI.Client.ViewModels
         private readonly IMessageDialogService _messageDialogService;
 
         public static bool DarkTheme = true;
+
+        public static string Language = "polish";
+
 
         [ObservableProperty]
         private bool myProperty;
@@ -70,6 +77,40 @@ namespace P12MAUI.Client.ViewModels
                 OnPropertyChanged(property.Name);
             }
         }
+
+        private string selectedLanguage;
+
+        public string SelectedLanguage
+        {
+            get { return selectedLanguage; }
+            set
+            {
+                if (selectedLanguage != value)
+                {
+                    selectedLanguage = value;
+                    // Tutaj mo�esz doda� kod do obs�ugi wybranego j�zyka
+                    Debug.WriteLine($"Selected language: {selectedLanguage}");
+                    RefreshAllProperties();
+                }
+            }
+        }    public static event EventHandler<string> LanguageChanged;
+
+
+        public void OnLanguageSelected(object sender, EventArgs e)
+        {
+            var picker = sender as Picker;
+            if (picker != null)
+            {
+                SelectedLanguage = picker.SelectedItem as string;
+
+                Preferences.Set("language", SelectedLanguage);
+                TestViewModel.Language = SelectedLanguage.ToLower();
+                            RefreshAllProperties();
+            LanguageChanged?.Invoke(this, TestViewModel.Language);
+
+            }
+        }
+
 
     }
 }

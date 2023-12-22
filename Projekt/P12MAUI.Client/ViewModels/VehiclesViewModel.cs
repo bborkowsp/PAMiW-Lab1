@@ -3,6 +3,8 @@ using CommunityToolkit.Mvvm.Input;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.VehicleDealership;
+using P06Shop.Shared.Languages;
+
 using P12MAUI.Client;
 using P12MAUI.Client.ViewModels;
 using System;
@@ -23,6 +25,9 @@ namespace P12MAUI.Client.ViewModels
         private readonly IVehicleDealershipService _vehicleDealershipService;
         private readonly VehicleDetailsView _vehicleDetailsView;
         private readonly IMessageDialogService _messageDialogService;
+
+        private readonly ILanguageService _translationsManager;
+
         private readonly IConnectivity _connectivity;
 
         private int _currentPage = 1;
@@ -41,13 +46,16 @@ namespace P12MAUI.Client.ViewModels
         private Vehicle selectedVehicle;
 
         public VehiclesViewModel(IVehicleDealershipService vehicleDealership, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService,
-            IConnectivity connectivity)
+            IConnectivity connectivity, ILanguageService translationsManager
+)
         {
             _messageDialogService = messageDialogService;
             _vehicleDetailsView = vehicleDetailsView;
             _vehicleDealershipService = vehicleDealership;
             _connectivity = connectivity;
             PageVehicles = new ObservableCollection<Vehicle>();
+            _translationsManager = translationsManager;
+
             AllVehicles = new List<Vehicle>();
             GetVehicles();
         }
@@ -195,6 +203,8 @@ namespace P12MAUI.Client.ViewModels
         {
             get { return CurrentPage + " / " + maxPage; }
         }
+
+
 
     }
 }

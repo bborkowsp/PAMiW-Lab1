@@ -5,7 +5,8 @@ using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
-using System;
+using System;using P06Shop.Shared.Languages;
+
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
@@ -19,6 +20,7 @@ namespace P12MAUI.Client.ViewModels
         private readonly IAuthService _authService;
         private readonly IMessageDialogService _messageDialogService;
         private readonly IVehicleDealershipService _vehicleDealershipService;
+        private readonly ILanguageService _translationsManager;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
         public AuthenticationState AuthenticationState;
@@ -28,7 +30,7 @@ namespace P12MAUI.Client.ViewModels
         public MainViewModel(IServiceProvider serviceProvider, IAuthService authService,
                              IMessageDialogService messageDialogService,
                              AuthenticationStateProvider authenticationStateProvider,
-                             IVehicleDealershipService vehicleDealershipService)
+                             IVehicleDealershipService vehicleDealershipService,ILanguageService translationsManager)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
@@ -36,6 +38,9 @@ namespace P12MAUI.Client.ViewModels
             _messageDialogService = messageDialogService;
             _authenticationStateProvider = authenticationStateProvider;
             _vehicleDealershipService = vehicleDealershipService;
+                        _translationsManager = translationsManager;
+        TestViewModel.LanguageChanged += OnLanguageChanged;
+
         }
 
         [ObservableProperty]
@@ -145,6 +150,16 @@ namespace P12MAUI.Client.ViewModels
             {
                 OnPropertyChanged(property.Name);
             }
+        }
+    private void OnLanguageChanged(object sender, string newLanguage)
+    {
+        // Handle the language change in MainViewModel
+        // You can update language-dependent properties or perform other actions here
+        RefreshAllProperties();
+    }
+        public string LoginText
+        {
+            get { return _translationsManager.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle"); }
         }
     }
 }
