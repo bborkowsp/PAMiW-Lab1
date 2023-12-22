@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-22T21:40:49.938</Modified>
+      <Modified>2023-12-22T22:03:08.782</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-22T21:40:49.099</Modified>
+      <Modified>2023-12-22T22:03:08.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.runtimeconfig.json">
       <PackagePath>P12MAUI.Client.runtimeconfig.json</PackagePath>
@@ -43,15 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.dll">
       <PackagePath>P12MAUI.Client.dll</PackagePath>
-      <Modified>2023-12-22T21:40:46.222</Modified>
+      <Modified>2023-12-22T22:03:05.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>P12MAUI.Client.exe</PackagePath>
-      <Modified>2023-12-22T21:40:46.306</Modified>
+      <Modified>2023-12-22T22:03:05.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\P12MAUI.Client.deps.json">
       <PackagePath>P12MAUI.Client.deps.json</PackagePath>
-      <Modified>2023-12-22T20:12:15.613</Modified>
+      <Modified>2023-12-22T21:59:58.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
+             x:Class="P12MAUI.Client.RegisterPage">
+
+
+    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <VerticalStackLayout IsVisible="{Binding IsNormalLoginRegisterInvisible, Converter={StaticResource boolToVisibilityConv}}" >
+            <VerticalStackLayout Margin="10">
+                <VerticalStackLayout>
+                    <Label Text="{Binding EmailText}" />
+                    <Entry x:Name="EmailTextBox" Text="{Binding UserRegisterDTO.Email, Mode=TwoWay}" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding IsRegistrationHidden, Converter={StaticResource boolToVisibilityConv}}">
+                    <Label Text="{Binding UsernameText}" />
+                    <Entry x:Name="UsernameTextBox" Text="{Binding UserRegisterDTO.Username, Mode=TwoWay}" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Label Text="{Binding PasswordText}" />
+                    <Entry x:Name="PasswordBox" Text="{Binding UserRegisterDTO.Password, Mode=TwoWay}" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout IsVisible="{Binding IsRegistrationHidden, Converter={StaticResource boolToVisibilityConv}}">
+                    <Label Text="{Binding ConfirmPasswordText}" />
+                    <Entry x:Name="ConfirmPasswordBox" Text="{Binding UserRegisterDTO.ConfirmPassword, Mode=TwoWay}" />
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout HorizontalOptions="Start">
+                <Button Text="{Binding LoginText}" Command="{Binding LoginRegisterCommand}" />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

@@ -1,36 +1,39 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.AspNetCore.Components.Authorization;
-using System.Diagnostics;
 using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection;
+using System.Threading.Tasks;
+
 namespace P12MAUI.Client.ViewModels
 {
-
     public partial class MainViewModel : ObservableObject
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IAuthService _authService;
-        private readonly IMessageDialogService _mesageDialogService;
-
+        private readonly IMessageDialogService _messageDialogService;
         private readonly IVehicleDealershipService _vehicleDealershipService;
-
-        public AuthenticationState AuthenticationState;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
+        public AuthenticationState AuthenticationState;
         private bool IsLoadingWebView;
         private bool IsLogin = false;
 
         public MainViewModel(IServiceProvider serviceProvider, IAuthService authService,
-          IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider, IVehicleDealershipService vehicleDealershipService)
+                             IMessageDialogService messageDialogService,
+                             AuthenticationStateProvider authenticationStateProvider,
+                             IVehicleDealershipService vehicleDealershipService)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
             _authService = authService;
-            _mesageDialogService = wpfMesageDialogService;
+            _messageDialogService = messageDialogService;
             _authenticationStateProvider = authenticationStateProvider;
             _vehicleDealershipService = vehicleDealershipService;
         }
@@ -47,24 +50,29 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private bool isLoggingIn;
 
-        public void SetIsLogin(bool _isLogin)
+        public void SetIsLogin(bool isLogin)
         {
-            IsLogin = _isLogin;
+            IsLogin = isLogin;
             RefreshAllProperties();
         }
 
         [RelayCommand]
         public async Task Login()
         {
-            if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password)) { }
+            if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password))
+            {
+                return;
+            }
 
-            UserLoginDTO userLoginDTO = new UserLoginDTO();
-            userLoginDTO.Email = UserLoginDTO.Email;
-            userLoginDTO.Password = UserLoginDTO.Password;
+            var userLoginDTO = new UserLoginDTO
+            {
+                Email = UserLoginDTO.Email,
+                Password = UserLoginDTO.Password
+            };
 
             try
             {
-                IsLoggingIn = true; // Set the flag to indicate login in progress
+                IsLoggingIn = true;
 
                 var response = await _authService.Login(userLoginDTO);
 
@@ -80,31 +88,44 @@ namespace P12MAUI.Client.ViewModels
             }
             finally
             {
-                IsLoggingIn = false; // Reset the flag when login is completed or failed
+                IsLoggingIn = false;
             }
+        }
+
+        [RelayCommand]
+        public async Task Register()
+        {
+            RegisterPage loginView = _serviceProvider.GetService<RegisterPage>();
+            RegisterViewModel loginViewModel = _serviceProvider.GetService<RegisterViewModel>();
+
+            loginViewModel.SetIsLogin(false);
+
+            await Shell.Current.GoToAsync(nameof(RegisterPage), true, new Dictionary<string, object>
+            {
+                {nameof(MainViewModel), this }
+            });
         }
 
         public async Task LoggedIn(string token)
         {
             AppCurrentResources.SetToken(token);
 
-            VehiclesPage loginView = _serviceProvider.GetService<VehiclesPage>();
-            VehiclesViewModel loginViewModel = _serviceProvider.GetService<VehiclesViewModel>();
+            var loginView = _serviceProvider.GetService<VehiclesPage>();
+            var loginViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
-            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object> {
-                {
-                nameof(MainViewModel), this
-                }
+            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object>
+            {
+                { nameof(MainViewModel), this }
             });
 
-            MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
+            var mainViewModel = _serviceProvider.GetService<MainViewModel>();
             mainViewModel.GetAuthenticationState();
         }
 
         public async Task LoggedOut()
         {
             AppCurrentResources.SetToken("");
-            MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
+            var mainViewModel = _serviceProvider.GetService<MainViewModel>();
             mainViewModel.GetAuthenticationState();
         }
 
@@ -125,6 +146,5 @@ namespace P12MAUI.Client.ViewModels
                 OnPropertyChanged(property.Name);
             }
         }
-
     }
 }

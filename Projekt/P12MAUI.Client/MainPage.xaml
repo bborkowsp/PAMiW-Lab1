@@ -17,5 +17,7 @@
 
 
         <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+
+        <Button Text="Register" Command="{Binding RegisterCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
     </StackLayout>
 </ContentPage>

@@ -104,6 +104,8 @@ namespace P12MAUI.Client
             services.AddTransient<VehicleDetailsViewModel>();
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<TestViewModel>();
+            services.AddSingleton<RegisterViewModel>();
+
         }
 
         private static void ConfigureViews(IServiceCollection services)
@@ -112,6 +114,7 @@ namespace P12MAUI.Client
             services.AddTransient<VehicleDetailsView>();
             services.AddSingleton<VehiclesPage>();
             services.AddSingleton<TestPage>();
+            services.AddSingleton<RegisterPage>();
         }
 
         private static void ConfigureHttpClients(IServiceCollection services, AppSettings appSettingsSection)
@@ -120,7 +123,6 @@ namespace P12MAUI.Client
             services.AddHttpClient<IVehicleDealershipService, VehicleDealershipService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddHttpClient<IAuthService, AuthService>(client => client.BaseAddress = uriBuilder.Uri);
             services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
-
         }
     }
 }
