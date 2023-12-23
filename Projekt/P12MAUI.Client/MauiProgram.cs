@@ -110,7 +110,6 @@ namespace P12MAUI.Client
             services.AddSingleton<MainViewModel>();
             services.AddSingleton<TestViewModel>();
             services.AddSingleton<RegisterViewModel>();
-
         }
 
         private static void ConfigureViews(IServiceCollection services)

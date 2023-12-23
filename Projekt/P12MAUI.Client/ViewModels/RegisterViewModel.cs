@@ -37,11 +37,15 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty] private bool isConfirmationPasswordErrorMessageVisible;
 
         [ObservableProperty] private bool isGlobalErrorMessageVisible;
+        [ObservableProperty] private bool isLoading;
+
+        [ObservableProperty] private bool isAccountCreatedMessageVisible;
 
         [ObservableProperty] private string emailErrorMessage = "";
         [ObservableProperty] private string usernameErrorMessage = "";
         [ObservableProperty] private string passwordErrorMessage = "";
         [ObservableProperty] private string confirmationPasswordErrorMessage = "";
+        [ObservableProperty] private string accountCreatedMessage = "";
 
         [ObservableProperty] private string globalErrorMessage = "";
 
@@ -61,13 +65,6 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private UserRegisterDTO userRegisterDTO;
 
-        public void SetIsLogin(bool _isLogin)
-        {
-            Debug.WriteLine("SetIsLogin: " + _isLogin);
-            IsLogin = _isLogin;
-            RefreshAllPropertiesA();
-        }
-
         [RelayCommand]
         public async Task Register()
         {
@@ -76,7 +73,6 @@ namespace P12MAUI.Client.ViewModels
             isEmailErrorMessageVisible = false;
             isPasswordErrorMessageVisible = false;
             isGlobalErrorMessageVisible = false;
-
             RefreshAllPropertiesA();
             if (string.IsNullOrEmpty(UserRegisterDTO.Email) || string.IsNullOrEmpty(UserRegisterDTO.Password) || string.IsNullOrEmpty(UserRegisterDTO.Username) || string.IsNullOrEmpty(UserRegisterDTO.ConfirmPassword))
             {
@@ -107,43 +103,46 @@ namespace P12MAUI.Client.ViewModels
                 RefreshAllPropertiesA();
                 return;
             }
-
-            var response = await _authService.Register(UserRegisterDTO);
-
-            if (response.Success)
+            try
             {
-                SetIsLogin(true);
-            }
-            else
-            {
-                globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountErrorMessage");
-                isGlobalErrorMessageVisible = true;
+                isLoading = true;
+                RefreshAllPropertiesA();
+                var response = await _authService.Register(UserRegisterDTO);
+                isLoading = false;
                 RefreshAllPropertiesA();
 
-                return;
+                if (response.Success)
+                {
+                    accountCreatedMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "AccountCreatedMessage");
+                    isAccountCreatedMessageVisible = true;
+                    RefreshAllPropertiesA();
+                    isLoading = false;
+                    RefreshAllPropertiesA();
+
+                    Thread.Sleep(3000);
+
+                    return;
+
+                }
+                else
+                {
+                    globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountErrorMessage");
+                    isGlobalErrorMessageVisible = true;
+                    RefreshAllPropertiesA();
+                    isLoading = false;
+                    RefreshAllPropertiesA();
+
+
+
+                    return;
+                }
             }
-        }
+            finally
+            {
+                isLoading = false;
+                           //         CloseLoginWindow();
 
-        public async Task LoggedIn(string token)
-        {
-            Debug.WriteLine("Logged in!");
-
-            AppCurrentResources.SetToken(token);
-            MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
-            mainViewModel.GetAuthenticationState();
-            CloseLoginWindow();
-        }
-
-        public async Task LoggedOut()
-        {
-            AppCurrentResources.SetToken("");
-            MainViewModel mainViewModel = _serviceProvider.GetService<MainViewModel>();
-            mainViewModel.GetAuthenticationState();
-        }
-
-        public void OnPageLoaded()
-        {
-            SetLoading(false);
+            }
         }
 
         public void SetLoading(bool loading) { }
@@ -152,6 +151,8 @@ namespace P12MAUI.Client.ViewModels
         {
             var navigation = Application.Current.MainPage.Navigation;
             await navigation.PopAsync();
+            return;
+
         }
 
         public string UsernameText
@@ -191,6 +192,18 @@ namespace P12MAUI.Client.ViewModels
             {
                 OnPropertyChanged(property.Name);
             }
+            OnPropertyChanged(nameof(IsUsernameErrorMessageVisible));
+            OnPropertyChanged(nameof(IsConfirmationPasswordErrorMessageVisible));
+            OnPropertyChanged(nameof(IsEmailErrorMessageVisible));
+            OnPropertyChanged(nameof(IsPasswordErrorMessageVisible));
+            OnPropertyChanged(nameof(IsGlobalErrorMessageVisible));
+            OnPropertyChanged(nameof(IsAccountCreatedMessageVisible));
+            OnPropertyChanged(nameof(EmailErrorMessage));
+            OnPropertyChanged(nameof(UsernameErrorMessage));
+            OnPropertyChanged(nameof(PasswordErrorMessage));
+            OnPropertyChanged(nameof(ConfirmationPasswordErrorMessage));
+            OnPropertyChanged(nameof(AccountCreatedMessage));
+            OnPropertyChanged(nameof(GlobalErrorMessage));
         }
     }
 }

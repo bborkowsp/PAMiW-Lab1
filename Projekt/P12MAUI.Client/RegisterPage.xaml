@@ -36,6 +36,9 @@
 
             <VerticalStackLayout HorizontalOptions="Center">
                 <Button Text="{Binding CreateAccountText}" Command="{Binding RegisterCommand}" />
+                <ActivityIndicator IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" Color="Blue" />
+                         <Label Text="{Binding AccountCreatedMessage}" TextColor="Green" IsVisible="{Binding IsAccountCreatedMessageVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,20" />
+
             </VerticalStackLayout>
         </VerticalStackLayout>
 

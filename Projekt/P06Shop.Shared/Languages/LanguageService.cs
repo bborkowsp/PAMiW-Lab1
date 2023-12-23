@@ -265,6 +265,10 @@ namespace P06Shop.Shared.Languages
               "CreateAccountErrorMessage",
               "Error, failed to create new account!"
             },
+                        {
+              "AccountCreatedMessage",
+              "Account created successfully!"
+            },
           }
         },
         {
@@ -498,6 +502,10 @@ namespace P06Shop.Shared.Languages
             {
               "CreateAccountErrorMessage",
               "Błąd, nie udało się utworzyć nowego konta!"
+            },
+            {
+              "AccountCreatedMessage",
+              "Konto utworzone poprawnie!"
             },
           }
         }

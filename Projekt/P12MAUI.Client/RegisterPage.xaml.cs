@@ -13,9 +13,9 @@ public partial class RegisterPage : ContentPage
         InitializeComponent();
     }
 
-    private void Navigated(object sender, WebNavigatedEventArgs e)
-    {
-        loginViewModel.OnPageLoaded();
-    }
+    // private void Navigated(object sender, WebNavigatedEventArgs e)
+    // {
+    //     loginViewModel.OnPageLoaded();
+    // }
 
 }

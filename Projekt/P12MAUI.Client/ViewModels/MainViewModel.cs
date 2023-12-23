@@ -94,9 +94,6 @@ namespace P12MAUI.Client.ViewModels
         {
             RegisterPage loginView = _serviceProvider.GetService<RegisterPage>();
             RegisterViewModel loginViewModel = _serviceProvider.GetService<RegisterViewModel>();
-
-            loginViewModel.SetIsLogin(false);
-
             await Shell.Current.GoToAsync(nameof(RegisterPage), true, new Dictionary<string, object>
             {
                 { nameof(MainViewModel), this }
