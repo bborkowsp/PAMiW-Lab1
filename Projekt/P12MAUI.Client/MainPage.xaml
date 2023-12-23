@@ -10,14 +10,14 @@
     <StackLayout>
         <Label Text="{Binding LoginText}" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
         <Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
-        <Entry Placeholder="Password" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
-        <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        <Entry Placeholder="{Binding PasswordText}" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
+        <Button Text="{Binding LoginButtonText}" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
 
         <ActivityIndicator IsRunning="{Binding IsLoggingIn}" IsVisible="{Binding IsLoggingIn}" Color="Green" />
 
 
         <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
 
-        <Button Text="Register" Command="{Binding RegisterCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        <Button Text="{Binding CreateAccountText}" Command="{Binding RegisterCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
     </StackLayout>
 </ContentPage>

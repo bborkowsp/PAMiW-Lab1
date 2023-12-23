@@ -5,7 +5,8 @@ using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
-using System;using P06Shop.Shared.Languages;
+using System;
+using P06Shop.Shared.Languages;
 
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -20,7 +21,7 @@ namespace P12MAUI.Client.ViewModels
         private readonly IAuthService _authService;
         private readonly IMessageDialogService _messageDialogService;
         private readonly IVehicleDealershipService _vehicleDealershipService;
-        private readonly ILanguageService _translationsManager;
+        private readonly ILanguageService _languageService;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
         public AuthenticationState AuthenticationState;
@@ -30,7 +31,7 @@ namespace P12MAUI.Client.ViewModels
         public MainViewModel(IServiceProvider serviceProvider, IAuthService authService,
                              IMessageDialogService messageDialogService,
                              AuthenticationStateProvider authenticationStateProvider,
-                             IVehicleDealershipService vehicleDealershipService,ILanguageService translationsManager)
+                             IVehicleDealershipService vehicleDealershipService, ILanguageService languageService)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
@@ -38,8 +39,8 @@ namespace P12MAUI.Client.ViewModels
             _messageDialogService = messageDialogService;
             _authenticationStateProvider = authenticationStateProvider;
             _vehicleDealershipService = vehicleDealershipService;
-                        _translationsManager = translationsManager;
-        TestViewModel.LanguageChanged += OnLanguageChanged;
+            _languageService = languageService;
+            TestViewModel.LanguageChanged += OnLanguageChanged;
 
         }
 
@@ -64,8 +65,15 @@ namespace P12MAUI.Client.ViewModels
         [RelayCommand]
         public async Task Login()
         {
+            IsErrorVisible = false;
+            IsLoggingIn = true;
+
             if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password))
             {
+                ErrorMessage = GetErrorMessage();
+                IsErrorVisible = true;
+                IsLoggingIn = false;
+
                 return;
             }
 
@@ -78,6 +86,8 @@ namespace P12MAUI.Client.ViewModels
             try
             {
                 IsLoggingIn = true;
+                IsErrorVisible = false;
+
 
                 var response = await _authService.Login(userLoginDTO);
 
@@ -87,7 +97,7 @@ namespace P12MAUI.Client.ViewModels
                 }
                 else
                 {
-                    ErrorMessage = "Wrong credentials";
+                    ErrorMessage = GetErrorMessage();
                     IsErrorVisible = true;
                 }
             }
@@ -151,15 +161,31 @@ namespace P12MAUI.Client.ViewModels
                 OnPropertyChanged(property.Name);
             }
         }
-    private void OnLanguageChanged(object sender, string newLanguage)
-    {
-        // Handle the language change in MainViewModel
-        // You can update language-dependent properties or perform other actions here
-        RefreshAllProperties();
-    }
+        private void OnLanguageChanged(object sender, string newLanguage)
+        {
+            RefreshAllProperties();
+        }
         public string LoginText
         {
-            get { return _translationsManager.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle"); }
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle"); }
+        }
+
+        public string PasswordText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel"); }
+        }
+        public string CreateAccountText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel"); }
+        }
+
+        public string GetErrorMessage()
+        {
+            return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ErrorMessageLabel");
+        }
+        public string LoginButtonText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton"); }
         }
     }
 }
