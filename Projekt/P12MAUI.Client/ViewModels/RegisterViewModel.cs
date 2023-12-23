@@ -31,11 +31,25 @@ namespace P12MAUI.Client.ViewModels
 
         private readonly ILanguageService _languageService;
 
+        [ObservableProperty] private bool isUsernameErrorMessageVisible;
+        [ObservableProperty] private bool isEmailErrorMessageVisible;
+        [ObservableProperty] private bool isPasswordErrorMessageVisible;
+        [ObservableProperty] private bool isConfirmationPasswordErrorMessageVisible;
+
+        [ObservableProperty] private bool isGlobalErrorMessageVisible;
+
+        [ObservableProperty] private string emailErrorMessage = "";
+        [ObservableProperty] private string usernameErrorMessage = "";
+        [ObservableProperty] private string passwordErrorMessage = "";
+        [ObservableProperty] private string confirmationPasswordErrorMessage = "";
+
+        [ObservableProperty] private string globalErrorMessage = "";
+
         private bool IsLogin = false;
 
         public RegisterViewModel(IServiceProvider serviceProvider, IAuthService authService,
             IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider,
-             ILanguageService languageService)
+            ILanguageService languageService)
         {
             UserRegisterDTO = new UserRegisterDTO();
             _serviceProvider = serviceProvider;
@@ -51,31 +65,46 @@ namespace P12MAUI.Client.ViewModels
         {
             Debug.WriteLine("SetIsLogin: " + _isLogin);
             IsLogin = _isLogin;
-            RefreshAllProperties();
+            RefreshAllPropertiesA();
         }
 
         [RelayCommand]
         public async Task Register()
         {
-            Debug.WriteLine("Logging in... with email: " + UserRegisterDTO.Email + " and password " + UserRegisterDTO.Password);
+            isUsernameErrorMessageVisible = false;
+            isConfirmationPasswordErrorMessageVisible = false;
+            isEmailErrorMessageVisible = false;
+            isPasswordErrorMessageVisible = false;
+            isGlobalErrorMessageVisible = false;
 
-            if (string.IsNullOrEmpty(UserRegisterDTO.Email) || string.IsNullOrEmpty(UserRegisterDTO.Password))
+            RefreshAllPropertiesA();
+            if (string.IsNullOrEmpty(UserRegisterDTO.Email) || string.IsNullOrEmpty(UserRegisterDTO.Password) || string.IsNullOrEmpty(UserRegisterDTO.Username) || string.IsNullOrEmpty(UserRegisterDTO.ConfirmPassword))
             {
+                globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
+                isGlobalErrorMessageVisible = true;
+                RefreshAllPropertiesA();
                 return;
             }
-
-            if (string.IsNullOrEmpty(UserRegisterDTO.Username) || string.IsNullOrEmpty(UserRegisterDTO.ConfirmPassword))
+            if (!UserRegisterDTO.Email.Contains("@"))
             {
+                emailErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongEmailMessageError");
+                isEmailErrorMessageVisible = true;
+                RefreshAllPropertiesA();
                 return;
             }
-
-            if (!UserRegisterDTO.Email.Contains("@") || UserRegisterDTO.Password.Length < 6)
+            if (UserRegisterDTO.Password.Length < 8)
             {
+                passwordErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongPasswordMessageError");
+                isPasswordErrorMessageVisible = true;
+                RefreshAllPropertiesA();
                 return;
             }
 
             if (UserRegisterDTO.Password != UserRegisterDTO.ConfirmPassword)
             {
+                confirmationPasswordErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongConfPasswordMessageError");
+                isConfirmationPasswordErrorMessageVisible = true;
+                RefreshAllPropertiesA();
                 return;
             }
 
@@ -87,6 +116,11 @@ namespace P12MAUI.Client.ViewModels
             }
             else
             {
+                globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountErrorMessage");
+                isGlobalErrorMessageVisible = true;
+                RefreshAllPropertiesA();
+
+                return;
             }
         }
 
@@ -112,16 +146,44 @@ namespace P12MAUI.Client.ViewModels
             SetLoading(false);
         }
 
-        public void SetLoading(bool loading)
-        {
-        }
+        public void SetLoading(bool loading) { }
 
         public async void CloseLoginWindow()
         {
             var navigation = Application.Current.MainPage.Navigation;
             await navigation.PopAsync();
         }
-        public void RefreshAllProperties()
+
+        public string UsernameText
+        {
+            get
+            {
+                return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "UsernameLabel");
+            }
+        }
+        public string PasswordText
+        {
+            get
+            {
+                return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel");
+            }
+        }
+        public string ConfirmPasswordText
+        {
+            get
+            {
+                return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ConfirmPasswordLabel");
+            }
+        }
+        public string CreateAccountText
+        {
+            get
+            {
+                return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel2");
+            }
+        }
+
+        private void RefreshAllPropertiesA()
         {
             OnPropertyChanged();
             var properties = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
@@ -129,23 +191,6 @@ namespace P12MAUI.Client.ViewModels
             {
                 OnPropertyChanged(property.Name);
             }
-        }
-
-        public string UsernameText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "UsernameLabel"); }
-        }
-        public string PasswordText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel"); }
-        }
-        public string ConfirmPasswordText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ConfirmPasswordLabel"); }
-        }
-                public string CreateAccountText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel2"); }
         }
     }
 }

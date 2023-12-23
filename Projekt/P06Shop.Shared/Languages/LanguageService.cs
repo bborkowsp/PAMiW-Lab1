@@ -224,25 +224,46 @@ namespace P06Shop.Shared.Languages
               "Customer",
               "Customer"
             },
-                        {
+            {
               "CreateAccountLabel",
               "Create new account!"
             },
-                        {
-               "ErrorMessageLabel",
-               "Incorrect credentials!"
+            {
+              "ErrorMessageLabel",
+              "Incorrect credentials!"
             },
             {
-               "NotRegisteredLabel",
-               "Not registered?"
+              "NotRegisteredLabel",
+              "Not registered?"
             },
-                        {
+            {
               "ConfirmPasswordLabel",
               "Confirm password"
             },
-                        {
+            {
               "CreateAccountLabel2",
               "Create an account"
+            },
+            {
+              "NonNullFieldErrorMessage",
+              "Error, none of the fields can be empty!"
+            },
+            {
+              "WrongEmailMessageError",
+              "Error, wrong email!"
+            },
+            {
+              "WrongPasswordMessageError",
+              "Error, password is too weak!"
+            },
+            {
+              "WrongConfPasswordMessageError",
+              "Error, passwords are not the same!"
+            },
+
+            {
+              "CreateAccountErrorMessage",
+              "Error, failed to create new account!"
             },
           }
         },
@@ -438,17 +459,17 @@ namespace P06Shop.Shared.Languages
               "Customer",
               "Klient"
             },
-                        {
+            {
               "CreateAccountLabel",
               "Załóż nowe!"
             },
             {
-               "ErrorMessageLabel",
-               "Błędne dane logowania!"
+              "ErrorMessageLabel",
+              "Błędne dane logowania!"
             },
-                        {
-               "NotRegisteredLabel",
-               "Nie masz konta?"
+            {
+              "NotRegisteredLabel",
+              "Nie masz konta?"
             },
             {
               "ConfirmPasswordLabel",
@@ -458,7 +479,26 @@ namespace P06Shop.Shared.Languages
               "CreateAccountLabel2",
               "Utwórz konto"
             },
-
+            {
+              "NonNullFieldErrorMessage",
+              "Błąd, żadne z pól nie może być puste!"
+            },
+            {
+              "WrongEmailMessageError",
+              "Błąd, nieprawidłowy adres email!"
+            },
+            {
+              "WrongPasswordMessageError",
+              "Błąd, hasło jest za słabe!"
+            },
+            {
+              "WrongConfPasswordMessageError",
+              "Błąd, hasła nie są jednakowe!"
+            },
+            {
+              "CreateAccountErrorMessage",
+              "Błąd, nie udało się utworzyć nowego konta!"
+            },
           }
         }
       };
