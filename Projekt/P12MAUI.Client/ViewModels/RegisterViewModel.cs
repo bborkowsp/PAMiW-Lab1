@@ -46,8 +46,7 @@ namespace P12MAUI.Client.ViewModels
             _languageService = languageService;
         }
 
-        [ObservableProperty]
-        private UserRegisterDTO userRegisterDTO;
+        [ObservableProperty] private UserRegisterDTO userRegisterDTO;
 
         [RelayCommand]
         public async Task Register()

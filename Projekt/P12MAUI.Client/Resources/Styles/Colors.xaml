@@ -80,6 +80,8 @@
     <Color x:Key="ButtonLightBackColor">#75bdff</Color>
     <Color x:Key="ButtonDarkBackColor">#141414</Color>
 
+    <Color x:Key="SpinnerLightColor">#00467f</Color>
+    <Color x:Key="SpinnerDarkColor">#CCCCCC</Color>
 
     <Color x:Key="LightIconsColor">#ffffff</Color>
     <Color x:Key="DarkIconsColor">#1C1928</Color>
