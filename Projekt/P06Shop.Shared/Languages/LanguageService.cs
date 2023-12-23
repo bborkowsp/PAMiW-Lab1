@@ -1,37 +1,37 @@
 namespace P06Shop.Shared.Languages
 {
-   public class LanguageService : ILanguageService
-   {
-      public Dictionary<string, Dictionary<string, string>> loadedLanguages = new Dictionary<string, Dictionary<string, string>>();
+  public class LanguageService : ILanguageService
+  {
+    public Dictionary<string, Dictionary<string, string>> loadedLanguages = new Dictionary<string, Dictionary<string, string>>();
 
-      public LanguageService()
+    public LanguageService()
+    {
+      LoadLanguages();
+    }
+
+    public string GetLanguage(string language, string keyWord)
+    {
+      if (keyWord == null)
       {
-         LoadLanguages();
+        return keyWord;
       }
 
-      public string GetLanguage(string language, string keyWord)
+      if (loadedLanguages.TryGetValue(language, out
+          var languageTranslations))
       {
-         if (keyWord == null)
-         {
-            return keyWord;
-         }
-
-         if (loadedLanguages.TryGetValue(language, out
-             var languageTranslations))
-         {
-            if (languageTranslations.TryGetValue(keyWord, out
-                var translation))
-            {
-               return translation;
-            }
-         }
-
-         return keyWord;
+        if (languageTranslations.TryGetValue(keyWord, out
+            var translation))
+        {
+          return translation;
+        }
       }
 
-      public void LoadLanguages()
-      {
-         loadedLanguages = new Dictionary<string, Dictionary<string, string>> {
+      return keyWord;
+    }
+
+    public void LoadLanguages()
+    {
+      loadedLanguages = new Dictionary<string, Dictionary<string, string>> {
         {
           "english",
           new Dictionary < string,
@@ -66,11 +66,7 @@ namespace P06Shop.Shared.Languages
             },
             {
               "UsernameLabel",
-              "User name:"
-            },
-            {
-              "ConfirmPasswordLabel",
-              "Confirm Password:"
+              "User name"
             },
             {
               "RegisterButton",
@@ -239,7 +235,15 @@ namespace P06Shop.Shared.Languages
             {
                "NotRegisteredLabel",
                "Not registered?"
-            }
+            },
+                        {
+              "ConfirmPasswordLabel",
+              "Confirm password"
+            },
+                        {
+              "CreateAccountLabel2",
+              "Create an account"
+            },
           }
         },
         {
@@ -276,11 +280,7 @@ namespace P06Shop.Shared.Languages
             },
             {
               "UsernameLabel",
-              "Nazwa użytkownika:"
-            },
-            {
-              "ConfirmPasswordLabel",
-              "Potwierdź hasło:"
+              "Nazwa użytkownika"
             },
             {
               "RegisterButton",
@@ -449,12 +449,19 @@ namespace P06Shop.Shared.Languages
                         {
                "NotRegisteredLabel",
                "Nie masz konta?"
-            }
-
+            },
+            {
+              "ConfirmPasswordLabel",
+              "Potwierdź hasło"
+            },
+            {
+              "CreateAccountLabel2",
+              "Utwórz konto"
+            },
 
           }
         }
       };
-      }
-   }
+    }
+  }
 }

@@ -2,35 +2,36 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
+                 xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
              x:Class="P12MAUI.Client.RegisterPage">
 
 
     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-        <VerticalStackLayout IsVisible="{Binding IsNormalLoginRegisterInvisible, Converter={StaticResource boolToVisibilityConv}}" >
-            <VerticalStackLayout Margin="10">
-                <VerticalStackLayout>
-                    <Label Text="{Binding EmailText}" />
+        <VerticalStackLayout>
+            <VerticalStackLayout Margin="20">
+                <VerticalStackLayout Margin="0,0,0,10">
+                    <Label Text="Email" />
                     <Entry x:Name="EmailTextBox" Text="{Binding UserRegisterDTO.Email, Mode=TwoWay}" />
                 </VerticalStackLayout>
 
-                <VerticalStackLayout IsVisible="{Binding IsRegistrationHidden, Converter={StaticResource boolToVisibilityConv}}">
+                <VerticalStackLayout Margin="0,0,0,10">
                     <Label Text="{Binding UsernameText}" />
                     <Entry x:Name="UsernameTextBox" Text="{Binding UserRegisterDTO.Username, Mode=TwoWay}" />
                 </VerticalStackLayout>
 
-                <VerticalStackLayout>
+                <VerticalStackLayout Margin="0,0,0,10">
                     <Label Text="{Binding PasswordText}" />
-                    <Entry x:Name="PasswordBox" Text="{Binding UserRegisterDTO.Password, Mode=TwoWay}" />
+                    <Entry x:Name="PasswordBox" IsPassword="True" Text="{Binding UserRegisterDTO.Password, Mode=TwoWay}" />
                 </VerticalStackLayout>
 
-                <VerticalStackLayout IsVisible="{Binding IsRegistrationHidden, Converter={StaticResource boolToVisibilityConv}}">
+                <VerticalStackLayout Margin="0,0,0,10">
                     <Label Text="{Binding ConfirmPasswordText}" />
-                    <Entry x:Name="ConfirmPasswordBox" Text="{Binding UserRegisterDTO.ConfirmPassword, Mode=TwoWay}" />
+                    <Entry x:Name="ConfirmPasswordBox" IsPassword="True" Text="{Binding UserRegisterDTO.ConfirmPassword, Mode=TwoWay}" />
                 </VerticalStackLayout>
             </VerticalStackLayout>
 
-            <VerticalStackLayout HorizontalOptions="Start">
-                <Button Text="{Binding LoginText}" Command="{Binding LoginRegisterCommand}" />
+            <VerticalStackLayout HorizontalOptions="Center">
+                <Button Text="{Binding CreateAccountText}" Command="{Binding RegisterCommand}" />
             </VerticalStackLayout>
         </VerticalStackLayout>
 

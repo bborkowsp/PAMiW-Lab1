@@ -26,8 +26,6 @@
     
     
     <Style TargetType="Button">
-        <!-- Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Primary}}" / -->
-        <!-- Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" / -->
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource ButtonLightBackColor}, Dark={StaticResource ButtonDarkBackColor}}" />
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>

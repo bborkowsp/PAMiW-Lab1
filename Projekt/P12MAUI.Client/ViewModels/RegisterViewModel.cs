@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
+using P06Shop.Shared.Languages;
+
 using P06Shop.Shared.Services.VehicleDealershipService;
 using System;
 using System.Collections.Generic;
@@ -27,17 +29,19 @@ namespace P12MAUI.Client.ViewModels
         private readonly IAuthService _authService;
         private readonly IMessageDialogService _mesageDialogService;
 
-        private bool IsLoginWithFacebook;
-        private bool IsLoadingWebView;
+        private readonly ILanguageService _languageService;
+
         private bool IsLogin = false;
 
-        public RegisterViewModel(IServiceProvider serviceProvider, IAuthService authService, 
-            IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider)
+        public RegisterViewModel(IServiceProvider serviceProvider, IAuthService authService,
+            IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider,
+             ILanguageService languageService)
         {
             UserRegisterDTO = new UserRegisterDTO();
             _serviceProvider = serviceProvider;
             _authService = authService;
             _mesageDialogService = wpfMesageDialogService;
+            _languageService = languageService;
         }
 
         [ObservableProperty]
@@ -51,7 +55,7 @@ namespace P12MAUI.Client.ViewModels
         }
 
         [RelayCommand]
-        public async Task LoginRegister()
+        public async Task Register()
         {
             Debug.WriteLine("Logging in... with email: " + UserRegisterDTO.Email + " and password " + UserRegisterDTO.Password);
 
@@ -86,8 +90,6 @@ namespace P12MAUI.Client.ViewModels
             }
         }
 
-
-
         public async Task LoggedIn(string token)
         {
             Debug.WriteLine("Logged in!");
@@ -112,9 +114,6 @@ namespace P12MAUI.Client.ViewModels
 
         public void SetLoading(bool loading)
         {
-            Debug.WriteLine($"SetLoading= {loading}");
-            IsLoadingWebView = loading;
-          //  OnPropertyChanged(nameof(isLoadingSpinnerVisible));
         }
 
         public async void CloseLoginWindow()
@@ -132,5 +131,21 @@ namespace P12MAUI.Client.ViewModels
             }
         }
 
+        public string UsernameText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "UsernameLabel"); }
+        }
+        public string PasswordText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel"); }
+        }
+        public string ConfirmPasswordText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ConfirmPasswordLabel"); }
+        }
+                public string CreateAccountText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel2"); }
+        }
     }
 }

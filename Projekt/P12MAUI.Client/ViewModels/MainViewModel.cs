@@ -5,11 +5,8 @@ using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
 using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
-using System;
 using P06Shop.Shared.Languages;
-
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Reflection;
 using System.Threading.Tasks;
 
@@ -24,14 +21,15 @@ namespace P12MAUI.Client.ViewModels
         private readonly ILanguageService _languageService;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
-        public AuthenticationState AuthenticationState;
-        private bool IsLoadingWebView;
-        private bool IsLogin = false;
+        public AuthenticationState AuthenticationState { get; private set; }
+        public bool IsLoadingWebView { get; private set; }
+        public bool IsLogin { get; private set; }
 
-        public MainViewModel(IServiceProvider serviceProvider, IAuthService authService,
-                             IMessageDialogService messageDialogService,
-                             AuthenticationStateProvider authenticationStateProvider,
-                             IVehicleDealershipService vehicleDealershipService, ILanguageService languageService)
+        public MainViewModel(
+            IServiceProvider serviceProvider, IAuthService authService,
+            IMessageDialogService messageDialogService,
+            AuthenticationStateProvider authenticationStateProvider,
+            IVehicleDealershipService vehicleDealershipService, ILanguageService languageService)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
@@ -41,39 +39,24 @@ namespace P12MAUI.Client.ViewModels
             _vehicleDealershipService = vehicleDealershipService;
             _languageService = languageService;
             TestViewModel.LanguageChanged += OnLanguageChanged;
-
         }
 
-        [ObservableProperty]
-        private UserLoginDTO userLoginDTO;
-
-        [ObservableProperty]
-        private string errorMessage = "";
-
-        [ObservableProperty]
-        private bool isErrorVisible;
-
-        [ObservableProperty]
-        private bool isLoggingIn;
-
-        public void SetIsLogin(bool isLogin)
-        {
-            IsLogin = isLogin;
-            RefreshAllProperties();
-        }
+        [ObservableProperty] private UserLoginDTO userLoginDTO;
+        [ObservableProperty] private string errorMessage = "";
+        [ObservableProperty] private bool isErrorVisible;
+        [ObservableProperty] private bool isLoggingIn;
 
         [RelayCommand]
         public async Task Login()
         {
-            IsErrorVisible = false;
-            IsLoggingIn = true;
+            isErrorVisible = false;
+            isLoggingIn = true;
 
             if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password))
             {
-                ErrorMessage = GetErrorMessage();
-                IsErrorVisible = true;
-                IsLoggingIn = false;
-
+                errorMessage = GetErrorMessage();
+                isErrorVisible = true;
+                isLoggingIn = false;
                 return;
             }
 
@@ -85,25 +68,24 @@ namespace P12MAUI.Client.ViewModels
 
             try
             {
-                IsLoggingIn = true;
-                IsErrorVisible = false;
-
+                isLoggingIn = true;
+                isErrorVisible = false;
 
                 var response = await _authService.Login(userLoginDTO);
 
                 if (response.Success)
                 {
-                    LoggedIn(response.Data);
+                    await LoggedIn(response.Data);
                 }
                 else
                 {
-                    ErrorMessage = GetErrorMessage();
-                    IsErrorVisible = true;
+                    errorMessage = GetErrorMessage();
+                    isErrorVisible = true;
                 }
             }
             finally
             {
-                IsLoggingIn = false;
+                isLoggingIn = false;
             }
         }
 
@@ -117,11 +99,11 @@ namespace P12MAUI.Client.ViewModels
 
             await Shell.Current.GoToAsync(nameof(RegisterPage), true, new Dictionary<string, object>
             {
-                {nameof(MainViewModel), this }
+                { nameof(MainViewModel), this }
             });
         }
 
-        public async Task LoggedIn(string token)
+        private async Task LoggedIn(string token)
         {
             AppCurrentResources.SetToken(token);
 
@@ -134,17 +116,17 @@ namespace P12MAUI.Client.ViewModels
             });
 
             var mainViewModel = _serviceProvider.GetService<MainViewModel>();
-            mainViewModel.GetAuthenticationState();
+            await mainViewModel.GetAuthenticationState();
         }
 
         public async Task LoggedOut()
         {
             AppCurrentResources.SetToken("");
             var mainViewModel = _serviceProvider.GetService<MainViewModel>();
-            mainViewModel.GetAuthenticationState();
+            await mainViewModel.GetAuthenticationState();
         }
 
-        public async void GetAuthenticationState()
+        public async Task GetAuthenticationState()
         {
             AuthenticationState = await _authenticationStateProvider.GetAuthenticationStateAsync();
             _vehicleDealershipService.SetAuthToken(AppCurrentResources.Token);
@@ -161,36 +143,17 @@ namespace P12MAUI.Client.ViewModels
                 OnPropertyChanged(property.Name);
             }
         }
+
         private void OnLanguageChanged(object sender, string newLanguage)
         {
             RefreshAllProperties();
         }
-        public string LoginText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle"); }
-        }
 
-        public string PasswordText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel"); }
-        }
-        public string CreateAccountText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel"); }
-        }
-
-        public string GetErrorMessage()
-        {
-            return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ErrorMessageLabel");
-        }
-        public string LoginButtonText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton"); }
-        }
-
-        public string NotRegisteredText
-        {
-            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NotRegisteredLabel"); }
-        }
+        public string LoginText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle");
+        public string PasswordText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel");
+        public string CreateAccountText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel");
+        public string GetErrorMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ErrorMessageLabel");
+        public string LoginButtonText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton");
+        public string NotRegisteredText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NotRegisteredLabel");
     }
 }
