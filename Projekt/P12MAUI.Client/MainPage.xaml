@@ -7,6 +7,37 @@
     xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
     BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 
+    <ContentPage.Resources>
+        <Style x:Key="TransparentButtonStyle" TargetType="Button">
+            <Setter Property="TextColor" Value="{DynamicResource ButtonTextColor}" />
+            <Setter Property="FontFamily" Value="OpenSansRegular"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="Padding" Value="14,10"/>
+            <Setter Property="MinimumHeightRequest" Value="44"/>
+            <Setter Property="MinimumWidthRequest" Value="44"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" />
+                        <VisualState x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="PointerOver">
+                            <VisualState.Setters>
+                                <!-- You can add additional properties for the PointerOver state if needed -->
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+    </ContentPage.Resources>
+
     <StackLayout>
         <Label Text="{Binding LoginText}" FontSize="Large" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
         <Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
@@ -15,9 +46,23 @@
 
         <ActivityIndicator IsRunning="{Binding IsLoggingIn}" IsVisible="{Binding IsLoggingIn}" Color="Green" />
 
-
         <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
 
-        <Button Text="{Binding CreateAccountText}" Command="{Binding RegisterCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
+
+                            <Label Text="{Binding NotRegisteredText}" VerticalOptions="Center" Margin="10,0,0,0" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0">
+            <Label Text="{Binding CreateAccountText}" VerticalOptions="Center" Margin="10,0,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding RegisterCommand}" />
+                </Label.GestureRecognizers>
+                <Label.TextDecorations>
+                    <TextDecorations>Underline</TextDecorations>
+                </Label.TextDecorations>
+            </Label>
+        </StackLayout>
+        </StackLayout>
+
+
     </StackLayout>
 </ContentPage>

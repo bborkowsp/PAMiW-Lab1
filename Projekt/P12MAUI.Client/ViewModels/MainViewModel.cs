@@ -187,5 +187,10 @@ namespace P12MAUI.Client.ViewModels
         {
             get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton"); }
         }
+
+        public string NotRegisteredText
+        {
+            get { return _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NotRegisteredLabel"); }
+        }
     }
 }

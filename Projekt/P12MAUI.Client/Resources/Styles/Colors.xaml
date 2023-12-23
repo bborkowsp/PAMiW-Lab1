@@ -42,7 +42,6 @@
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
     <Color x:Key="ButtonTextColor">#000000</Color>
-    <Color x:Key="ButtonBackColor">#75bdff</Color>
     <Color x:Key="ButtonBackColorOnMouseOver">#297fff</Color>
 
 
@@ -78,6 +77,8 @@
     <Color x:Key="LightVehiclesThemeColor">#e0dede</Color>
     <Color x:Key="DarkVehiclesThemeColor">#CCCCCC</Color>
 
+    <Color x:Key="ButtonLightBackColor">#75bdff</Color>
+    <Color x:Key="ButtonDarkBackColor">#141414</Color>
 
 
     <Color x:Key="LightIconsColor">#ffffff</Color>

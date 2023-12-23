@@ -230,11 +230,15 @@ namespace P06Shop.Shared.Languages
             },
                         {
               "CreateAccountLabel",
-              "Create new account"
+              "Create new account!"
             },
                         {
                "ErrorMessageLabel",
                "Incorrect credentials!"
+            },
+            {
+               "NotRegisteredLabel",
+               "Not registered?"
             }
           }
         },
@@ -436,12 +440,18 @@ namespace P06Shop.Shared.Languages
             },
                         {
               "CreateAccountLabel",
-              "Załóż konto"
+              "Załóż nowe!"
             },
             {
                "ErrorMessageLabel",
                "Błędne dane logowania!"
+            },
+                        {
+               "NotRegisteredLabel",
+               "Nie masz konta?"
             }
+
+
           }
         }
       };
