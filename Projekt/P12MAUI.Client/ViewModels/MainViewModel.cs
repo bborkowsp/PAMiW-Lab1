@@ -37,7 +37,7 @@ namespace P12MAUI.Client.ViewModels
             _authenticationStateProvider = authenticationStateProvider;
             _vehicleDealershipService = vehicleDealershipService;
             _languageService = languageService;
-            TestViewModel.LanguageChanged += OnLanguageChanged;
+            SettingsViewModel.LanguageChanged += OnLanguageChanged;
         }
 
         [ObservableProperty] private UserLoginDTO userLoginDTO;
@@ -151,12 +151,12 @@ namespace P12MAUI.Client.ViewModels
             RefreshAllProperties();
         }
 
-        public string LoginText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle");
-        public string PasswordText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel");
-        public string CreateAccountText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel");
-        public string GetErrorMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
-        public string GetWrongCredentialsMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongCredentialsMessage");
-        public string LoginButtonText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton");
-        public string NotRegisteredText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NotRegisteredLabel");
+        public string LoginText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "LoginTitle");
+        public string PasswordText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "PasswordLabel");
+        public string CreateAccountText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "CreateAccountLabel");
+        public string GetErrorMessage() => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
+        public string GetWrongCredentialsMessage() => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "WrongCredentialsMessage");
+        public string LoginButtonText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "LoginButton");
+        public string NotRegisteredText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "NotRegisteredLabel");
     }
 }

@@ -16,7 +16,7 @@ namespace P12MAUI.Client
 
         private void Loaded_Event(object sender, EventArgs e)
         {
-            TestViewModel.LoadSettings();
+            SettingsViewModel.LoadSettings();
             _mainViewModel.RefreshAllProperties();
         }
     }

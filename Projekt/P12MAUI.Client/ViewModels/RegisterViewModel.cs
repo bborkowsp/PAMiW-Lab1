@@ -55,7 +55,7 @@ namespace P12MAUI.Client.ViewModels
             if (string.IsNullOrEmpty(UserRegisterDTO.Email) || string.IsNullOrEmpty(UserRegisterDTO.Password) ||
                 string.IsNullOrEmpty(UserRegisterDTO.Username) || string.IsNullOrEmpty(UserRegisterDTO.ConfirmPassword))
             {
-                globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
+                globalErrorMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
                 isGlobalErrorMessageVisible = true;
                 RefreshAllProperties();
                 return;
@@ -63,7 +63,7 @@ namespace P12MAUI.Client.ViewModels
 
             if (!UserRegisterDTO.Email.Contains("@"))
             {
-                emailErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongEmailMessageError");
+                emailErrorMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "WrongEmailMessageError");
                 isEmailErrorMessageVisible = true;
                 RefreshAllProperties();
                 return;
@@ -71,7 +71,7 @@ namespace P12MAUI.Client.ViewModels
 
             if (UserRegisterDTO.Password.Length < 8)
             {
-                passwordErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongPasswordMessageError");
+                passwordErrorMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "WrongPasswordMessageError");
                 isPasswordErrorMessageVisible = true;
                 RefreshAllProperties();
                 return;
@@ -79,7 +79,7 @@ namespace P12MAUI.Client.ViewModels
 
             if (UserRegisterDTO.Password != UserRegisterDTO.ConfirmPassword)
             {
-                confirmationPasswordErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongConfPasswordMessageError");
+                confirmationPasswordErrorMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "WrongConfPasswordMessageError");
                 isConfirmationPasswordErrorMessageVisible = true;
                 RefreshAllProperties();
                 return;
@@ -94,7 +94,7 @@ namespace P12MAUI.Client.ViewModels
 
                 if (response.Success)
                 {
-                    accountCreatedMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "AccountCreatedMessage");
+                    accountCreatedMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "AccountCreatedMessage");
                     isAccountCreatedMessageVisible = true;
                     RefreshAllProperties();
                     isLoading = false;
@@ -103,7 +103,7 @@ namespace P12MAUI.Client.ViewModels
                 }
                 else
                 {
-                    globalErrorMessage = _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountErrorMessage");
+                    globalErrorMessage = _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "CreateAccountErrorMessage");
                     isGlobalErrorMessageVisible = true;
                     RefreshAllProperties();
                     isLoading = false;
@@ -135,13 +135,13 @@ namespace P12MAUI.Client.ViewModels
             await navigation.PopAsync();
         }
 
-        public string UsernameText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "UsernameLabel");
+        public string UsernameText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "UsernameLabel");
 
-        public string PasswordText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel");
+        public string PasswordText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "PasswordLabel");
 
-        public string ConfirmPasswordText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ConfirmPasswordLabel");
+        public string ConfirmPasswordText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ConfirmPasswordLabel");
 
-        public string CreateAccountText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel2");
+        public string CreateAccountText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "CreateAccountLabel2");
 
         private void RefreshAllProperties()
         {

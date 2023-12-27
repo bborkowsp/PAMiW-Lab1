@@ -1,7 +1,8 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.AspNetCore.Components.Authorization;
-using System.Diagnostics;using P06Shop.Shared.Languages;
+using System.Diagnostics;
+using P06Shop.Shared.Languages;
 
 using P06Shop.Shared.Auth;
 using P06Shop.Shared.Services.AuthService;
@@ -14,7 +15,7 @@ using Microsoft.Maui.Controls;
 
 namespace P12MAUI.Client.ViewModels
 {
-    public partial class TestViewModel : ObservableObject
+    public partial class SettingsViewModel : ObservableObject
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IMessageDialogService _messageDialogService;
@@ -27,7 +28,7 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private bool myProperty;
 
-        public TestViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
+        public SettingsViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
         {
             _serviceProvider = serviceProvider;
             _messageDialogService = messageDialogService;
@@ -51,7 +52,7 @@ namespace P12MAUI.Client.ViewModels
         }
         public static void SetTheme(bool DarkTheme)
         {
-            TestViewModel.DarkTheme = DarkTheme;
+            SettingsViewModel.DarkTheme = DarkTheme;
             UpdateResources();
             Preferences.Set("isDarkTheme", DarkTheme);
         }
@@ -93,7 +94,8 @@ namespace P12MAUI.Client.ViewModels
                     RefreshAllProperties();
                 }
             }
-        }    public static event EventHandler<string> LanguageChanged;
+        }
+        public static event EventHandler<string> LanguageChanged;
 
 
         public void OnLanguageSelected(object sender, EventArgs e)
@@ -104,9 +106,9 @@ namespace P12MAUI.Client.ViewModels
                 SelectedLanguage = picker.SelectedItem as string;
 
                 Preferences.Set("language", SelectedLanguage);
-                TestViewModel.Language = SelectedLanguage.ToLower();
-                            RefreshAllProperties();
-            LanguageChanged?.Invoke(this, TestViewModel.Language);
+                SettingsViewModel.Language = SelectedLanguage.ToLower();
+                RefreshAllProperties();
+                LanguageChanged?.Invoke(this, SettingsViewModel.Language);
 
             }
         }

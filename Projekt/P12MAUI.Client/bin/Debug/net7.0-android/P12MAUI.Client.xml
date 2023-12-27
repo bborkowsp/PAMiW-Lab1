@@ -85,10 +85,10 @@
         <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.RegisterCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.RegisterViewModel.Register"/>.</summary>
         </member>
-        <member name="T:P12MAUI.Client.ViewModels.TestViewModel">
+        <member name="T:P12MAUI.Client.ViewModels.SettingsViewModel">
             <inheritdoc/>
         </member>
-        <member name="P:P12MAUI.Client.ViewModels.TestViewModel.MyProperty">
+        <member name="P:P12MAUI.Client.ViewModels.SettingsViewModel.MyProperty">
             <inheritdoc cref="F:P12MAUI.Client.ViewModels.TestViewModel.myProperty"/>
         </member>
         <member name="T:P12MAUI.Client.ViewModels.VehicleDetailsViewModel">

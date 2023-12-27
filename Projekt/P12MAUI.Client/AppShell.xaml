@@ -13,7 +13,7 @@
         
 	<FlyoutItem Title="Settings">
 		<Tab>
-			<ShellContent ContentTemplate="{DataTemplate local:TestPage}" />
+			<ShellContent ContentTemplate="{DataTemplate local:SettingsPage}" />
 		</Tab>
 	</FlyoutItem>
 </Shell>

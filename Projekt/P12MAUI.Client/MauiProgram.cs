@@ -96,7 +96,7 @@ namespace P12MAUI.Client
             services.AddSingleton<IMap>(Map.Default);
             services.AddSingleton<IVehicleDealershipService, VehicleDealershipService>();
             services.AddSingleton<IMessageDialogService, MauiMessageDialogService>();
-            services.AddSingleton<ILanguageService,LanguageService>();
+            services.AddSingleton<ILanguageService, LanguageService>();
             services.AddSingleton<ILanguageService>(languageService =>
             {
                 return new LanguageService();
@@ -108,7 +108,7 @@ namespace P12MAUI.Client
             services.AddSingleton<VehiclesViewModel>();
             services.AddTransient<VehicleDetailsViewModel>();
             services.AddSingleton<MainViewModel>();
-            services.AddSingleton<TestViewModel>();
+            services.AddSingleton<SettingsViewModel>();
             services.AddSingleton<RegisterViewModel>();
         }
 
@@ -117,7 +117,7 @@ namespace P12MAUI.Client
             services.AddSingleton<MainPage>();
             services.AddTransient<VehicleDetailsView>();
             services.AddSingleton<VehiclesPage>();
-            services.AddSingleton<TestPage>();
+            services.AddSingleton<SettingsPage>();
             services.AddSingleton<RegisterPage>();
         }
 
