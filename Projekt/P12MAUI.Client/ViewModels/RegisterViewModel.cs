@@ -34,8 +34,6 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty] private string accountCreatedMessage = "";
         [ObservableProperty] private string globalErrorMessage = "";
 
-        private bool IsLogin = false;
-
         public RegisterViewModel(IServiceProvider serviceProvider, IAuthService authService,
             IMessageDialogService wpfMesageDialogService, AuthenticationStateProvider authenticationStateProvider,
             ILanguageService languageService)

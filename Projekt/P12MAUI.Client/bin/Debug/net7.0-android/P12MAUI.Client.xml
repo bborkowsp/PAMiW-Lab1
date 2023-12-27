@@ -4,6 +4,93 @@
         <name>P12MAUI.Client</name>
     </assembly>
     <members>
+        <member name="T:P12MAUI.Client.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.UserLoginDTO">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.MainViewModel.userLoginDTO"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.ErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.MainViewModel.errorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.IsErrorVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.MainViewModel.isErrorVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.IsLoggingIn">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.MainViewModel.isLoggingIn"/>
+        </member>
+        <member name="F:P12MAUI.Client.ViewModels.MainViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.MainViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.MainViewModel.Login"/>.</summary>
+        </member>
+        <member name="F:P12MAUI.Client.ViewModels.MainViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.MainViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.MainViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.MainViewModel.Register"/>.</summary>
+        </member>
+        <member name="T:P12MAUI.Client.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsUsernameErrorMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isUsernameErrorMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsEmailErrorMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isEmailErrorMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsPasswordErrorMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isPasswordErrorMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsConfirmationPasswordErrorMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isConfirmationPasswordErrorMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsGlobalErrorMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isGlobalErrorMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsLoading">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isLoading"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.IsAccountCreatedMessageVisible">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.isAccountCreatedMessageVisible"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.EmailErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.emailErrorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.UsernameErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.usernameErrorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.PasswordErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.passwordErrorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.ConfirmationPasswordErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.confirmationPasswordErrorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.AccountCreatedMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.accountCreatedMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.GlobalErrorMessage">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.globalErrorMessage"/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.UserRegisterDTO">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.RegisterViewModel.userRegisterDTO"/>
+        </member>
+        <member name="F:P12MAUI.Client.ViewModels.RegisterViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.RegisterViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.RegisterViewModel.Register"/>.</summary>
+        </member>
+        <member name="T:P12MAUI.Client.ViewModels.TestViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:P12MAUI.Client.ViewModels.TestViewModel.MyProperty">
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.TestViewModel.myProperty"/>
+        </member>
         <member name="T:P12MAUI.Client.ViewModels.VehicleDetailsViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -67,6 +154,63 @@
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserLoginDTO">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserLoginDTO" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsErrorVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsErrorVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoggingIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoggingIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsUsernameErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsUsernameErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEmailErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEmailErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsPasswordErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsPasswordErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsConfirmationPasswordErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsConfirmationPasswordErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsGlobalErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsGlobalErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAccountCreatedMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAccountCreatedMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EmailErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EmailErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UsernameErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UsernameErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PasswordErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PasswordErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ConfirmationPasswordErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ConfirmationPasswordErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AccountCreatedMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AccountCreatedMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GlobalErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GlobalErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserRegisterDTO">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserRegisterDTO" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MyProperty">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MyProperty" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Vehicle">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Vehicle" generated properties.</summary>
         </member>
@@ -81,6 +225,63 @@
             A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
             for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
             </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserLoginDTO">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserLoginDTO" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsErrorVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsErrorVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoggingIn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoggingIn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsUsernameErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsUsernameErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEmailErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEmailErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsPasswordErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsPasswordErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsConfirmationPasswordErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsConfirmationPasswordErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsGlobalErrorMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsGlobalErrorMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoading">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoading" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAccountCreatedMessageVisible">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAccountCreatedMessageVisible" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EmailErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EmailErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UsernameErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UsernameErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PasswordErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PasswordErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ConfirmationPasswordErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ConfirmationPasswordErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AccountCreatedMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AccountCreatedMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GlobalErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GlobalErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserRegisterDTO">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserRegisterDTO" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MyProperty">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MyProperty" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Vehicle">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Vehicle" generated properties.</summary>

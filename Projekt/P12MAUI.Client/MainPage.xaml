@@ -26,8 +26,7 @@
 							</VisualState.Setters>
 						</VisualState>
 						<VisualState x:Name="PointerOver">
-							<VisualState.Setters>
-							</VisualState.Setters>
+							<VisualState.Setters></VisualState.Setters>
 						</VisualState>
 					</VisualStateGroup>
 				</VisualStateGroupList>
@@ -39,7 +38,7 @@
 		<Entry Placeholder="Email" Text="{Binding UserLoginDTO.Email}" Margin="20"/>
 		<Entry Placeholder="{Binding PasswordText}" IsPassword="True" Text="{Binding UserLoginDTO.Password}" Margin="20" />
 		<Button Text="{Binding LoginButtonText}" Command="{Binding LoginCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
-		<ActivityIndicator IsRunning="{Binding IsLoggingIn}" IsVisible="{Binding IsLoggingIn}" Color="Blue" />
+		<ActivityIndicator IsRunning="{Binding IsLoggingIn}" IsVisible="{Binding IsLoggingIn}" />
 		<Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding IsErrorVisible}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
 		<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0">
 			<Label Text="{Binding NotRegisteredText}" VerticalOptions="Center" Margin="10,0,0,0" />

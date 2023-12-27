@@ -16,25 +16,24 @@ namespace P12MAUI.Client.ViewModels
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IAuthService _authService;
-        private readonly IMessageDialogService _messageDialogService;
         private readonly IVehicleDealershipService _vehicleDealershipService;
         private readonly ILanguageService _languageService;
         private readonly AuthenticationStateProvider _authenticationStateProvider;
 
-        public AuthenticationState AuthenticationState { get; private set; }
-        public bool IsLoadingWebView { get; private set; }
-        public bool IsLogin { get; private set; }
+        public AuthenticationState AuthenticationState
+        {
+            get;
+            private set;
+        }
 
         public MainViewModel(
             IServiceProvider serviceProvider, IAuthService authService,
-            IMessageDialogService messageDialogService,
             AuthenticationStateProvider authenticationStateProvider,
             IVehicleDealershipService vehicleDealershipService, ILanguageService languageService)
         {
             UserLoginDTO = new UserLoginDTO();
             _serviceProvider = serviceProvider;
             _authService = authService;
-            _messageDialogService = messageDialogService;
             _authenticationStateProvider = authenticationStateProvider;
             _vehicleDealershipService = vehicleDealershipService;
             _languageService = languageService;
@@ -51,12 +50,14 @@ namespace P12MAUI.Client.ViewModels
         {
             isErrorVisible = false;
             isLoggingIn = true;
+            RefreshAllProperties();
 
             if (string.IsNullOrEmpty(UserLoginDTO.Email) || string.IsNullOrEmpty(UserLoginDTO.Password))
             {
                 errorMessage = GetErrorMessage();
                 isErrorVisible = true;
                 isLoggingIn = false;
+                RefreshAllProperties();
                 return;
             }
 
@@ -68,19 +69,21 @@ namespace P12MAUI.Client.ViewModels
 
             try
             {
-                isLoggingIn = true;
-                isErrorVisible = false;
-
                 var response = await _authService.Login(userLoginDTO);
 
                 if (response.Success)
                 {
                     await LoggedIn(response.Data);
+                    isLoggingIn = false;
+                    RefreshAllProperties();
                 }
                 else
                 {
-                    errorMessage = GetErrorMessage();
+                    errorMessage = GetWrongCredentialsMessage();
                     isErrorVisible = true;
+                    isLoggingIn = false;
+                    RefreshAllProperties();
+                    return;
                 }
             }
             finally
@@ -94,9 +97,10 @@ namespace P12MAUI.Client.ViewModels
         {
             RegisterPage loginView = _serviceProvider.GetService<RegisterPage>();
             RegisterViewModel loginViewModel = _serviceProvider.GetService<RegisterViewModel>();
-            await Shell.Current.GoToAsync(nameof(RegisterPage), true, new Dictionary<string, object>
-            {
-                { nameof(MainViewModel), this }
+            await Shell.Current.GoToAsync(nameof(RegisterPage), true, new Dictionary<string, object> {
+                {
+                    nameof(MainViewModel), this
+                }
             });
         }
 
@@ -107,9 +111,10 @@ namespace P12MAUI.Client.ViewModels
             var loginView = _serviceProvider.GetService<VehiclesPage>();
             var loginViewModel = _serviceProvider.GetService<VehiclesViewModel>();
 
-            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object>
-            {
-                { nameof(MainViewModel), this }
+            await Shell.Current.GoToAsync(nameof(VehiclesPage), true, new Dictionary<string, object> {
+                {
+                    nameof(MainViewModel), this
+                }
             });
 
             var mainViewModel = _serviceProvider.GetService<MainViewModel>();
@@ -149,7 +154,8 @@ namespace P12MAUI.Client.ViewModels
         public string LoginText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginTitle");
         public string PasswordText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "PasswordLabel");
         public string CreateAccountText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "CreateAccountLabel");
-        public string GetErrorMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "ErrorMessageLabel");
+        public string GetErrorMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NonNullFieldErrorMessage");
+        public string GetWrongCredentialsMessage() => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "WrongCredentialsMessage");
         public string LoginButtonText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "LoginButton");
         public string NotRegisteredText => _languageService.GetLanguage(TestViewModel.Language.ToLower(), "NotRegisteredLabel");
     }
