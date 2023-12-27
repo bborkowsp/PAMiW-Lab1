@@ -5,12 +5,17 @@ namespace P12MAUI.Client;
 
 public partial class RegisterPage : ContentPage
 {
-    private RegisterViewModel loginViewModel;
-    public RegisterPage(RegisterViewModel _loginViewModel)
+    private RegisterViewModel registerViewModel;
+    public RegisterPage(RegisterViewModel _registerViewModel)
     {
-        BindingContext = _loginViewModel;
-        loginViewModel = _loginViewModel;
+        BindingContext = _registerViewModel;
+        registerViewModel = _registerViewModel;
         InitializeComponent();
+    }
+    private void Loaded_Event(object sender, EventArgs e)
+    {
+        SettingsViewModel.LoadSettings();
+        registerViewModel.RefreshAllProperties();
     }
 
 }

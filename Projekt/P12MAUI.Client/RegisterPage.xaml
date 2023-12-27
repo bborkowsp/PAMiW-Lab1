@@ -4,7 +4,8 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
 	xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
-             x:Class="P12MAUI.Client.RegisterPage">
+             x:Class="P12MAUI.Client.RegisterPage"
+			     BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 	<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
 		<VerticalStackLayout>
 			<VerticalStackLayout Margin="20">

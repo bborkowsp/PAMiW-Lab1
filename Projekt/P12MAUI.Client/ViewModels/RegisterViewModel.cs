@@ -42,6 +42,7 @@ namespace P12MAUI.Client.ViewModels
             _serviceProvider = serviceProvider;
             _authService = authService;
             _languageService = languageService;
+            SettingsViewModel.LanguageChanged += OnLanguageChanged;
         }
 
         [ObservableProperty] private UserRegisterDTO userRegisterDTO;
@@ -143,7 +144,7 @@ namespace P12MAUI.Client.ViewModels
 
         public string CreateAccountText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "CreateAccountLabel2");
 
-        private void RefreshAllProperties()
+        public void RefreshAllProperties()
         {
             OnPropertyChanged();
             var properties = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
@@ -151,6 +152,10 @@ namespace P12MAUI.Client.ViewModels
             {
                 OnPropertyChanged(property.Name);
             }
+        }
+        private void OnLanguageChanged(object sender, string newLanguage)
+        {
+            RefreshAllProperties();
         }
     }
 }
