@@ -4,6 +4,7 @@ using P06Shop.Shared.MessageBox;
 using P06Shop.Shared.Services.VehicleDealershipService;
 using P06Shop.Shared.VehicleDealership;
 using P06Shop.Shared.Languages;
+using System.Reflection;
 
 using P12MAUI.Client;
 using P12MAUI.Client.ViewModels;
@@ -26,7 +27,7 @@ namespace P12MAUI.Client.ViewModels
         private readonly VehicleDetailsView _vehicleDetailsView;
         private readonly IMessageDialogService _messageDialogService;
 
-        private readonly ILanguageService _translationsManager;
+        private readonly ILanguageService _languageService;
 
         private readonly IConnectivity _connectivity;
 
@@ -46,7 +47,7 @@ namespace P12MAUI.Client.ViewModels
         private Vehicle selectedVehicle;
 
         public VehiclesViewModel(IVehicleDealershipService vehicleDealership, VehicleDetailsView vehicleDetailsView, IMessageDialogService messageDialogService,
-            IConnectivity connectivity, ILanguageService translationsManager
+            IConnectivity connectivity, ILanguageService languageService
 )
         {
             _messageDialogService = messageDialogService;
@@ -54,14 +55,19 @@ namespace P12MAUI.Client.ViewModels
             _vehicleDealershipService = vehicleDealership;
             _connectivity = connectivity;
             PageVehicles = new ObservableCollection<Vehicle>();
-            _translationsManager = translationsManager;
+            _languageService = languageService;
+
 
             AllVehicles = new List<Vehicle>();
+            SettingsViewModel.LanguageChanged += OnLanguageChanged;
+
             GetVehicles();
+
         }
 
         public async Task GetVehicles()
         {
+            RefreshAllProperties();
             AllVehicles.Clear();
 
             if (_connectivity.NetworkAccess != NetworkAccess.Internet)
@@ -205,6 +211,21 @@ namespace P12MAUI.Client.ViewModels
         }
 
 
-
+        public string AddNewCarText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "CreateVehicleTitle");
+        public string NextPageText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "NextPageButtonText");
+        public string PreviousPageText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "PreviousPageButtonText");
+        private void OnLanguageChanged(object sender, string newLanguage)
+        {
+            RefreshAllProperties();
+        }
+        public  void RefreshAllProperties()
+        {
+            OnPropertyChanged();
+            var properties = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (var property in properties)
+            {
+                OnPropertyChanged(property.Name);
+            }
+        }
     }
 }

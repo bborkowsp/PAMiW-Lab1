@@ -2,13 +2,20 @@ using P12MAUI.Client.ViewModels;
 using System.Diagnostics;
 namespace P12MAUI.Client
 {
-    [QueryProperty(nameof(MainViewModel), nameof(MainViewModel))]
     public partial class VehiclesPage : ContentPage
     {
-        public VehiclesPage(VehiclesViewModel vehiclesViewModel)
+        private VehiclesViewModel vehiclesViewModel;
+
+        public VehiclesPage(VehiclesViewModel _vehiclesViewModel)
         {
+            BindingContext = _vehiclesViewModel;
+            vehiclesViewModel = _vehiclesViewModel;
             InitializeComponent();
-            BindingContext = vehiclesViewModel;
+        }
+                private void Loaded_Event(object sender, EventArgs e)
+        {
+            SettingsViewModel.LoadSettings();
+            vehiclesViewModel.RefreshAllProperties();
         }
     }
 }

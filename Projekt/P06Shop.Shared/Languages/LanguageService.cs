@@ -1,20 +1,27 @@
-namespace P06Shop.Shared.Languages {
-    public class LanguageService: ILanguageService {
-        public Dictionary < string, Dictionary < string, string >> loadedLanguages = new Dictionary < string, Dictionary < string, string >> ();
+namespace P06Shop.Shared.Languages
+{
+    public class LanguageService : ILanguageService
+    {
+        public Dictionary<string, Dictionary<string, string>> loadedLanguages = new Dictionary<string, Dictionary<string, string>>();
 
-        public LanguageService() {
+        public LanguageService()
+        {
             LoadLanguages();
         }
 
-        public string GetLanguage(string language, string keyWord) {
-            if (keyWord == null) {
+        public string GetLanguage(string language, string keyWord)
+        {
+            if (keyWord == null)
+            {
                 return keyWord;
             }
 
             if (loadedLanguages.TryGetValue(language, out
-                    var languageTranslations)) {
+                    var languageTranslations))
+            {
                 if (languageTranslations.TryGetValue(keyWord, out
-                        var translation)) {
+                        var translation))
+                {
                     return translation;
                 }
             }
@@ -22,8 +29,9 @@ namespace P06Shop.Shared.Languages {
             return keyWord;
         }
 
-        public void LoadLanguages() {
-            loadedLanguages = new Dictionary < string, Dictionary < string, string >> {
+        public void LoadLanguages()
+        {
+            loadedLanguages = new Dictionary<string, Dictionary<string, string>> {
                 {
                     "english",
                     new Dictionary < string,
@@ -265,7 +273,14 @@ namespace P06Shop.Shared.Languages {
                             "WrongCredentialsMessage",
                             "Error, wrong login credentials!"
                         },
-
+                        {
+                            "NextPageButtonText",
+                            "Next page"
+                        },
+                                                {
+                            "PreviousPageButtonText",
+                            "Previous page"
+                        },
                     }
                 },
                 {
@@ -507,6 +522,14 @@ namespace P06Shop.Shared.Languages {
                         {
                             "WrongCredentialsMessage",
                             "Błąd, nieprawidłowe dane logowania!"
+                        },
+                        {
+                            "NextPageButtonText",
+                            "Następna strona"
+                        },
+                                                {
+                            "PreviousPageButtonText",
+                            "Poprzednia strona"
                         },
                     }
                 }

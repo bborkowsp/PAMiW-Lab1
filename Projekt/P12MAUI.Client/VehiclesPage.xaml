@@ -5,7 +5,7 @@
     x:Class="P12MAUI.Client.VehiclesPage"
 	xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
 	xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
-    BackgroundColor="{DynamicResource ThemeBackgroundColor}">
+    BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 	<ScrollView>
 		<VerticalStackLayout
             Spacing="15"
@@ -14,15 +14,8 @@
 			<HorizontalStackLayout Spacing="5">
 				<Button
                     Command="{Binding NewCommand}"
-                    Text="Add new Vehicle" TextColor="Black">
-					<Button.Style>
-						<Style TargetType="Button">
-							<Setter Property="Background" Value="{DynamicResource ButtonBackColor}" />
-							<Setter Property="Padding" Value="10,5" />
-							<Setter Property="FontSize" Value="14" />
-							<Setter Property="Margin" Value="0,10,30,0" />
-						</Style>
-					</Button.Style>
+Text="{Binding AddNewCarText}"
+					 >
 				</Button>
 			</HorizontalStackLayout>
 			<CollectionView ItemsSource="{Binding PageVehicles}" BackgroundColor="{DynamicResource ThemeVehiclesThemeColor}" >
@@ -63,9 +56,9 @@
 			</CollectionView>
 			<VerticalStackLayout HorizontalOptions="End" Spacing="5">
 				<HorizontalStackLayout HorizontalOptions="End" IsVisible="{Binding IsPaginationVisible}">
-					<Button Command="{Binding PreviousPageCommand}" Text="Previous Page" IsEnabled="{Binding IsPreviousButtonEnabled}" WidthRequest="110" />
+					<Button Command="{Binding PreviousPageCommand}" Text="{Binding PreviousPageText}"/>
 					<Label Text="{Binding CurrentPageText}" Margin="10" VerticalTextAlignment="Center" />
-					<Button Command="{Binding NextPageCommand}" Text="Next Page"  IsEnabled="{Binding IsNextButtonEnabled}" WidthRequest="100" />
+					<Button Command="{Binding NextPageCommand}" Text="{Binding NextPageText}"/>
 				</HorizontalStackLayout>
 			</VerticalStackLayout>
 		</VerticalStackLayout>
