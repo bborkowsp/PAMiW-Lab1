@@ -4,10 +4,13 @@ namespace P12MAUI.Client
 {
     public partial class SettingsPage : ContentPage
     {
-        public SettingsPage(SettingsViewModel settingsViewModel)
+        private SettingsViewModel settingsViewModel;
+
+        public SettingsPage(SettingsViewModel _settingsViewModel)
         {
+            BindingContext = _settingsViewModel;
+            settingsViewModel = _settingsViewModel;
             InitializeComponent();
-            BindingContext = settingsViewModel;
         }
 
         private void OnToggledCommand(object sender, ToggledEventArgs e)
@@ -18,6 +21,11 @@ namespace P12MAUI.Client
         public void OnLanguageSelected(object sender, EventArgs e)
         {
             ((SettingsViewModel)BindingContext).OnLanguageSelected(sender, e);
+        }
+        private void Loaded_Event(object sender, EventArgs e)
+        {
+            SettingsViewModel.LoadSettings();
+            settingsViewModel.RefreshAllProperties();
         }
     }
 }

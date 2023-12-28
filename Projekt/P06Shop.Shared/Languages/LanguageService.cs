@@ -281,6 +281,10 @@ namespace P06Shop.Shared.Languages
                             "PreviousPageButtonText",
                             "Previous page"
                         },
+                                                                    {
+                            "LanguageLabel",
+                            "Language"
+                        },
                     }
                 },
                 {
@@ -530,6 +534,14 @@ namespace P06Shop.Shared.Languages
                                                 {
                             "PreviousPageButtonText",
                             "Poprzednia strona"
+                        },
+                                                                                            {
+                            "LanguageLabel",
+                            "Język"
+                        },
+                                                                                                                {
+                            "LanguageSubLabel",
+                            "Wybierz język aplikacji"
                         },
                     }
                 }

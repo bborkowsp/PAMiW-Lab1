@@ -21,8 +21,6 @@ namespace P12MAUI.Client
             Preferences.Set("token", token);
         }
 
-        // THEME
-
         public static void ToggleTheme()
         {
             SetTheme(DarkTheme, true);
@@ -51,7 +49,6 @@ namespace P12MAUI.Client
             }
         }
 
-        // LANGUAGE
 
         public static void ToggleLanguage()
         {

@@ -77,7 +77,7 @@ namespace P12MAUI.Client
             //         Base_url = "api/Vehicle/",
             //         GetVehiclesEndpoint= "api/Vehicle",
             //         GetVehicleEndpoint= "api/Vehicle/{0}",
-            //         UpdateVehicleEndpoint= "api/Vehicl/{0}",
+            //         UpdateVehicleEndpoint= "api/Vehicle/{0}",
             //         DeleteVehicleEndpoint= "api/Vehicle/{0}",
             //         AddVehicleEndpoint= "api/Vehicle",
             //         SearchVehiclesEndpoint= "api/Vehicle/search"
