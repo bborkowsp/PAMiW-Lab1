@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using System.Net.Http.Headers;
 using System.Security.Claims;
+using Blazored.LocalStorage;
 using System.Text.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -9,23 +10,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
-using P12MAUI.Client.ViewModels;
-using P12MAUI.Client;
 
-namespace P12MAUI.Client.Services.CustomAuthStateProvider
+namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
 {
     public class CustomAuthStateProvider : AuthenticationStateProvider
     {
+        private readonly ILocalStorageService _localStorageService;
+
         private readonly HttpClient _httpClient;
 
-        public CustomAuthStateProvider(HttpClient httpClient)
+        public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient httpClient)
         {
             _httpClient = httpClient;
+            _localStorageService = localStorageService;
         }
+
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
-            string authToken = AppCurrentResources.Token;
+            string authToken = await _localStorageService.GetItemAsStringAsync("authToken");
 
             var identity = new ClaimsIdentity();
 
@@ -35,14 +38,11 @@ namespace P12MAUI.Client.Services.CustomAuthStateProvider
                 {
                     identity = new ClaimsIdentity(ParseClaimsFromJwt(authToken), "jwt");
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
-                    AppCurrentResources.SetToken("");
+                    await _localStorageService.RemoveItemAsync("authToken");
                     identity = new ClaimsIdentity();
                 }
-            }
-            else
-            {
             }
 
             var user = new ClaimsPrincipal(identity);

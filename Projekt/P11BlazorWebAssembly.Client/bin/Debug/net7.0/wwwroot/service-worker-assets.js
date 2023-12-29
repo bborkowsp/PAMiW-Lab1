@@ -97,12 +97,12 @@
       "url": "appsettings.Production.json"
     },
     {
-      "hash": "sha256-0mQT+DB5F4CE70VQKlY5OzVTNLG7WmJ0xyNnIW7WwbI=",
-      "url": "P11BlazorWebAssembly.Client.styles.css"
-    },
-    {
       "hash": "sha256-lOCs45frNf+D7me6lKLgUhRCdt4VwHCp9H6Ct+YWzfs=",
       "url": "_framework\/blazor.webassembly.js"
+    },
+    {
+      "hash": "sha256-0mQT+DB5F4CE70VQKlY5OzVTNLG7WmJ0xyNnIW7WwbI=",
+      "url": "P11BlazorWebAssembly.Client.styles.css"
     },
     {
       "hash": "sha256-5V8ovY1srbIIz7lzzMhLd3nNJ9LJ6bHoBOnLJahv8Go=",
@@ -969,23 +969,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-QborIk\/iz0hKvBdz7I\/cQQFyjfcLPHgCFqHCDlSQvLo=",
-      "url": "_framework\/P06Shop.Shared.dll"
+      "hash": "sha256-jxjMvznzankQut1UOF+Nfd6t66oHsT4FAnAqqYA4qkg=",
+      "url": "_framework\/P06VehicleDealership.Shared.dll"
     },
     {
-      "hash": "sha256-Y1im4yiWqBEGJilfc2YaZ+2et4mmOjC\/qUv0vEYVNEg=",
-      "url": "_framework\/P06Shop.Shared.pdb"
+      "hash": "sha256-EfeTM\/Onnjhhdgb3GQuS+jTuIwymSkvod1kQcdfS0A4=",
+      "url": "_framework\/P06VehicleDealership.Shared.pdb"
     },
     {
-      "hash": "sha256-GHWybFqtFhTwbpXyTBZm+hV1f32CF3chkEyAR9mFgMU=",
+      "hash": "sha256-uG37gNQ\/654etHNIPU4vy6ur09ekrp+J4hRGz7Qkb1Y=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-3NqOhII6ZWYil9wgqIxu1mr9iebK0Si6mmePUj1yuAk=",
+      "hash": "sha256-OYyjYceMoAUMjqgg8gpf5gW\/WYvNXYavv5hQk5A6NEg=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-7plMtU3qZrKMpvddkP1cjezHjQxDVkxQTlqihU5H3+o=",
+      "hash": "sha256-M9dakrF\/yexCnibK6pCuW8cNI8KSG16nMuEMzC4KMW0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "RRpOZpgz"
+  "version": "FsZtShwA"
 };

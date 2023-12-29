@@ -736,8 +736,8 @@
     <AppxPackagedFile Include="C:\Users\Paweł\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P06Shop.Shared\bin\Debug\net7.0\P06Shop.Shared.dll">
-      <PackagePath>P06Shop.Shared.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P06VehicleDealership.Shared\bin\Debug\net7.0\P06VehicleDealership.Shared.dll">
+      <PackagePath>P06VehicleDealership.Shared.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Paweł\.nuget\packages\microsoft.maui.controls.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

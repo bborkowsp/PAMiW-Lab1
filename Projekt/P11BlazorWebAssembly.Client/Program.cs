@@ -3,18 +3,18 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using P06Shop.Shared.Languages;
-	   
-											
+using P06VehicleDealership.Shared.Languages;
+
+
 using Microsoft.Extensions.Options;
-						  
-using P06Shop.Shared.Configuration;
-							   
-using P06Shop.Shared.Services.AuthService;
-using P06Shop.Shared.Services.VehicleDealershipService;
+
+using P06VehicleDealership.Shared.Configuration;
+
+using P06VehicleDealership.Shared.Services.AuthService;
+using P06VehicleDealership.Shared.Services.VehicleDealershipService;
 using P11BlazorWebAssembly.Client;
 using P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider;
-										 
+
 using System.Diagnostics;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

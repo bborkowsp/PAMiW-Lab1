@@ -89,7 +89,7 @@
             <inheritdoc/>
         </member>
         <member name="P:P12MAUI.Client.ViewModels.SettingsViewModel.MyProperty">
-            <inheritdoc cref="F:P12MAUI.Client.ViewModels.TestViewModel.myProperty"/>
+            <inheritdoc cref="F:P12MAUI.Client.ViewModels.SettingsViewModel.myProperty"/>
         </member>
         <member name="T:P12MAUI.Client.ViewModels.VehicleDetailsViewModel">
             <inheritdoc/>
@@ -140,7 +140,7 @@
             <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand"/>.</summary>
         </member>
         <member name="P:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetailsCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetails(P06Shop.Shared.VehicleDealership.Vehicle)"/>.</summary>
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:P12MAUI.Client.ViewModels.VehiclesViewModel.ShowDetails(P06VehicleDealership.Shared.VehicleDealership.Vehicle)"/>.</summary>
         </member>
         <member name="F:P12MAUI.Client.ViewModels.VehiclesViewModel.newCommand">
             <summary>The backing field for <see cref="P:P12MAUI.Client.ViewModels.VehiclesViewModel.NewCommand"/>.</summary>

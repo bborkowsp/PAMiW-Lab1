@@ -1,11 +1,11 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.AspNetCore.Components.Authorization;
-using P06Shop.Shared.Auth;
-using P06Shop.Shared.Services.AuthService;
-using P06Shop.Shared.MessageBox;
-using P06Shop.Shared.Languages;
-using P06Shop.Shared.Services.VehicleDealershipService;
+using P06VehicleDealership.Shared.Auth;
+using P06VehicleDealership.Shared.Services.AuthService;
+using P06VehicleDealership.Shared.MessageBox;
+using P06VehicleDealership.Shared.Languages;
+using P06VehicleDealership.Shared.Services.VehicleDealershipService;
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
