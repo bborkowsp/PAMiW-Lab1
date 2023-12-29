@@ -922,7 +922,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "P06Shop.Shared/1.0.0": {
+      "P06VehicleDealership.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -934,10 +934,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/P06Shop.Shared.dll": {}
+          "bin/placeholder/P06VehicleDealership.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/P06Shop.Shared.dll": {}
+          "bin/placeholder/P06VehicleDealership.Shared.dll": {}
         }
       }
     },
@@ -1846,7 +1846,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "P06Shop.Shared/1.0.0": {
+      "P06VehicleDealership.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1858,10 +1858,10 @@
           "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
-          "bin/placeholder/P06Shop.Shared.dll": {}
+          "bin/placeholder/P06VehicleDealership.Shared.dll": {}
         },
         "runtime": {
-          "bin/placeholder/P06Shop.Shared.dll": {}
+          "bin/placeholder/P06VehicleDealership.Shared.dll": {}
         }
       }
     }
@@ -3326,10 +3326,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "P06Shop.Shared/1.0.0": {
+    "P06VehicleDealership.Shared/1.0.0": {
       "type": "project",
-      "path": "../P06Shop.Shared/P06Shop.Shared.csproj",
-      "msbuildProject": "../P06Shop.Shared/P06Shop.Shared.csproj"
+      "path": "../P06VehicleDealership.Shared/P06VehicleDealership.Shared.csproj",
+      "msbuildProject": "../P06VehicleDealership.Shared/P06VehicleDealership.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3344,7 +3344,7 @@
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.0",
-      "P06Shop.Shared >= 1.0.0",
+      "P06VehicleDealership.Shared >= 1.0.0",
       "Quick.AspNetCore.Components.Web.Extensions >= 6.0.2"
     ]
   },
@@ -3381,8 +3381,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj": {
-              "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\P06Shop.Shared.csproj"
+            "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\P06VehicleDealership.Shared.csproj": {
+              "projectPath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\P06VehicleDealership.Shared.csproj"
             }
           }
         }

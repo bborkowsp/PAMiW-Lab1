@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T8pQ3RLlD0rYK5fSiL/ltN+yhsr4kc5Wkkpierkwydo=",
+  "Hash": "z0aKvRAuL7dqyR2q08zWFvDyh+LuvfH8cz6uA9S5qo4=",
   "Source": "P11BlazorWebAssembly.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -1081,12 +1081,12 @@
       "OriginalItemSpec": "C:\\Users\\Paweł\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib\\net6.0\\Newtonsoft.Json.dll"
     },
     {
-      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.dll",
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.dll",
       "SourceId": "P11BlazorWebAssembly.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/P06Shop.Shared.dll",
+      "RelativePath": "_framework/P06VehicleDealership.Shared.dll",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1097,15 +1097,15 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\bin\\Debug\\net7.0\\P06Shop.Shared.dll"
+      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\bin\\Debug\\net7.0\\P06VehicleDealership.Shared.dll"
     },
     {
-      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.pdb",
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.pdb",
       "SourceId": "P11BlazorWebAssembly.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/P06Shop.Shared.pdb",
+      "RelativePath": "_framework/P06VehicleDealership.Shared.pdb",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1116,7 +1116,7 @@
       "AssetTraitValue": "symbol",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06Shop.Shared\\bin\\Debug\\net7.0\\P06Shop.Shared.pdb"
+      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\bin\\Debug\\net7.0\\P06VehicleDealership.Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P11BlazorWebAssembly.Client.dll",
@@ -5907,6 +5907,25 @@
       "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.Compression.dll"
     },
     {
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\fwwe7g0vdz.gz",
+      "SourceId": "P11BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/P06VehicleDealership.Shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.dll"
+    },
+    {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\g1bppnnqg7.gz",
       "SourceId": "P11BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -6610,25 +6629,6 @@
       "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Diagnostics.TextWriterTraceListener.dll"
     },
     {
-      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\m6ow9a9ss0.gz",
-      "SourceId": "P11BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/P06Shop.Shared.pdb.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.pdb",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.pdb"
-    },
-    {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\m97ql7oa8z.gz",
       "SourceId": "P11BlazorWebAssembly.Client",
       "SourceType": "Computed",
@@ -6779,25 +6779,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.dll"
-    },
-    {
-      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\ng3hvqxzqw.gz",
-      "SourceId": "P11BlazorWebAssembly.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/P06Shop.Shared.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06Shop.Shared.dll"
     },
     {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\ni6nnzav6v.gz",
@@ -8451,6 +8432,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Hosting.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\ytgd522n75.gz",
+      "SourceId": "P11BlazorWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/P06VehicleDealership.Shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\P06VehicleDealership.Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\obj\\Debug\\net7.0\\compressed\\zzyro5zk44.gz",

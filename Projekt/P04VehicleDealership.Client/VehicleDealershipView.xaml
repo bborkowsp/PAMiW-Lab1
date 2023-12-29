@@ -1,0 +1,95 @@
+﻿<Window x:Class="P04VehicleDealership.Client.VehicleDealershipView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:P04VehicleDealership.Client"
+    mc:Ignorable="d"
+    Title="ShopProductsWindow" Height="471" Width="900">
+
+    <Window.Resources >
+        <BooleanToVisibilityConverter x:Key="boolToVisConv" ></BooleanToVisibilityConverter>
+        <Style x:Key="mainButtonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="{DynamicResource ButtonBackground}"/>
+            <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Cursor" Value="Hand" />
+
+        </Style>
+        <Style x:Key="mainLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel Grid.Column="0" Grid.Row="0" Background="{DynamicResource ThemeBackgroundColor}" >
+
+        <ListView ItemsSource="{Binding PageVehicles}" Height="350" DockPanel.Dock="Top" Background="{DynamicResource ThemeBackgroundColor}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Padding="10" Margin="5">
+                        <Grid Width="300">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                                <RowDefinition Height="Auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!--Pierwszy wiersz-->
+                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+
+                                <Label Content="{Binding Id}" FontWeight="Bold" Margin="0 0 10 0" Foreground="{DynamicResource LabelForeground}"></Label>
+                                <Label Content="{Binding Model}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource ModelForeground}"></Label>
+                                <Label Content="{Binding Fuel}" FontSize="16" FontWeight="Bold" Foreground="{DynamicResource FuelForeground}"></Label>
+                            </StackPanel>
+                            <!--Drugi wiersz-->
+                            <!--Trzeci wiersz-->
+                            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                <TextBlock Foreground="DarkGreen" Margin="0 0 10 0">
+
+                                </TextBlock>
+                            </StackPanel>
+                            <Button Grid.Row="3" 
+Command="{Binding DataContext.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=ListView}}" 
+CommandParameter="{Binding}" Style="{StaticResource mainButtonStyle}"  Content="{DynamicResource EditVehicle}" >
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="border" BorderBrush="Gray" BorderThickness="1" CornerRadius="4" Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="SkyBlue" />
+                                                <Setter Property="Foreground" Value="White" />
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </Grid>
+                    </Border>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NewVehicle}" Command="{Binding NewCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+
+        <Button DockPanel.Dock="Left" Content="{DynamicResource PrevPage}" Command="{Binding PreviousPageCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+        
+        <Button DockPanel.Dock="Left" Content="{DynamicResource NextPage}" Command="{Binding NextPageCommand}" Style="{StaticResource mainButtonStyle}" Width="130" Height="50"/>
+
+        <Label DockPanel.Dock="Left" Content="{DynamicResource PageNumber}"  FontWeight="Bold" VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding CurrentPage}"  FontWeight="Bold" Foreground="{DynamicResource LabelForeground}" VerticalAlignment="Center" ></Label>
+        <Label DockPanel.Dock="Left" Content=" / "  FontWeight="Bold" VerticalAlignment="Center"  Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content="{Binding MaxPage}" VerticalAlignment="Center" FontWeight="Bold" Foreground="{DynamicResource LabelForeground}"></Label>
+        <Label DockPanel.Dock="Left" Content=" " VerticalAlignment="Center" Foreground="{DynamicResource LabelForeground}" ></Label>
+
+    </DockPanel>
+
+</Window>

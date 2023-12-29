@@ -1,7 +1,7 @@
 {
   "entryAssembly": "P11BlazorWebAssembly.Client",
   "resources": {
-    "hash": "sha256-jLtDrUuZkh0ax1lBN77vbolps/FwR9bsGjdBKLEzD7A=",
+    "hash": "sha256-sPTJ7o5GzO/7hwixi5BfHdkL/W5wfhV+gb1hNqfW5Eo=",
     "runtime": {
       "dotnet.7.0.14.f8ia1wfuq2.js": "sha256-YWGUknGRzP/fgO6YjvCJKPVQNZAPEd6ll+rHfQEIW+I=",
       "dotnet.timezones.blat": "sha256-t5xviiOQTfAsF0UDhmcyalKiaehUmf/sqJl97tmPM0M=",
@@ -221,12 +221,12 @@
       "mscorlib.dll": "sha256-YcsJInaT/kw3Vrm+SESegPxvT/Lr9RE6rE/KnxWIIc0=",
       "netstandard.dll": "sha256-TztlSRjADgiEABbiAMdWZpHrUVd8wnRtQRAvlwmRP/4=",
       "System.Private.CoreLib.dll": "sha256-BAhrZ8Zg3cJKQipxdzqQo+9jtPkOkRx1ou3oIhDohtk=",
-      "P06Shop.Shared.dll": "sha256-SiqCUqBZA/1ORw8/ZuXO0538Kt7OZ4bjkeio1rTDxis=",
-      "P11BlazorWebAssembly.Client.dll": "sha256-XAZTYw0JRVrs5gZeOGaFFbOgeNEgnZwRk1WTe3YaUD4="
+      "P06VehicleDealership.Shared.dll": "sha256-c1kARLGtzU0VjlOuJSggbHkuEe5IK97Mpo2exdXDnuU=",
+      "P11BlazorWebAssembly.Client.dll": "sha256-hUOAi24FpMO82nBb2pWyp5Mhp6ghD9Yo4jLJZoryoZw="
     },
     "pdb": {
-      "P06Shop.Shared.pdb": "sha256-mWL8v/eCHTd5JYxXG7E28y4aRAcnILlyeluciC1IZn0=",
-      "P11BlazorWebAssembly.Client.pdb": "sha256-myz0CC1rQzSl7HwKCOsEKnAHSCT2IYKXAY1XfkmuiJw="
+      "P06VehicleDealership.Shared.pdb": "sha256-zr9C0yfxljRXNY9XYSrsggnVBoEZpHMBUVEPeols8jY=",
+      "P11BlazorWebAssembly.Client.pdb": "sha256-+2574vngXSm6EwMSJKcV8JKlsaLQrVyid4eaXFskrFQ="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

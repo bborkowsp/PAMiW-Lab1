@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using P06Shop.Shared.MessageBox;
-using P06Shop.Shared.Services.VehicleDealershipService;
-using P06Shop.Shared.VehicleDealership;
-using P06Shop.Shared.Languages;
+using P06VehicleDealership.Shared.MessageBox;
+using P06VehicleDealership.Shared.Services.VehicleDealershipService;
+using P06VehicleDealership.Shared.VehicleDealership;
+using P06VehicleDealership.Shared.Languages;
 using System.Reflection;
 
 using P12MAUI.Client;
@@ -218,7 +218,7 @@ namespace P12MAUI.Client.ViewModels
         {
             RefreshAllProperties();
         }
-        public  void RefreshAllProperties()
+        public void RefreshAllProperties()
         {
             OnPropertyChanged();
             var properties = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
