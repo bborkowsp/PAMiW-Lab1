@@ -55,7 +55,7 @@ Text="{Binding AddNewCarText}"
 				</CollectionView.ItemTemplate>
 			</CollectionView>
 			<VerticalStackLayout HorizontalOptions="End" Spacing="5">
-				<HorizontalStackLayout HorizontalOptions="End" IsVisible="{Binding IsPaginationVisible}">
+				<HorizontalStackLayout HorizontalOptions="End">
 					<Button Command="{Binding PreviousPageCommand}" Text="{Binding PreviousPageText}"/>
 					<Label Text="{Binding CurrentPageText}" Margin="10" VerticalTextAlignment="Center" />
 					<Button Command="{Binding NextPageCommand}" Text="{Binding NextPageText}"/>

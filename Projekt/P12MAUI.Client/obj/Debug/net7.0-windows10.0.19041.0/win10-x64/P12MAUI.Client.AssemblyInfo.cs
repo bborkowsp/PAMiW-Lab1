@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P12MAUI.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ff6b98e39633342b6ae21cfaf95cdc388f1405f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2b4a1e9950d17ba3b0a596b2b67c8fb8c8fb6e74")]
 [assembly: System.Reflection.AssemblyProductAttribute("P12MAUI.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P12MAUI.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
