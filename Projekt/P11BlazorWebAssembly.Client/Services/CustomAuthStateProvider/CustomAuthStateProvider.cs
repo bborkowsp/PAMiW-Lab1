@@ -1,22 +1,15 @@
-﻿using Microsoft.AspNetCore.Components.Authorization;
+﻿using Blazored.LocalStorage;
+using Microsoft.AspNetCore.Components.Authorization;
 using System.Net.Http.Headers;
 using System.Security.Claims;
-using Blazored.LocalStorage;
 using System.Text.Json;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Diagnostics;
-using Microsoft.Extensions.DependencyInjection;
+using static System.Net.WebRequestMethods;
 
 namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
 {
     public class CustomAuthStateProvider : AuthenticationStateProvider
     {
         private readonly ILocalStorageService _localStorageService;
-
         private readonly HttpClient _httpClient;
 
         public CustomAuthStateProvider(ILocalStorageService localStorageService, HttpClient httpClient)
@@ -25,18 +18,19 @@ namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
             _localStorageService = localStorageService;
         }
 
-
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
         {
             string authToken = await _localStorageService.GetItemAsStringAsync("authToken");
 
             var identity = new ClaimsIdentity();
+            _httpClient.DefaultRequestHeaders.Authorization = null;
 
             if (!string.IsNullOrEmpty(authToken))
             {
                 try
                 {
                     identity = new ClaimsIdentity(ParseClaimsFromJwt(authToken), "jwt");
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken.Replace("\"", ""));
                 }
                 catch (Exception)
                 {
@@ -48,7 +42,7 @@ namespace P11BlazorWebAssembly.Client.Services.CustomAuthStateProvider
             var user = new ClaimsPrincipal(identity);
             var state = new AuthenticationState(user);
             NotifyAuthenticationStateChanged(Task.FromResult(state));
-            return state;
+            return state;    
         }
 
         private IEnumerable<Claim> ParseClaimsFromJwt(string jwt)

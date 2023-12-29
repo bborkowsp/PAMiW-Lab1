@@ -13,11 +13,11 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-gCo0DMAE0k1X5ZIPcG6TVE2xUXtYagXfZB0wu1f888Q=",
+      "hash": "sha256-wHivjXgKbdbkXmGIuhQ0qyYwtpAlN4yYsGSqlGFVWPc=",
       "url": "css\/dark-theme.css"
     },
     {
-      "hash": "sha256-BnLwnsFXtyYlcjR5XZvd1y3ZPUPSw0R1YpadQBr7KZ0=",
+      "hash": "sha256-8OAniN3P1i6sFnLE8TVey40hWhQxL4HHij7fWA8CT38=",
       "url": "css\/light-theme.css"
     },
     {
@@ -969,23 +969,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-jxjMvznzankQut1UOF+Nfd6t66oHsT4FAnAqqYA4qkg=",
-      "url": "_framework\/P06VehicleDealership.Shared.dll"
+      "hash": "sha256-5IxtPumHrXLaUP5czl2EloGFTfcqJ\/5memsnGu+Lk8s=",
+      "url": "_framework\/P06Shop.Shared.dll"
     },
     {
-      "hash": "sha256-EfeTM\/Onnjhhdgb3GQuS+jTuIwymSkvod1kQcdfS0A4=",
-      "url": "_framework\/P06VehicleDealership.Shared.pdb"
+      "hash": "sha256-OIHdp1PxvkqPWXRcabEOHrbjWR9KKv6c3Ph6rKK9aJw=",
+      "url": "_framework\/P06Shop.Shared.pdb"
     },
     {
-      "hash": "sha256-uG37gNQ\/654etHNIPU4vy6ur09ekrp+J4hRGz7Qkb1Y=",
+      "hash": "sha256-8EOofCPEXlstE8tN3lejlINajQBWGLPW\/sRBAxrloU4=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-OYyjYceMoAUMjqgg8gpf5gW\/WYvNXYavv5hQk5A6NEg=",
+      "hash": "sha256-hXb31urKSE\/2dG5VYZV+\/OLe9N85nqhH81SQ\/LPT\/xA=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-M9dakrF\/yexCnibK6pCuW8cNI8KSG16nMuEMzC4KMW0=",
+      "hash": "sha256-2LfKdFlOpA9G+dEWwpeoOuC1FSc817vmrbo68PXNgFY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "FsZtShwA"
+  "version": "DOeeBgIN"
 };

@@ -2,9 +2,9 @@
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.ApplicationModel;
 using P12MAUI.Client.ViewModels;
-using P06VehicleDealership.Shared.MessageBox;
-using P06VehicleDealership.Shared.Services.VehicleDealershipService;
-using P06VehicleDealership.Shared.VehicleDealership;
+using P06Shop.Shared.MessageBox;
+using P06Shop.Shared.Services.VehicleDealershipService;
+using P06Shop.Shared.VehicleDealership;
 using System;
 using System.Collections.Generic;
 using System.Linq;

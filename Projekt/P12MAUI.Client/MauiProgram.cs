@@ -3,12 +3,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Maui.Controls;
 using P12MAUI.Client.ViewModels;
-using P06VehicleDealership.Shared.Configuration;
-using P06VehicleDealership.Shared.MessageBox;
-using P06VehicleDealership.Shared.Services.AuthService;
-using P06VehicleDealership.Shared.Services.VehicleDealershipService;
+using P06Shop.Shared.Configuration;
+using P06Shop.Shared.MessageBox;
+using P06Shop.Shared.Services.AuthService;
+using P06Shop.Shared.Services.VehicleDealershipService;
 using P12MAUI.Client.MessageBox;
-using P06VehicleDealership.Shared.Languages;
+using P06Shop.Shared.Languages;
 using Microsoft.AspNetCore.Components.Authorization;
 using P12MAUI.Client.Services.CustomAuthStateProvider;
 using System.Diagnostics;
@@ -77,7 +77,7 @@ namespace P12MAUI.Client
             //         Base_url = "api/Vehicle/",
             //         GetVehiclesEndpoint= "api/Vehicle",
             //         GetVehicleEndpoint= "api/Vehicle/{0}",
-            //         UpdateVehicleEndpoint= "api/Vehicle/{0}",
+            //         UpdateVehicleEndpoint= "api/Vehicl/{0}",
             //         DeleteVehicleEndpoint= "api/Vehicle/{0}",
             //         AddVehicleEndpoint= "api/Vehicle",
             //         SearchVehiclesEndpoint= "api/Vehicle/search"

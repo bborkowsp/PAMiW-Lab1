@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\P06VehicleDealership.Shared\P06VehicleDealership.Shared.csproj" />
+    <ProjectReference Include="..\P06Shop.Shared\P06Shop.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

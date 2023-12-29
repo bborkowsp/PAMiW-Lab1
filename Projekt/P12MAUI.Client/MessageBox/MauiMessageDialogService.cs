@@ -1,4 +1,4 @@
-﻿using P06VehicleDealership.Shared.MessageBox;
+﻿using P06Shop.Shared.MessageBox;
 using System;
 using System.Collections.Generic;
 using System.Linq;

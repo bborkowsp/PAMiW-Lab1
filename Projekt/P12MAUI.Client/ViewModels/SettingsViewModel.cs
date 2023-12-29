@@ -2,12 +2,12 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Diagnostics;
-using P06VehicleDealership.Shared.Languages;
+using P06Shop.Shared.Languages;
 
-using P06VehicleDealership.Shared.Auth;
-using P06VehicleDealership.Shared.Services.AuthService;
-using P06VehicleDealership.Shared.MessageBox;
-using P06VehicleDealership.Shared.Services.VehicleDealershipService;
+using P06Shop.Shared.Auth;
+using P06Shop.Shared.Services.AuthService;
+using P06Shop.Shared.MessageBox;
+using P06Shop.Shared.Services.VehicleDealershipService;
 using System.Reflection;
 using System;
 using System.Globalization;
@@ -19,7 +19,6 @@ namespace P12MAUI.Client.ViewModels
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IMessageDialogService _messageDialogService;
-        private readonly ILanguageService _languageService;
 
         public static bool DarkTheme = true;
 
@@ -29,18 +28,14 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private bool myProperty;
 
-        public SettingsViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService,
-        ILanguageService languageService)
+        public SettingsViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
         {
             _serviceProvider = serviceProvider;
             _messageDialogService = messageDialogService;
             DarkTheme = Preferences.Get("isDarkTheme", true);
             MyProperty = DarkTheme;
-            _languageService = languageService;
-
             SetTheme(DarkTheme);
             RefreshAllProperties();
-            SettingsViewModel.LanguageChanged += OnLanguageChanged;
         }
 
         public static void LoadSettings()
@@ -94,6 +89,7 @@ namespace P12MAUI.Client.ViewModels
                 if (selectedLanguage != value)
                 {
                     selectedLanguage = value;
+                    // Tutaj mo�esz doda� kod do obs�ugi wybranego j�zyka
                     Debug.WriteLine($"Selected language: {selectedLanguage}");
                     RefreshAllProperties();
                 }
@@ -113,16 +109,10 @@ namespace P12MAUI.Client.ViewModels
                 SettingsViewModel.Language = SelectedLanguage.ToLower();
                 RefreshAllProperties();
                 LanguageChanged?.Invoke(this, SettingsViewModel.Language);
+
             }
         }
-        private void OnLanguageChanged(object sender, string newLanguage)
-        {
-            RefreshAllProperties();
-        }
-        public string LanguageText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "LanguageLabel");
-        public string LanguageSubText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "LanguageSubLabel");
-        public string EnglishOptionText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "EnglishOption");
-        public string PolishOptionText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "PolishOption");
+
 
     }
 }

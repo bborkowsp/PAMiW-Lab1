@@ -6,8 +6,8 @@ C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.com
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.aab
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk.idsig
-C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.dll
-C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.pdb
+C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.dll
+C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.pdb
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\build.props
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\adb.props
@@ -152,8 +152,8 @@ C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Mono.Android.pdb
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\netstandard.dll
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
-C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.dll
-C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.pdb
+C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.dll
+C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.pdb
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.dll
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.pdb
 C:\Users\pamiw\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\System.AppContext.dll
@@ -1060,8 +1060,8 @@ C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.aab
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk.idsig
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.dll
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.pdb
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.pdb
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\build.props
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\adb.props
@@ -1253,8 +1253,8 @@ C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Mono.Android.pdb
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\netstandard.dll
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.dll
-C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.pdb
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.pdb
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.dll
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.pdb
 C:\Users\Paweł\Downloads\github3\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\System.AppContext.dll
@@ -2082,8 +2082,8 @@ C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p
 C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.aab
 C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk
 C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk.idsig
-C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.dll
-C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.pdb
+C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.dll
+C:\Users\pamiw\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.pdb
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\build.props
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\adb.props
@@ -2275,8 +2275,8 @@ C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Mo
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Mono.Android.pdb
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\netstandard.dll
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
-C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.dll
-C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.pdb
+C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.dll
+C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.pdb
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.dll
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.pdb
 C:\Users\pamiw\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\System.AppContext.dll
@@ -3139,8 +3139,8 @@ C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.aab
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\com.companyname.p12maui.client-Signed.apk.idsig
-C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.dll
-C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06VehicleDealership.Shared.pdb
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\bin\Debug\net7.0-android\P06Shop.Shared.pdb
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\build.props
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\adb.props
@@ -3332,8 +3332,8 @@ C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Mono.Android.pdb
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\netstandard.dll
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
-C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.dll
-C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06VehicleDealership.Shared.pdb
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.dll
+C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P06Shop.Shared.pdb
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.dll
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\P12MAUI.Client.pdb
 C:\Users\Paweł\Downloads\github\PAMiW-Lab\Projekt\P12MAUI.Client\obj\Debug\net7.0-android\android\assets\System.AppContext.dll

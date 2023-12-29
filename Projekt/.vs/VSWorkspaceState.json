@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\P04WeatherForecastAPI.Client",
+    "\\P04WeatherForecastAPI.Client\\ViewModels",
+    "\\P11BlazorWebAssembly.Client",
+    "\\P11BlazorWebAssembly.Client\\Pages"
   ],
   "SelectedNode": "\\Dzien18.sln",
   "PreviewInSolutionExplorer": false

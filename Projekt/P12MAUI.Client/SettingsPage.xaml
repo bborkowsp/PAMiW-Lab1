@@ -5,33 +5,24 @@
     x:Class="P12MAUI.Client.SettingsPage"
     xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
     xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
-	BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
+    BackgroundColor="{DynamicResource ThemeBackgroundColor}">
+
     <StackLayout>
         <StackLayout>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
-                <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
-                <Switch Grid.Column="1" IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
-            </Grid>
+            <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
         </StackLayout>
 
         <StackLayout>
-            <Label Text="{Binding LanguageText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="{Binding LanguageSubText}" VerticalOptions="Center"/>
-                <Picker SelectedIndexChanged="OnLanguageSelected" VerticalOptions="Center">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>English</x:String>
-                            <x:String>Polish</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
-            </StackLayout>
+            <Label Text="Select Language" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+            <Picker Title="ChooseLanguage" SelectedIndexChanged="OnLanguageSelected">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>English</x:String>
+                        <x:String>Polish</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
         </StackLayout>
-
     </StackLayout>
 </ContentPage>
