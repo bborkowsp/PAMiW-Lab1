@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4qf8bZK2yzzMaw7jJ7L8KfqYgGsVG6Al7sG9zO5tgCZYLHSej+nd9J0CLvOgBBj8TQmTpGjeB4IeT3zONReHpw==",
+  "dgSpecHash": "4bqnv/eTRqdAZvfc0B4c9aw2vNrtYb24qfSYQJ/Gdf6ZsEzQTFrYFtUoz1EqGKww5mzx4LMHkvW9muX47kLYJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github2\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
+  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P11BlazorWebAssembly.Client\\P11BlazorWebAssembly.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\blazored.localstorage\\4.4.0\\blazored.localstorage.4.4.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\jokersoft.aspnetcore.webutilities\\7.0.13\\jokersoft.aspnetcore.webutilities.7.0.13.nupkg.sha512",
