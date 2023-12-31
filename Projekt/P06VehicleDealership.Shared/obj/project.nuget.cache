@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A+W7vthAmPOJvw1QRpKS4GAuV6nkxsKAgMQ++im7OW/9n7qy8ApRt7DBSgItC50L7zsAHfcR4Q35s/FeJaohdw==",
+  "dgSpecHash": "fBvZN1hGZ3bpalxXdN12M29TZizXlK2UbKKygldFK6KOspK5gCJ7h5cnFniHJOhd9yTD7ut7FCzYfPl2EqX34Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\P06VehicleDealership.Shared.csproj",
+  "projectFilePath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P06VehicleDealership.Shared\\P06VehicleDealership.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

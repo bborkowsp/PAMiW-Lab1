@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vOAtbEg764Ldm/Og/j9hy6MDaoKvysJRpOCWojLXuaI7YrvOI1+0Yf+9jLHpdGZ6LwJmnUlAUnYd1VvZQ96lEA==",
+  "dgSpecHash": "vynhyRvTsV++RG2EhzbW9x/ikiHNsskIFu9jMNkL3mtwFYv9sEdBPFU9fvgeGp7tlit+8jxNcAyKj2QDXxLLtA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P05VehicleDealership.API\\P05VehicleDealership.API.csproj",
+  "projectFilePath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P05VehicleDealership.API\\P05VehicleDealership.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

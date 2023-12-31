@@ -19,6 +19,7 @@ namespace P12MAUI.Client.ViewModels
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IMessageDialogService _messageDialogService;
+        private readonly ILanguageService _languageService;
 
         public static bool DarkTheme = true;
 
@@ -28,14 +29,33 @@ namespace P12MAUI.Client.ViewModels
         [ObservableProperty]
         private bool myProperty;
 
-        public SettingsViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService)
+        [ObservableProperty]
+        private int selectedIndex;
+
+        public SettingsViewModel(IServiceProvider serviceProvider, IMessageDialogService messageDialogService, ILanguageService languageService)
         {
             _serviceProvider = serviceProvider;
             _messageDialogService = messageDialogService;
             DarkTheme = Preferences.Get("isDarkTheme", true);
             MyProperty = DarkTheme;
             SetTheme(DarkTheme);
+            SetLanguage();
+            _languageService = languageService;
+            SettingsViewModel.LanguageChanged += OnLanguageChanged;
             RefreshAllProperties();
+        }
+
+        private void SetLanguage()
+        {
+            var savedLanguage = Preferences.Get("language", "polish");
+            if (savedLanguage == "English")
+            {
+                selectedIndex = 1;
+                return;
+            }
+            selectedIndex = 2;
+            return;
+
         }
 
         public static void LoadSettings()
@@ -89,8 +109,6 @@ namespace P12MAUI.Client.ViewModels
                 if (selectedLanguage != value)
                 {
                     selectedLanguage = value;
-                    // Tutaj mo�esz doda� kod do obs�ugi wybranego j�zyka
-                    Debug.WriteLine($"Selected language: {selectedLanguage}");
                     RefreshAllProperties();
                 }
             }
@@ -113,6 +131,12 @@ namespace P12MAUI.Client.ViewModels
             }
         }
 
+        public string ToggleThemeText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ToggleTheme");
 
+        public string ChooseLanguageLabelText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ChooseLanguageLabel");
+        private void OnLanguageChanged(object sender, string newLanguage)
+        {
+            RefreshAllProperties();
+        }
     }
 }

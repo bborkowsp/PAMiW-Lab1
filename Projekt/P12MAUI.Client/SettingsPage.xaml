@@ -5,17 +5,19 @@
     x:Class="P12MAUI.Client.SettingsPage"
     xmlns:viewmodel="clr-namespace:P12MAUI.Client.ViewModels"
     xmlns:converters="clr-namespace:P12MAUI.Client.Resources"
-    BackgroundColor="{DynamicResource ThemeBackgroundColor}">
+	BackgroundColor="{DynamicResource ThemeBackgroundColor}" Loaded="Loaded_Event">
 
     <StackLayout>
-        <StackLayout>
-            <Label Text="Toggle Theme" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
-            <Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand"/>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="{Binding ToggleThemeText}" FontSize="16" VerticalOptions="Center" VerticalTextAlignment="Center"/>
+            <BoxView HorizontalOptions="EndAndExpand" Color="Transparent"/>
+            <Switch IsToggled="{Binding MyProperty, Mode=TwoWay}" Toggled="OnToggledCommand" HorizontalOptions="End"/>
         </StackLayout>
 
-        <StackLayout>
-            <Label Text="Select Language" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
-            <Picker Title="ChooseLanguage" SelectedIndexChanged="OnLanguageSelected">
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+            <Label Text="{Binding ChooseLanguageLabelText}" FontSize="16" VerticalOptions="Center" VerticalTextAlignment="Center"/>
+            <BoxView HorizontalOptions="EndAndExpand" Color="Transparent"/>
+            <Picker SelectedIndexChanged="OnLanguageSelected" HorizontalOptions="End" Title="" SelectedIndex="{Binding SelectedIndex}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>English</x:String>
@@ -24,5 +26,6 @@
                 </Picker.ItemsSource>
             </Picker>
         </StackLayout>
+
     </StackLayout>
 </ContentPage>

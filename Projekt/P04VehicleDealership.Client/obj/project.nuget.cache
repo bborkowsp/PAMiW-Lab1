@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2A9H6qBoH1l5gbWR+rTYCgliaUTq4X5jP5xsUZnXNeHPkmrPEdPs5d8f7u2997f8hleiNT+36ZXOwa+H1cWwnA==",
+  "dgSpecHash": "lS8YPIVWF8WbR1CE7BGzBWnPt9VBCexL/3u5YWjoLn6fjyfRKUZ2Lw9BUJgigyoMzCla1ycig4p5yvZgpst2Qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Paweł\\Downloads\\github3\\PAMiW-Lab\\Projekt\\P04VehicleDealership.Client\\P04VehicleDealership.Client.csproj",
+  "projectFilePath": "C:\\Users\\pamiw\\PAMiW-Lab\\Projekt\\P04VehicleDealership.Client\\P04VehicleDealership.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Paweł\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\Paweł\\.nuget\\packages\\microsoft.cognitiveservices.speech\\1.33.0\\microsoft.cognitiveservices.speech.1.33.0.nupkg.sha512",

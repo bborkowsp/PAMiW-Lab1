@@ -48,43 +48,43 @@ namespace P12MAUI.Client
         private static AppSettings ConfigureAppSettings(IServiceCollection services)
         {
 
-            string workingDirectory = AppContext.BaseDirectory;
-            string projectDir = Directory.GetParent(workingDirectory).Parent.Parent.Parent.Parent.Parent.FullName;
+            // string workingDirectory = AppContext.BaseDirectory;
+            // string projectDir = Directory.GetParent(workingDirectory).Parent.Parent.Parent.Parent.Parent.FullName;
 
-            string s = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            var builder = new ConfigurationBuilder()
-              .AddUserSecrets<MauiApp>()
-              .SetBasePath(projectDir)
-              .AddJsonFile("appsettings.json");
-            IConfiguration _configuration = builder.Build();
+            // string s = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            // var builder = new ConfigurationBuilder()
+            //   .AddUserSecrets<MauiApp>()
+            //   .SetBasePath(projectDir)
+            //   .AddJsonFile("appsettings.json");
+            // IConfiguration _configuration = builder.Build();
 
-            var appSettings = _configuration.GetSection(nameof(AppSettings));
-            var appSettingsSection = appSettings.Get<AppSettings>();
+            // var appSettings = _configuration.GetSection(nameof(AppSettings));
+            // var appSettingsSection = appSettings.Get<AppSettings>();
 
+            // services.AddSingleton(appSettingsSection);
+
+            string baseUrl;
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "production")
+            {
+                baseUrl = "https://pamiw-409617.lm.r.appspot.com";
+            }
+
+            var appSettingsSection = new AppSettings()
+            {
+                BaseAPIUrl = "https://pamiw-409617.lm.r.appspot.com",
+                VehicleDealershipEndpoints = new VehicleDealershipEndpoints()
+                {
+                    Base_url = "api/Vehicle/",
+                    GetVehiclesEndpoint = "api/Vehicle",
+                    GetVehicleEndpoint = "api/Vehicle/{0}",
+                    UpdateVehicleEndpoint = "api/Vehicle/{0}",
+                    DeleteVehicleEndpoint = "api/Vehicle/{0}",
+                    AddVehicleEndpoint = "api/Vehicle",
+                    SearchVehiclesEndpoint = "api/Vehicle/search"
+                },
+
+            };
             services.AddSingleton(appSettingsSection);
-
-            // string baseUrl;
-            // if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "production")
-            // {
-            //     baseUrl = "https://localhost:7230";
-            // }
-
-            // var appSettingsSection = new AppSettings()
-            // {
-            //     BaseAPIUrl = "https://localhost:7230",
-            //     VehicleDealershipEndpoints = new VehicleDealershipEndpoints()
-            //     {
-            //         Base_url = "api/Vehicle/",
-            //         GetVehiclesEndpoint= "api/Vehicle",
-            //         GetVehicleEndpoint= "api/Vehicle/{0}",
-            //         UpdateVehicleEndpoint= "api/Vehicl/{0}",
-            //         DeleteVehicleEndpoint= "api/Vehicle/{0}",
-            //         AddVehicleEndpoint= "api/Vehicle",
-            //         SearchVehiclesEndpoint= "api/Vehicle/search"
-            //     },
-
-            // };
-            //  services.AddSingleton(appSettingsSection);
 
             return appSettingsSection;
         }

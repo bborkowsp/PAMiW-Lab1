@@ -985,7 +985,7 @@
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-zyhVmZfNn9\/n6qKST5O3+Lc31eb85FgzLAZhA1r\/N74=",
+      "hash": "sha256-n+U3Klw4fKyNjf+qmdE\/fe50v4lPSftHkXhwzcLn22Q=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "QYdNCBGE"
+  "version": "BEprcZ8V"
 };

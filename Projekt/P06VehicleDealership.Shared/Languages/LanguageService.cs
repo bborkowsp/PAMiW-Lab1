@@ -285,6 +285,10 @@ namespace P06VehicleDealership.Shared.Languages
               "LanguageLabel",
               "Language"
             },
+            {
+              "ToggleTheme",
+              "Toggle theme"
+            },
           }
         },
         {
@@ -542,6 +546,10 @@ namespace P06VehicleDealership.Shared.Languages
             {
               "LanguageSubLabel",
               "Wybierz język aplikacji"
+            },
+            {
+              "ToggleTheme",
+              "Zmień tło"
             },
           }
         }
