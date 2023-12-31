@@ -131,7 +131,8 @@ namespace P12MAUI.Client.ViewModels
             }
         }
 
-        public string ToggleThemeText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ToggleTheme");
+
+        public string ToggleThemeText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ToogleThemeText");
 
         public string ChooseLanguageLabelText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ChooseLanguageLabel");
         private void OnLanguageChanged(object sender, string newLanguage)

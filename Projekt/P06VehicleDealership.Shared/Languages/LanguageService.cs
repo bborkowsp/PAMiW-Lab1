@@ -82,7 +82,7 @@ namespace P06VehicleDealership.Shared.Languages
             },
             {
               "PolishOption",
-              "Polish"
+              "Polski"
             },
             {
               "EnglishOption",
@@ -286,7 +286,7 @@ namespace P06VehicleDealership.Shared.Languages
               "Language"
             },
             {
-              "ToggleTheme",
+              "ToogleThemeText",
               "Toggle theme"
             },
           }
@@ -345,7 +345,7 @@ namespace P06VehicleDealership.Shared.Languages
             },
             {
               "EnglishOption",
-              "Angielski"
+              "English"
             },
             {
               "SaveButton",
@@ -547,8 +547,8 @@ namespace P06VehicleDealership.Shared.Languages
               "LanguageSubLabel",
               "Wybierz język aplikacji"
             },
-            {
-              "ToggleTheme",
+                        {
+              "ToogleThemeText",
               "Zmień tło"
             },
           }

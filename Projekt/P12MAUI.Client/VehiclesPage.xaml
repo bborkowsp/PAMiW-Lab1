@@ -12,11 +12,7 @@
             Padding="30,0"
             VerticalOptions="Center">
 			<HorizontalStackLayout Spacing="5">
-				<Button
-                    Command="{Binding NewCommand}"
-Text="{Binding AddNewCarText}"
-					 >
-				</Button>
+				<Button Command="{Binding NewCommand}" Text="{Binding AddNewCarText}"/>
 			</HorizontalStackLayout>
 			<CollectionView ItemsSource="{Binding PageVehicles}" BackgroundColor="{DynamicResource ThemeVehiclesThemeColor}" >
 				<CollectionView.ItemTemplate>

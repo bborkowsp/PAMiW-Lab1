@@ -5,9 +5,11 @@ using P12MAUI.Client.ViewModels;
 using P06VehicleDealership.Shared.MessageBox;
 using P06VehicleDealership.Shared.Services.VehicleDealershipService;
 using P06VehicleDealership.Shared.VehicleDealership;
+using P06VehicleDealership.Shared.Languages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,11 +22,16 @@ namespace P12MAUI.Client.ViewModels
         private readonly IVehicleDealershipService _vehicleDealershipService;
         private readonly IMessageDialogService _messageDialogService;
         private VehiclesViewModel _vehicleViewModel;
+        private readonly ILanguageService _languageService;
 
-        public VehicleDetailsViewModel(IVehicleDealershipService vehicleDealership, IMessageDialogService messageDialogService)
+
+        public VehicleDetailsViewModel(IVehicleDealershipService vehicleDealership, IMessageDialogService messageDialogService, ILanguageService languageService)
         {
             _vehicleDealershipService = vehicleDealership;
             _messageDialogService = messageDialogService;
+            _languageService = languageService;
+            SettingsViewModel.LanguageChanged += OnLanguageChanged;
+            RefreshAllProperties();
         }
 
         public VehiclesViewModel VehiclesViewModel
@@ -100,5 +107,24 @@ namespace P12MAUI.Client.ViewModels
             DeleteVehicle();
             await Shell.Current.GoToAsync("../", true);
         }
+
+        private void OnLanguageChanged(object sender, string newLanguage)
+        {
+            RefreshAllProperties();
+        }
+        public void RefreshAllProperties()
+        {
+            OnPropertyChanged();
+            var properties = GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            foreach (var property in properties)
+            {
+                OnPropertyChanged(property.Name);
+            }
+        }
+
+        public string LabelFuelText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "FuelLabel");
+        public string DeleteText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "DeleteButton");
+        public string SaveText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "SaveButton");
+
     }
 }
