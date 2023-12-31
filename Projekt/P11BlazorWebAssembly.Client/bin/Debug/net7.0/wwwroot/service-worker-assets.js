@@ -85,11 +85,11 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-4aE541bcaDOv5jkCYzt3UP1RKeijbE8aa18aTC3rOxQ=",
+      "hash": "sha256-FALZdUx5e+YjRT57cD+AYzf1u8al5XEXx8\/ugF7+cd8=",
       "url": "appsettings.Development.json"
     },
     {
-      "hash": "sha256-lLj5RYrc4hmUVg3lvpkg3KO2wuBrRjfmxeRhw5Maafg=",
+      "hash": "sha256-GmbL7RnuJyAnbjaRGlrjj57MkPYjQvbCgxLqpqsr\/WY=",
       "url": "appsettings.json"
     },
     {
@@ -977,15 +977,15 @@
       "url": "_framework\/P06VehicleDealership.Shared.pdb"
     },
     {
-      "hash": "sha256-hUOAi24FpMO82nBb2pWyp5Mhp6ghD9Yo4jLJZoryoZw=",
+      "hash": "sha256-e86Je60xybKdfsPPSKr63Y4mdEVd2eB2HXgUziBCk5c=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-+2574vngXSm6EwMSJKcV8JKlsaLQrVyid4eaXFskrFQ=",
+      "hash": "sha256-Dw\/eKsewM4D8BU1P8pAqnI5qrn2IB6a6K2OqWh0aSdQ=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-ETpv1A+fWLbJHVRzZQyXYoaQwxKN2SyTQ+vK6mu7h84=",
+      "hash": "sha256-zyhVmZfNn9\/n6qKST5O3+Lc31eb85FgzLAZhA1r\/N74=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "fdzUN2Q8"
+  "version": "QYdNCBGE"
 };
