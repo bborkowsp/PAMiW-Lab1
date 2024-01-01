@@ -21,7 +21,7 @@
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
                         <x:String>English</x:String>
-                        <x:String>Polish</x:String>
+                        <x:String>Polski</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>

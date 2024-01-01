@@ -18,11 +18,11 @@
 <EditForm Model="userRegisterDTO" OnValidSubmit="HandleRegistration">
     <p>@LanguageService.GetLanguage(selectedLanguage, "EmailLabel")</p>
     <InputText @bind-Value="userRegisterDTO.Email" id="email"></InputText>
-    <p>@LanguageService.GetLanguage(selectedLanguage, "UsernameLabel")</p>
+    <p>@LanguageService.GetLanguage(selectedLanguage, "UsernameLabel"):</p>
     <InputText @bind-Value="userRegisterDTO.Username" id="username"></InputText>
-    <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel")</p>
+    <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel"):</p>
         <InputText @bind-Value="userRegisterDTO.Password" id="password" type="password" style="color: 	#000000;"></InputText>
-        <p>@LanguageService.GetLanguage(selectedLanguage, "ConfirmPasswordLabel")</p>
+        <p>@LanguageService.GetLanguage(selectedLanguage, "ConfirmPasswordLabel"):</p>
         <InputText @bind-Value="userRegisterDTO.ConfirmPassword" id="confirmPassword" type="password" style="color: 	#000000;"></InputText>
 
     <button type="submit">@LanguageService.GetLanguage(selectedLanguage, "RegisterButton")</button>

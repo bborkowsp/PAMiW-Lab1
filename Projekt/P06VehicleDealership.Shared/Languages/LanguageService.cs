@@ -292,7 +292,7 @@ namespace P06VehicleDealership.Shared.Languages
           }
         },
         {
-          "polish",
+          "polski",
           new Dictionary < string,
           string > {
             {

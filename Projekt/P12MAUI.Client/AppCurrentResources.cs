@@ -55,13 +55,13 @@ namespace P12MAUI.Client
 
         public static void ToggleLanguage()
         {
-            if (Language == "polish")
+            if (Language == "polski")
             {
                 SetLanguage("english");
             }
             else
             {
-                SetLanguage("polish");
+                SetLanguage("polski");
             }
         }
 

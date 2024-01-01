@@ -12,15 +12,15 @@
 
 @if (selectedLanguage != null)
 {
-<h3>@LanguageService.GetLanguage(selectedLanguage, "LoginTitle")</h3>
 
     <h1>@LanguageService.GetLanguage(selectedLanguage, "WelcomeTitle")</h1>
+<h3>@LanguageService.GetLanguage(selectedLanguage, "LoginTitle")</h3>
 
 <EditForm Model="userLoginDTO" OnValidSubmit="HandleLogin">
 
     <p>@LanguageService.GetLanguage(selectedLanguage, "EmailLabel")</p>
     <InputText @bind-Value="userLoginDTO.Email" id="email"></InputText>
-    <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel")</p>
+    <p>@LanguageService.GetLanguage(selectedLanguage, "PasswordLabel"):</p>
     <InputText @bind-Value="userLoginDTO.Password" id="password" type="password" style="color: 	#000000;"></InputText>
 
     <button type="submit">@LanguageService.GetLanguage(selectedLanguage, "LoginButton")</button>

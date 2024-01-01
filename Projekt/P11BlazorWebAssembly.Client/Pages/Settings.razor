@@ -21,7 +21,7 @@
         <div>
             <p>>@LanguageService.GetLanguage(selectedLanguage, "ChooseLanguageLabel"):</p>
             <select class="form-control" @bind="language">
-                <option value="polish">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
+                <option value="polski">@LanguageService.GetLanguage(selectedLanguage, "PolishOption")</option>
                 <option value="english">@LanguageService.GetLanguage(selectedLanguage, "EnglishOption")</option>
             </select>
             <button class="btn btn-primary mt-3" @onclick="SaveLanguage">@LanguageService.GetLanguage(selectedLanguage, "SaveButton")</button>

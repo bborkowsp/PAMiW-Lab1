@@ -23,7 +23,7 @@ namespace P12MAUI.Client.ViewModels
 
         public static bool DarkTheme = true;
 
-        public static string Language = "polish";
+        public static string Language = "polski";
 
 
         [ObservableProperty]
@@ -47,7 +47,7 @@ namespace P12MAUI.Client.ViewModels
 
         private void SetLanguage()
         {
-            var savedLanguage = Preferences.Get("language", "polish");
+            var savedLanguage = Preferences.Get("language", "polski");
             if (savedLanguage == "English")
             {
                 selectedIndex = 1;
