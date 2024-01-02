@@ -20,8 +20,8 @@
             <Picker SelectedIndexChanged="OnLanguageSelected" HorizontalOptions="End" Title="" SelectedIndex="{Binding SelectedIndex}">
                 <Picker.ItemsSource>
                     <x:Array Type="{x:Type x:String}">
-                        <x:String>English</x:String>
-                        <x:String>Polski</x:String>
+                        <x:String>english</x:String>
+                        <x:String>polski</x:String>
                     </x:Array>
                 </Picker.ItemsSource>
             </Picker>

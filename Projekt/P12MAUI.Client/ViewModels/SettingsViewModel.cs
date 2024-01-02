@@ -23,7 +23,7 @@ namespace P12MAUI.Client.ViewModels
 
         public static bool DarkTheme = true;
 
-        public static string Language = "polski";
+        public static string Language = Preferences.Get("language", "polski");
 
         private bool firstOpen = true;
 
@@ -49,20 +49,22 @@ namespace P12MAUI.Client.ViewModels
         private void SetLanguage()
         {
             var savedLanguage = Preferences.Get("language", "polski");
-            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
-
-            Trace.WriteLine("funckaj setLanguage ", savedLanguage);
-            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
 
             if (savedLanguage == "english")
             {
+                            System.Diagnostics.Trace.WriteLine("-==-------SetLanguage-----------------------------", savedLanguage);
+
                 selectedIndex = 0;
-                return;
             }
-            selectedIndex = 1;
-            return;
+            else
+            {
+                selectedIndex = 1;
+            }
+
+            // Ustaw wartość dla Pickera
 
         }
+
 
         public static void LoadSettings()
         {
@@ -132,7 +134,9 @@ namespace P12MAUI.Client.ViewModels
 
         public void OnLanguageSelected(object sender, EventArgs e)
         {
+
             var picker = sender as Picker;
+
             if (picker != null)
             {
                 if (!firstOpen)
