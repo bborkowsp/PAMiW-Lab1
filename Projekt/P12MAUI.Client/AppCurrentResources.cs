@@ -68,6 +68,9 @@ namespace P12MAUI.Client
         public static void SetLanguage(string language)
         {
             AppCurrentResources.Language = language;
+            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+                System.Diagnostics.Trace.WriteLine(" Appcurrent resoruce - set lanugae" , language);
+                            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
 
             Preferences.Set("language", language);
         }

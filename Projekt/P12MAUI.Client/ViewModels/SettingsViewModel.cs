@@ -25,6 +25,7 @@ namespace P12MAUI.Client.ViewModels
 
         public static string Language = "polski";
 
+        private bool firstOpen = true;
 
         [ObservableProperty]
         private bool myProperty;
@@ -48,12 +49,17 @@ namespace P12MAUI.Client.ViewModels
         private void SetLanguage()
         {
             var savedLanguage = Preferences.Get("language", "polski");
-            if (savedLanguage == "English")
+            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+
+            Trace.WriteLine("funckaj setLanguage ", savedLanguage);
+            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+
+            if (savedLanguage == "english")
             {
-                selectedIndex = 1;
+                selectedIndex = 0;
                 return;
             }
-            selectedIndex = 2;
+            selectedIndex = 1;
             return;
 
         }
@@ -61,6 +67,12 @@ namespace P12MAUI.Client.ViewModels
         public static void LoadSettings()
         {
             SetTheme(Preferences.Get("isDarkTheme", true));
+            Language = Preferences.Get("language", "polski");
+            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+
+            Trace.WriteLine("funckaj loadSettings ", Language);
+            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+
         }
 
         public void OnToggledCommand(object sender, ToggledEventArgs e)
@@ -103,7 +115,10 @@ namespace P12MAUI.Client.ViewModels
 
         public string SelectedLanguage
         {
-            get { return selectedLanguage; }
+            get
+            {
+                return selectedLanguage;
+            }
             set
             {
                 if (selectedLanguage != value)
@@ -115,22 +130,29 @@ namespace P12MAUI.Client.ViewModels
         }
         public static event EventHandler<string> LanguageChanged;
 
-
         public void OnLanguageSelected(object sender, EventArgs e)
         {
             var picker = sender as Picker;
             if (picker != null)
             {
-                SelectedLanguage = picker.SelectedItem as string;
+                if (!firstOpen)
+                {
+                    SelectedLanguage = picker.SelectedItem as string;
+                    System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
 
-                Preferences.Set("language", SelectedLanguage);
-                SettingsViewModel.Language = SelectedLanguage.ToLower();
-                RefreshAllProperties();
-                LanguageChanged?.Invoke(this, SettingsViewModel.Language);
+                    Trace.WriteLine("funckaj OnLanguageSelected ", SelectedLanguage);
+                    System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
+                    Preferences.Set("language", SelectedLanguage);
+
+                    SettingsViewModel.Language = SelectedLanguage.ToLower();
+                    RefreshAllProperties();
+                    LanguageChanged?.Invoke(this, SettingsViewModel.Language);
+                    return;
+                }
+                firstOpen = false;
 
             }
         }
-
 
         public string ToggleThemeText => _languageService.GetLanguage(SettingsViewModel.Language.ToLower(), "ToogleThemeText");
 
