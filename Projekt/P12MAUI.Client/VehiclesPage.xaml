@@ -39,16 +39,18 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-
 	<ScrollView>
-		<VerticalStackLayout
-            Spacing="15"
-            Padding="30,0"
-            VerticalOptions="Center">
-			<HorizontalStackLayout Spacing="5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Spacing="5">
             	<Button Command="{Binding NewCommand}" Text="{Binding AddNewCarText}" Style="{StaticResource CustomButtonStyle}" />
 			</HorizontalStackLayout>
-			<CollectionView ItemsSource="{Binding PageVehicles}" BackgroundColor="{DynamicResource ThemeVehiclesThemeColor}" >
+        <CollectionView Grid.Row="1" ItemsSource="{Binding PageVehicles}" BackgroundColor="{DynamicResource ThemeVehiclesThemeColor}">
 				<CollectionView.ItemTemplate>
 					<DataTemplate>
 						<Frame Padding="10" Margin="5">
@@ -59,38 +61,30 @@
 							</Frame.GestureRecognizers>
 							<Grid>
 								<Grid.RowDefinitions>
-									<RowDefinition Height="Auto"></RowDefinition>
-									<RowDefinition Height="Auto"></RowDefinition>
-									<RowDefinition Height="Auto"></RowDefinition>
-									<RowDefinition Height="Auto"></RowDefinition>
+									<RowDefinition Height="Auto" />
+									<RowDefinition Height="Auto" />
+									<RowDefinition Height="Auto" />
 								</Grid.RowDefinitions>
-								<!--Pierwszy
-                                wiersz-->
-								<HorizontalStackLayout Grid.Row="0">
+								<HorizontalStackLayout Grid.Row="0" Spacing="5">
 									<Label Text="{Binding Id}" Margin="0,0,10,0"></Label>
 									<Label Text="{Binding Model}" FontSize="16"></Label>
 									<Label Text=" – " FontSize="16" TextColor="Gray"></Label>
 									<Label Text="{Binding Fuel}" FontSize="16"></Label>
 								</HorizontalStackLayout>
-								<!--Drugi
-                                wiersz-->
-								<Label Grid.Row="1" Text="{Binding Description}"
-                                    TextColor="LightGray"></Label>
-								<!--Trzeci
-                                wiersz-->
-								<HorizontalStackLayout Grid.Row="2"></HorizontalStackLayout>
+								<BoxView Grid.Row="2" HeightRequest="5" Color="Transparent" />
 							</Grid>
 						</Frame>
 					</DataTemplate>
 				</CollectionView.ItemTemplate>
 			</CollectionView>
-			<VerticalStackLayout HorizontalOptions="End" Spacing="5">
-				<HorizontalStackLayout HorizontalOptions="End">
-					<Button Command="{Binding PreviousPageCommand}" Text="{Binding PreviousPageText}"/>
-					<Label Text="{Binding CurrentPageText}" Margin="10" VerticalTextAlignment="Center" />
-					<Button Command="{Binding NextPageCommand}" Text="{Binding NextPageText}"/>
-				</HorizontalStackLayout>
-			</VerticalStackLayout>
-		</VerticalStackLayout>
+        <VerticalStackLayout Grid.Row="2" HorizontalOptions="End" Spacing="5">
+            <HorizontalStackLayout HorizontalOptions="End" VerticalOptions="End">
+                <Button Command="{Binding PreviousPageCommand}" Text="{Binding PreviousPageText}" />
+                <Label Text="{Binding CurrentPageText}" Margin="10" VerticalTextAlignment="Center" />
+                <Button Command="{Binding NextPageCommand}" Text="{Binding NextPageText}" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+		    </Grid>
+
 	</ScrollView>
 </ContentPage>
