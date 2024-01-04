@@ -47,8 +47,7 @@ PS > curl pamiw-409617.lm.r.appspot.com/api/Vehicle
 ```
 ### Kompatybilność Aplikacji Mobilnej
 Aplikacja mobilna napisana w framework'u MAUI poprawnie uruchamia się na urządzeniu z systemem Android.
-W moim przypadku wykorzystuję wirtualne środowisko uruchomieniowe systemu Android w wersji 13.0, oparte na specyfikacjach urządzenia Pixel 5. 
-![image](https://github.com/bborkowsp/PAMiW-Lab/assets/95755487/c9622c99-f425-4eef-aca1-728637129733)
+![image](https://github.com/bborkowsp/PAMiW-Lab/assets/95755487/b663645f-641c-4fad-9ad9-8a6a3948817c)
 
 ### Udoskonalenie Interfejsu
 #### Aplikacja mobilna
