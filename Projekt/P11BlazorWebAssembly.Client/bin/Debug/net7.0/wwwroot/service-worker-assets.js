@@ -969,23 +969,23 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-XscZht+QiNSBjZqCcurcmpLz\/eCbRW8SPXHxWM1TNsE=",
+      "hash": "sha256-q2zZPJLnIVDWGpuf6GJ12ymmiCIcYnkhqjT3i9OCb2c=",
       "url": "_framework\/P06VehicleDealership.Shared.dll"
     },
     {
-      "hash": "sha256-EsLUxEqjVIHV3WGLPoqzfXK25i4yLnlGMGUqPN5XUcQ=",
+      "hash": "sha256-CPN\/nFc62FJR8wG4tRhhA3AYczYYbRcbO5WWuOhbCho=",
       "url": "_framework\/P06VehicleDealership.Shared.pdb"
     },
     {
-      "hash": "sha256-Hk4sqbcHKEFMSapp9qTT+F5efJK0RTEEIsOnwtGkJYk=",
+      "hash": "sha256-PLJ2PzLSRrW6b8ML2DTxz3t4iq70jpNBrjaMKVQWWr4=",
       "url": "_framework\/P11BlazorWebAssembly.Client.dll"
     },
     {
-      "hash": "sha256-aXVr7XaOkLJa3ClwAtO++Ql5yTEdOQQfKZktipxfq5A=",
+      "hash": "sha256-Vj1E6FoC\/mIoRLaww4wGyZbmnnDj77kVuixCrxiX+LI=",
       "url": "_framework\/P11BlazorWebAssembly.Client.pdb"
     },
     {
-      "hash": "sha256-UQQHRJANiRjw8b7Mz6ZNfF\/YgZhgcoNDkjt15WFrDhM=",
+      "hash": "sha256-AKy5Ntd8qM9mjzWDYJxTTbPyDUpZcjiBrEelpP60faM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -993,5 +993,5 @@
       "url": "_content\/Quick.AspNetCore.Components.Web.Extensions\/headManager.js"
     }
   ],
-  "version": "Aezsx12n"
+  "version": "SSx0\/MyQ"
 };
