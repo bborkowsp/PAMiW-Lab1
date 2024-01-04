@@ -68,7 +68,7 @@ Długie operacja sygnalizowane są ikoną ładowania.
 ![image](https://github.com/bborkowsp/PAMiW-Lab/assets/95755487/f43e19b1-b700-4f58-82a8-028b649c65c9)
 
 Dodatkowo, użytkownik jest informowany o wszelkich błędach jakie wystąpiły, lub o poprawnym zakończeniu operacji.
-![image](https://github.com/bborkowsp/PAMiW-Lab/assets/95755487/1a137a06-fd5d-4861-9a99-8e998a7f5727)
+![image](https://github.com/bborkowsp/PAMiW-Lab/assets/95755487/8d4eab66-4016-41f5-bdc0-d04842ec6349)
 
 ### Ustawienia użytkownika
 #### Aplikacja mobilna
