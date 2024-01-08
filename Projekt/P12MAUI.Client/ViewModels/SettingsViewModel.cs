@@ -52,17 +52,12 @@ namespace P12MAUI.Client.ViewModels
 
             if (savedLanguage == "english")
             {
-                            System.Diagnostics.Trace.WriteLine("-==-------SetLanguage-----------------------------", savedLanguage);
-
                 selectedIndex = 0;
             }
             else
             {
                 selectedIndex = 1;
             }
-
-            // Ustaw wartość dla Pickera
-
         }
 
 
@@ -70,11 +65,6 @@ namespace P12MAUI.Client.ViewModels
         {
             SetTheme(Preferences.Get("isDarkTheme", true));
             Language = Preferences.Get("language", "polski");
-            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
-
-            Trace.WriteLine("funckaj loadSettings ", Language);
-            System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
-
         }
 
         public void OnToggledCommand(object sender, ToggledEventArgs e)
@@ -134,18 +124,13 @@ namespace P12MAUI.Client.ViewModels
 
         public void OnLanguageSelected(object sender, EventArgs e)
         {
-
             var picker = sender as Picker;
-
             if (picker != null)
             {
                 if (!firstOpen)
                 {
                     SelectedLanguage = picker.SelectedItem as string;
-                    System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
 
-                    Trace.WriteLine("funckaj OnLanguageSelected ", SelectedLanguage);
-                    System.Diagnostics.Trace.WriteLine("-==---------------------------------------------");
                     Preferences.Set("language", SelectedLanguage);
 
                     SettingsViewModel.Language = SelectedLanguage.ToLower();
@@ -154,7 +139,6 @@ namespace P12MAUI.Client.ViewModels
                     return;
                 }
                 firstOpen = false;
-
             }
         }
 
